@@ -6,9 +6,13 @@
   --main-grey: #52596b;
 }
 
-* {
-  font-family: "Playfair Display", serif;
+@font-face {
+  font-family: Gilroy;
+  src: url('assets/fonts/Gilroy/Gilroy-Regular.otf');
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+  margin: 0;
+}

@@ -1,0 +1,24 @@
+<div class="main">
+  <div class="text-container">
+    <h5 class="text-1">NEDEN KINGKONG?</h5>
+    <h1 class="text-2">KingKong<br />Dünyasında</h1>
+    <h1 class="text-3">Neler<br />Yapabilirsiniz?</h1>
+  </div>
+
+  <div id="slider-cover">
+    <div class="card" *ngFor="let item of imgs; let i = index"> 
+      <img [src]="'../../../assets/cards/'+item.img" alt="" class="card-img"/>
+      <div class="card-content">
+        <img [src]="'../../../assets/cards/'+item.icon" alt="" class="card-icon" />
+        <h3 class="card-text"> {{item.title}} </h3>
+        <p class="card-sub"> {{item.sub}} </p>
+        <p class="card-detail">Detaylı Bilgi</p>
+      </div>
+    </div>
+  </div>
+  <div class="buttons" >
+    <img src="../../../assets/cards/l-arrow.svg" alt="" class="arrow" />
+    <img src="../../../assets/cards/seperator.svg" alt="" class="seperator" />
+    <img src="../../../assets/cards/r-arrow.svg" alt="" class="arrow"  />
+  </div>
+</div>

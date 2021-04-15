@@ -8,6 +8,11 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Section2Component } from './shared/section2/section2.component';
+import { Section3Component } from './shared/section3/section3.component';
+import { SliderComponent } from './shared/slider/slider.component';
+import { HowitworksComponent } from './shared/howitworks/howitworks.component';
+import { GalleryComponent } from './shared/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SharedComponent,
     HeaderComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    Section2Component,
+    Section3Component,
+    SliderComponent,
+    HowitworksComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

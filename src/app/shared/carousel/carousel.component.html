@@ -1,6 +1,12 @@
 <div class="collapser">
   <div class="carousel-back">
-    <img alt="" class="carousel-back-img" *ngFor="let img of imgs; let i = index;" [src]="'../../../assets/carousel/'+img" [ngClass]="'carousel-img-'+i">
+    <img
+      alt=""
+      class="carousel-back-img"
+      *ngFor="let img of imgs; let i = index"
+      [src]="'../../../assets/carousel/' + img"
+      [ngClass]="'carousel-img-' + i"
+    />
   </div>
   <div class="carousel-content">
     <div></div>
@@ -8,20 +14,36 @@
       <div class="carousel-text">
         <h3 class="carousel-title">KingKong'la Tanışın</h3>
         <h1 class="carousel-sub">Etkinliklerinizi Taçlandırır</h1>
-        <h6 class="carousel-hint">KingKong sanal konferans platformu benzerlerine göre benzersiz olanaklar sunar!</h6>
+        <h6 class="carousel-hint">
+          KingKong sanal konferans platformu benzerlerine göre benzersiz
+          olanaklar sunar!
+        </h6>
         <div class="carousel-viewmore">
           <div>Detaylı Bilgi</div>
           <div>></div>
         </div>
       </div>
       <div class="carousel-points">
-        <div class="point" [ngClass]="{'point-active': i == activeImg}" *ngFor="let img of imgs; let i = index;" (click)="selectImg(i)"></div> <!-- ngfor -->
+        <div
+          class="point"
+          [ngClass]="{ 'point-active': i == activeImg }"
+          *ngFor="let img of imgs; let i = index"
+          (click)="selectImg(i)"
+        ></div>
+        <!-- ngfor -->
       </div>
     </div>
     <div class="carousel-pagination">
-      <div class="page-slider"></div>
-      <p class="page-title"></p>
-      <p class="page-text"></p>
+      <div
+        class="page-cont"
+        *ngFor="let pag of paginations; let i = index"
+        (click)="selectImg(i)"
+      >
+        <div class="page-slider" [ngClass]="'page-slider-'+i"></div>
+        <!-- <div class="page-slider" [ngClass]="{ 'page-title-active': i == activeImg }"></div> -->
+        <p class="page-title" [ngClass]="{ 'page-title-active': i == activeImg }">{{ pag.title }}</p>
+        <p class="page-text" [ngClass]="{ 'page-text-active': i == activeImg }">{{ pag.sub }}</p>
+      </div>
     </div>
   </div>
 </div>

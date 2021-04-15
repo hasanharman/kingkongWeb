@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-img {
+  width: 50vw;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 40vw
+}
+.text-head {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  color: var(--main-black);
+  margin: 20px 0 0 0;
+}
+
+.text-2 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: var(--main-black);
+  margin: 20px 0 0 0;
+}
+
+.text-3 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: var(--main-grey);
+  margin: 20px 0 0 0;
+}
+
+.carousel-viewmore {
+    margin-top: 60px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 120px;
+    border-radius: 50px;
+    border: 1px solid;
+    color: var(--main-red);
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+  }

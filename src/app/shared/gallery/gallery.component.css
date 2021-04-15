@@ -1,0 +1,75 @@
+.main {
+  width: 100%;
+  /* background */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly;
+    align-items: center; */
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-head1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  margin: 10px 0 0 0;
+}
+.text-head2 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  margin: 10px 0 0 0;
+}
+
+.menu {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  align-items: center;
+    margin-top: 43px;
+}
+
+.menu-text {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.menu-text:active {
+  color: var(--main-red);
+}
+.gallery-masonry {
+  margin: 3%
+}
+.masonry {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.item-double {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-img {
+  margin: 8px;
+  border-radius: 10px;
+}
