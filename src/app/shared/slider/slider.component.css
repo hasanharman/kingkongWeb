@@ -143,3 +143,13 @@
   color: white;
   margin: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+  .text-container {
+    margin-left: 5%;
+  }
+  .card {
+    margin-left: 5%;
+
+  }
+}

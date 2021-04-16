@@ -32,7 +32,7 @@
   flex: row;
   justify-content: center;
   align-items: center;
-    margin-top: 43px;
+  margin-top: 43px;
 }
 
 .menu-text {
@@ -55,6 +55,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .item {
@@ -72,4 +73,16 @@
 .item-img {
   margin: 8px;
   border-radius: 10px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .item-img {
+    margin: 0;
+    width: 100%;
+    padding: 8px 2px 8px 2px;
+    /* margin: 8px 0 8px 0; */
+  }
+  .item-double {
+    width: 90vw;
+  }
 }

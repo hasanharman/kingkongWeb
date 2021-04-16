@@ -203,3 +203,16 @@
   margin: 10px 0px 0px 0px;
   opacity: 1;
 }
+
+/* Phone Screen */
+@media only screen and (max-width: 450px) {
+  .carousel-info {
+    width: 80%;
+  }
+  .carousel-sub {
+    font-size: 30px;
+  }
+  .carousel-hint {
+    font-size: 20px;
+  }
+}

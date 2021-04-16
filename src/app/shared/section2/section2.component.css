@@ -1,10 +1,12 @@
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .left-img {
-  width: 50vw;
+  width: 100%;
 }
 
 .text-container {

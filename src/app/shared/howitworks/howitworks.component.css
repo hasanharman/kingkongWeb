@@ -1,11 +1,11 @@
 .main {
   width: 100%;
-  height: 80vh;
   /* background */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin: 50px 0 50px 0;
 }
 .logo {
   width: 55px;
@@ -19,6 +19,8 @@
 .heading {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .text-head1 {
   font-family: Playfair Display;
@@ -46,7 +48,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 380px;
+  flex-wrap: wrap;
+  width: 300px;
   height: 340px;
   padding: 20px;
 }
@@ -108,3 +111,5 @@ div:hover > .only-show-on-hover2 {
 div:hover > .only-show-on-hover3 {
   visibility: visible;
 }
+
+

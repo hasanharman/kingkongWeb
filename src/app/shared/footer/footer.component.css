@@ -135,6 +135,9 @@ input:focus {
 
 
 @media only screen and (max-device-width: 480px) {
+  .crown {
+    padding: 0;
+  }
   input {
     width: 250px;
     height: 46.36px;
