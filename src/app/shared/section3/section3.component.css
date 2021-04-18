@@ -4,10 +4,13 @@
   width: 100%;
 }
 
+.img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 .left-img {
-  position: absolute;
-  right: 0;
-  width: 100vw;
+  width: 100%;
   z-index: -2;
 }
 

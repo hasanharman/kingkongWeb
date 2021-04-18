@@ -31,29 +31,36 @@ export class SliderComponent implements OnInit {
 		{ img: 'card4.png', icon: 'id.svg', title: 'Toplantı ve Motivasyon Etkinlikler', sub: '' }
 	];
 
+	totalItems = this.imgs.length;
+
+
 	constructor() {}
 
-	ngOnInit(): void {}
+	ngOnInit(): void {
+	}
 
-	// prev(index: number) {
-	// 	TweenMax.to(`.card-img"-${this.activeImg}`, 0.5, {
-	// 		css: {
-	// 			opacity: 0
+	// prev() {
+	// 	console.log(this.activeImg * 230);
+	// 	TweenMax.fromTo(
+	// 		'.card-0',
+	// 		0.5,
+	// 		{
+	// 			css: {
+	// 				'margin-left': this.activeImg * 230
+	// 			}
+	// 		},
+	// 		{
+	// 			css: {
+	// 				'margin-left': (this.activeImg - 1) * 230
+	// 			}
 	// 		}
-	// 	});
-	// 	TweenMax.to(`.card-img"-${index}`, 0.5, {
-	// 		css: {
-	// 			opacity: 1
-	// 		}
-	// 	});
-	// 	this.activeImg = index;
+	// 	);
+	// 	this.activeImg -= 1;
 	// }
 
 	prev() {
-		console.log(this.activeImg * 230);
-		TweenMax.fromTo(
-			'.card-0',
-			0.5,
+		
+		TweenMax.fromTo(`.card-img-${this.imgs[this.activeImg].img}`, 0.5,
 			{
 				css: {
 					'margin-left': this.activeImg * 230

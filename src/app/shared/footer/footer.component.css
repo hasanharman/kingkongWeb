@@ -82,6 +82,18 @@ input:focus {
   font-size: 12px;
 }
 
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end!important;
+  align-items: flex-end!important;
+}
+
+.social-img {
+  margin-top: -25px;
+  margin-left: 10px;
+}
+
 .footer-end {
   width: 100%;
   background-color: #15141a;

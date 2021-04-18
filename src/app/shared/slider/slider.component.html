@@ -41,8 +41,9 @@
     </div>
   </div>
   <div class="buttons" >
-    <img src="../../../assets/cards/l-arrow.svg" alt="" class="arrow" (click)="activeImg !== 0 ? prev() : null"/>
+    <img src="../../../assets/cards/l-arrow.svg" alt="" class="arrow" (click)="activeImg !== 0 ? prev() : null "/>
+    <!-- <img src="../../../assets/cards/l-arrow.svg" alt="" class="arrow" (click)="activeImg < imgs.length + 1 ? prev() : next() "/> -->
     <img src="../../../assets/cards/seperator.svg" alt="" class="seperator" />
-    <img src="../../../assets/cards/r-arrow.svg" alt="" class="arrow" (click)="activeImg < imgs.length - 1 ? next() : null"/>
+    <img src="../../../assets/cards/r-arrow.svg" alt="" class="arrow" (click)="activeImg <= imgs.length - 1 ? next() : null"/>
   </div>
 </div>
