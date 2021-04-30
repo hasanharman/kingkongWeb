@@ -5,10 +5,16 @@
   </div>
   <div class="gallery-main">
     <div class="menu">
-      <a (click)="show1()" class="menu-text">Ana Giriş</a>
+      <!-- <a (click)="show1()" class="menu-text active">Ana Giriş</a>
       <a (click)="show2()" class="menu-text">Networking Alanı</a>
       <a (click)="show3()" class="menu-text">Stand Alanı</a>
-      <a (click)="show4()" class="menu-text">Toplantı Salonları</a>
+      <a (click)="show4()" class="menu-text">Toplantı Salonları</a> -->
+
+      <a class="menu-text active">Ana Giriş</a>
+      <a class="menu-text">Networking Alanı</a>
+      <a class="menu-text">Stand Alanı</a>
+      <a class="menu-text">Toplantı Salonları</a>
+
     </div>
     <div class="gallery-masonry">
       <div *ngIf="isShown1" class="masonry">

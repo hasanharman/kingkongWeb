@@ -74,7 +74,9 @@
   margin: 8px;
   border-radius: 10px;
 }
-
+.active {
+  color: red;
+}
 @media only screen and (max-device-width: 480px) {
   .item-img {
     margin: 0;
