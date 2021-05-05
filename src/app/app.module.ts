@@ -13,6 +13,7 @@ import { Section3Component } from './shared/section3/section3.component';
 import { SliderComponent } from './shared/slider/slider.component';
 import { HowitworksComponent } from './shared/howitworks/howitworks.component';
 import { GalleryComponent } from './shared/gallery/gallery.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { GalleryComponent } from './shared/gallery/gallery.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

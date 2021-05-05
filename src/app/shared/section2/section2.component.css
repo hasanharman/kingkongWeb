@@ -1,61 +1,80 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.main-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	background: url('../../../assets/deneme.png') no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
 }
 
-.left-img {
+/* .left-img {
   width: 100%;
-}
+} */
 
 .text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  width: 40vw
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: 10%;
+	margin-left: 55%;
+	width: 40%;
 }
 .text-head {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  color: var(--main-black);
-  margin: 20px 0 0 0;
+	font-family: "Playfair Display";
+	font-weight: 400;
+	font-size: 50px;
+	color: var(--main-black);
+	margin: 20px 0 0 0;
+}
+.text-head-bold {
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: 900;
+	font-size: 50px;
+	color: var(--main-black);
 }
 
 .text-2 {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  color: var(--main-black);
-  margin: 20px 0 0 0;
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	color: var(--main-black);
+	margin: 20px 0 0 0;
 }
 
 .text-3 {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  color: var(--main-grey);
-  margin: 20px 0 0 0;
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: var(--main-grey);
+	margin: 20px 0 0 0;
 }
 
 .carousel-viewmore {
-    margin-top: 60px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 120px;
-    border-radius: 50px;
-    border: 1px solid;
-    color: var(--main-red);
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-  }
+	margin-top: 60px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 120px;
+	border-radius: 50px;
+	border: 1px solid;
+	color: var(--main-red);
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 700px) {
+	.text-container {
+		margin-top: 5%;
+		margin-left: 5%;
+		width: 80%;
+	}
+}

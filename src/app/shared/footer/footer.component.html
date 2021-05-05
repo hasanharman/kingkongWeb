@@ -20,28 +20,74 @@
   </div>
   <div class="footer-end">
     <div class="social">
-      <a href="https://www.instagram.com/kingkongistanbul/" target="_blank"> <img src="../../../assets/footer/ig.svg" alt="" class="social-img"></a>
-      <a href="https://twitter.com/kingkongistanbul" target="_blank">  <img src="../../../assets/footer/tw.svg" alt="" class="social-img"></a>
-      <a href="https://www.facebook.com/kingkongistanbul" target="_blank"><img src="../../../assets/footer/fb.svg" alt="" class="social-img"></a>
-      <a href="" target="_blank"><img src="../../../assets/footer/yt.svg" alt="" class="social-img"></a>
-    </div>
-    <div class="text-footer">
-      <img src="../../../assets/logo-grey.svg" alt="" />
-      <div class="menu-footer">
-        <h1 class="menu-text">KingKong Nedir?</h1>
-        <h1 class="menu-text">Neden KingKong?</h1>
-        <!-- <h1 class="menu-text">Webinar</h1>
-        <h1 class="menu-text">Dewcon</h1> -->
-        <h1 class="menu-text">İletişim</h1>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div>
+        <a href="https://www.instagram.com/kingkongistanbul/" target="_blank"> <img src="../../../assets/footer/ig.svg"
+            alt="" class="social-img"></a>
+        <a href="https://twitter.com/kingkongistanbul" target="_blank"> <img src="../../../assets/footer/tw.svg" alt=""
+            class="social-img"></a>
+        <a href="https://www.facebook.com/kingkongistanbul" target="_blank"><img src="../../../assets/footer/fb.svg"
+            alt="" class="social-img"></a>
       </div>
-      <div class="footer-legal">
-        <h1 class="legal-text">Yasal Uyarı</h1>
-        <h1 class="legal-text">Gizlilik Politikası</h1>
-        <h1 class="legal-text">İletişim</h1>
-      </div>
+      <!-- <a href="" target="_blank"><img src="../../../assets/footer/yt.svg" alt="" class="social-img"></a> -->
     </div>
-    <div>
-      <h1 class="copyright">© 2021 | Tüm hakları saklıdır.</h1>
+    <div class="footer-content">
+      <div class="text-footer">
+        <img src="../../../assets/logo-grey.svg" alt="" />
+        <div class="menu-footer">
+          <h1 class="menu-text">KingKong Nedir?</h1>
+          <h1 class="menu-text">Neden KingKong?</h1>
+          <!-- <h1 class="menu-text">Webinar</h1>
+          <h1 class="menu-text">Dewcon</h1> -->
+          <h1 class="menu-text">İletişim</h1>
+        </div>
+        <div class="footer-legal">
+          <h1 class="legal-text" (click)="openLegal(legal)">Yasal Uyarı</h1>
+          <h1 class="legal-text" (click)="openPrivacy(privacy)">Gizlilik Politikası</h1>
+          <h1 class="legal-text">İletişim</h1>
+        </div>
+      </div>
+      <div>
+        <h1 class="copyright">© 2021 | Tüm hakları saklıdır.</h1>
+      </div>
     </div>
   </div>
 </div>
+
+<ng-template #legal let-modal>
+  <div class="header-modal">
+    <div></div>
+    <h4 class="title-modal">Yasal Uyarı</h4>
+
+      <button href="" class="close-button"  (click)="modal.close('Cross click')" aria-hidden="true" ><img src="../../../assets/modal-close.svg" alt=""></button>
+
+    <!-- <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button> -->
+  </div>
+  <div class="body-modal">
+  </div>
+  <div class="footer-modal">
+    <button type="button" class="send-button">Onayla</button>
+  </div>
+</ng-template>
+
+<ng-template #privacy let-modal>
+  <div class="header-modal">
+    <div></div>
+    <h4 class="title-modal">Gizlilik Metni</h4>
+
+      <button href="" class="close-button"  (click)="modal.close('Cross click')" aria-hidden="true" ><img src="../../../assets/modal-close.svg" alt=""></button>
+
+    <!-- <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button> -->
+  </div>
+  <div class="body-modal">
+  </div>
+  <div class="footer-modal">
+    <button type="button" class="send-button">Onayla</button>
+  </div>
+</ng-template>

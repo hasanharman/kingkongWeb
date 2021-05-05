@@ -85,8 +85,8 @@ input:focus {
 .social {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end!important;
-  align-items: flex-end!important;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .social-img {
@@ -99,10 +99,13 @@ input:focus {
   background-color: #15141a;
   display: flex;
   flex-direction: column;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .text-footer {
   display: flex;
   flex-direction: row;
@@ -135,6 +138,7 @@ input:focus {
   font-size: 12px;
   color: var(--main-grey);
   padding-left: 29.5px;
+  cursor: pointer;
 }
 
 .copyright {
@@ -175,3 +179,5 @@ input:focus {
     padding-left: 10px;
   }
 }
+
+

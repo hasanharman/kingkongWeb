@@ -186,10 +186,10 @@
 
 .page-title-active {
   font-family: "Gilroy";
-  font-style: normal;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 18px;
-  color: var(--main-red);
+  color: white;
+  /* color: var(--main-red); */
   margin: 10px 0px 0px 0px;
   opacity: 1;
 }

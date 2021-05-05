@@ -59,8 +59,10 @@ export class SliderComponent implements OnInit {
 	// }
 
 	prev() {
+		// console.log(`.card-image-${this.imgs[this.activeImg].img}`);
+		console.log(this.activeImg);
 		
-		TweenMax.fromTo(`.card-img-${this.imgs[this.activeImg].img}`, 0.5,
+		TweenMax.fromTo(`.card-image-${this.imgs[this.activeImg].img}`, 0.5,
 			{
 				css: {
 					'margin-left': this.activeImg * 230
@@ -76,8 +78,9 @@ export class SliderComponent implements OnInit {
 	}
 
 	next() {
+		console.log(this.imgs[this.activeImg].img);
 		TweenMax.fromTo(
-			'.card-0',
+			`.card-image-${this.activeImg}`,
 			0.5,
 			{
 				css: {

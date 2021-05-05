@@ -1,115 +1,184 @@
-.main {
-  width: 100%;
-  /* background */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 50px 0 50px 0;
+.main-container3 {
+	width: 100%;
+	/* background */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 50px 0 50px 0;
 }
-.logo {
-  width: 55px;
-}
+/* .logo {
+	width: 55px;
+} */
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .text-head1 {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  margin: 10px 0 0 0;
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	margin: 10px 0 0 0;
 }
 .text-head2 {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 50px;
-  margin: 10px 0 0 0;
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 50px;
+	margin: 10px 0 0 0;
 }
 .contents {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 300px;
-  height: 340px;
-  padding: 20px;
+.card-container2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 300px;
+	height: 340px;
+	padding: 20px;
+	margin: 40px;
 }
 
-.card:hover {
-  box-shadow: 0px 4px 20px rgba(34, 33, 39, 0.2);
-  border-radius: 10px;
+.card-container2:hover {
+	box-shadow: 0px 4px 20px rgba(34, 33, 39, 0.2);
+	border-radius: 10px;
 }
 
 .text-card-head {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  color: var(--main-black);
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: var(--main-black);
 }
 
 .text-card {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
-  text-align: center;
-  font-size: 16px;
-  color: var(--main-grey);
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	font-size: 16px;
+	color: var(--main-grey);
 }
 
 .carousel-viewmore {
-  margin-top: 380px;
-  padding: 10px;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 120px;
-  border-radius: 50px;
-  background-color: var(--main-red);
-  color: white;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
+	margin-top: 350px;
+	padding: 10px;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 120px;
+	cursor: pointer;
+	border-radius: 50px;
+	background-color: var(--main-red);
+	color: white;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
 }
 
 .only-show-on-hover1 {
-  visibility: hidden;
+	visibility: hidden;
 }
 div:hover > .only-show-on-hover1 {
-  visibility: visible;
+	visibility: visible;
+}
+.card-container2:hover > svg {
+	fill: var(--main-red);
+	stroke: var(--main-red);
 }
 .only-show-on-hover2 {
-  visibility: hidden;
+	visibility: hidden;
 }
 div:hover > .only-show-on-hover2 {
-  visibility: visible;
+	visibility: visible;
 }
 .only-show-on-hover3 {
-  visibility: hidden;
+	visibility: hidden;
 }
 div:hover > .only-show-on-hover3 {
-  visibility: visible;
+	visibility: visible;
 }
 
+/* Modal CSS */
 
+.header-modal {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title-modal {
+	font-size: 30px;
+	background: -webkit-linear-gradient(#fa2b56, #f91c3d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-top: 37px;
+}
+
+.body-modal {
+	color: #52596b;
+	font-size: 16px;
+	padding: 20px 80px 20px 80px;
+}
+
+#typeahead {
+	background-color: #222127 !important;
+	border-color: #52596b;
+	border-radius: 5px;
+}
+
+.footer-modal {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.close-button {
+	margin-top: 18px;
+	margin-right: 23px;
+	background-color: #222127;
+	border: none;
+}
+
+.send-button {
+	width: 100%;
+	color: white;
+	background: linear-gradient(259.52deg, #fa2b56 36.56%, #f91c3d 93.83%);
+	/* PortalButtonShadow */
+	width: 628px;
+	height: 60px;
+	box-shadow: 0px 4px 20px rgba(250, 37, 76, 0.2);
+	border: none;
+	border-radius: 90px;
+	margin-bottom: 43px;
+}
+
+.success-msg {
+	color: white;
+	font-family: Gilroy;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 80px;
+}
