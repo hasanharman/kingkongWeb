@@ -30,7 +30,7 @@
     <h1 class="text-3">Neler<br />Yapabilirsiniz?</h1>
   </div>
   <div id="slider-cover">
-    <div class="card-cont" [ngClass]="'card-image-'+i" *ngFor="let item of imgs; let i = index">
+    <div class="card-cont" [ngClass]="'card-cont-'+i" *ngFor="let item of imgs; let i = index">
       <img [src]="'../../../assets/cards/'+item.img" alt="" class="card-image"/>
       <div class="card-content">
         <img [src]="'../../../assets/cards/'+item.icon" alt="" class="card-icon" />
@@ -41,11 +41,9 @@
     </div>
   </div>
   <div class="buttons" >
-    <img src="../../../assets/cards/l-arrow.svg" alt="" class="arrow" (click)="activeImg <= imgs.length + 1 ? prev() : next() "/>
+    <img src="../../../assets/cards/l-arrow.svg" alt="" class="arrow" (click)="activeImg < imgs.length + 1 ? prev() : null "/>
     <img src="../../../assets/cards/seperator.svg" alt="" class="seperator" />
-    <img src="../../../assets/cards/r-arrow.svg" alt="" class="arrow" (click)="activeImg <= imgs.length - 1 ? next() : prev()"/>
-    <!-- <img src="../../../assets/cards/l-arrow.svg" alt="" class="arrow"/>
-    <img src="../../../assets/cards/seperator.svg" alt="" class="seperator" />
-    <img src="../../../assets/cards/r-arrow.svg" alt="" class="arrow"/> -->
+    <img src="../../../assets/cards/r-arrow.svg" alt="" class="arrow" (click)="activeImg < imgs.length - 1 ? next() : prev()"/>
   </div>
 </div>
+

@@ -59,6 +59,35 @@
 	box-shadow: 0px 4px 20px rgba(34, 33, 39, 0.2);
 	border-radius: 10px;
 }
+.icon-container1 {
+	width: 100px;
+	height: 100px;
+	background: url('../../../assets/how/Toplanti.svg') no-repeat;
+	background-size: contain;
+}
+.card-container2:hover > .icon-container1  {
+	background: url('../../../assets/how/Toplanti.png') no-repeat;
+}
+.icon-container2 {
+	width: 100px;
+	height: 100px;
+	background: url('../../../assets/how/PaketButce.svg') no-repeat;
+	background-size: contain;
+}
+.card-container2:hover > .icon-container2  {
+	background: url('../../../assets/how/PaketButce.png') no-repeat;
+}
+.icon-container3 {
+	width: 100px;
+	height: 100px;
+	background: url('../../../assets/how/umbrella-2.png') no-repeat;
+	background-size: contain;
+}
+.card-container2:hover > .icon-container3  {
+
+	background: url('../../../assets/how/umbrella.png') no-repeat;
+	background-size: contain;
+}
 
 .text-card-head {
 	font-family: Playfair Display;
@@ -130,7 +159,6 @@ div:hover > .only-show-on-hover3 {
 .title-modal {
 	font-size: 30px;
 	background: -webkit-linear-gradient(#fa2b56, #f91c3d);
-	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-top: 37px;
 }

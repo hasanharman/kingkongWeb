@@ -14,6 +14,7 @@ import { SliderComponent } from './shared/slider/slider.component';
 import { HowitworksComponent } from './shared/howitworks/howitworks.component';
 import { GalleryComponent } from './shared/gallery/gallery.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

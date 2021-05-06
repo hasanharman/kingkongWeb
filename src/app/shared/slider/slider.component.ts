@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TweenMax } from 'gsap';
+declare var $: any;
 
 @Component({
 	selector: 'app-slider',
@@ -34,7 +35,9 @@ export class SliderComponent implements OnInit {
 	totalItems = this.imgs.length;
 
 
-	constructor() {}
+	constructor() {
+		
+	}
 
 	ngOnInit(): void {
 	}
@@ -59,9 +62,7 @@ export class SliderComponent implements OnInit {
 	// }
 
 	prev() {
-		// console.log(`.card-image-${this.imgs[this.activeImg].img}`);
 		console.log(this.activeImg);
-		
 		TweenMax.fromTo(`.card-image-${this.imgs[this.activeImg].img}`, 0.5,
 			{
 				css: {
@@ -78,9 +79,10 @@ export class SliderComponent implements OnInit {
 	}
 
 	next() {
-		console.log(this.imgs[this.activeImg].img);
+		console.log(`.card-image-${this.imgs[this.activeImg].img}`);
+		console.log(this.activeImg);		
 		TweenMax.fromTo(
-			`.card-image-${this.activeImg}`,
+			'.card-0',
 			0.5,
 			{
 				css: {
@@ -95,4 +97,6 @@ export class SliderComponent implements OnInit {
 		);
 		this.activeImg += 1;
 	}
+
+	
 }
