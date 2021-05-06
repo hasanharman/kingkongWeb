@@ -159,6 +159,7 @@ div:hover > .only-show-on-hover3 {
 .title-modal {
 	font-size: 30px;
 	background: -webkit-linear-gradient(#fa2b56, #f91c3d);
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-top: 37px;
 }
@@ -168,11 +169,20 @@ div:hover > .only-show-on-hover3 {
 	font-size: 16px;
 	padding: 20px 80px 20px 80px;
 }
-
+label {
+	margin-top: 10px;
+}
 #typeahead {
 	background-color: #222127 !important;
 	border-color: #52596b;
 	border-radius: 5px;
+}
+
+#typeahead2 {
+	background-color: #222127 !important;
+	border-color: #52596b;
+	border-radius: 5px;
+	width: 300px;
 }
 
 .footer-modal {

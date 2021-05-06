@@ -11,6 +11,11 @@
   src: url('assets/fonts/Gilroy/Gilroy-Regular.otf');
 }
 
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url('assets/fonts/Gilroy/Gilroy-Extrabold.otf');
+}
+
 html,
 body {
   height: 100%;

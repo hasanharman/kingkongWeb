@@ -1,6 +1,10 @@
 
-<div class="videobg">
-  <video autoplay loop muted oncanplay="this.muted=true" class="video-bg" src="../../../assets/background_video.mp4" type="video/mp4"></video>
+<div>
+  <!-- <video autoplay loop muted oncanplay="this.muted=true" class="video-bg" src="../../../assets/background_video.mp4" type="video/mp4"></video> -->
+  <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" id="videoId">
+    <source src="../../../assets/background_video.mp4" type="video/mp4" />
+  </video>
+
 </div>
 <div class="collapser">
   <div class="carousel-back">
@@ -17,16 +21,14 @@
     <div></div>
     <div class="carousel-info">
       <div class="carousel-text">
-        <h3 class="carousel-title">KingKong'la Tanışın</h3>
-        <h1 class="carousel-sub">Etkinliklerinizi Taçlandırır</h1>
+        <h3 class="carousel-title">KingKong ile Tanışın</h3>
+        <h1 class="carousel-sub">Etkinliklerinizi Taçlandırın!</h1>
         <h6 class="carousel-hint">
-          KingKong sanal konferans platformu benzerlerine göre benzersiz
-          olanaklar sunar!
+          Akıllı etkinlik sistemi KingKong benzerlerine göre benzersiz olanaklar sunar!
         </h6>
-        <!-- <div class="carousel-viewmore">
-          <div>Detaylı Bilgi</div>
-          <div>></div>
-        </div> -->
+        <div class="carousel-viewmore" (click)="openVideo(video)">
+          <div>İzle</div>
+        </div>
       </div>
       <div class="carousel-points">
         <div
@@ -52,3 +54,22 @@
     </div>
   </div>
 </div>
+
+
+<ng-template #video let-modal>
+  <div class="header-modal">
+    <div></div>
+    <h4 class="title-modal"></h4>
+
+      <button href="" class="close-button"  (click)="modal.close('Cross click')" aria-hidden="true" ><img src="../../../assets/modal-close.svg" alt=""></button>
+
+    <!-- <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button> -->
+  </div>
+  <div class="modal-body">
+    <video loop muted autoplay controls oncanplay="this.play()" id="videoId">
+      <source src="https://player.vimeo.com/external/546009659.hd.mp4?s=efca536f7216017ee06ade06aa61374aa0c8d495&profile_id=175" type="video/mp4" />
+    </video>
+  </div>
+</ng-template>

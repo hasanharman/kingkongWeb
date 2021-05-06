@@ -40,6 +40,7 @@
   font-size: 16px;
   color: white;
   opacity: 0.8;
+  margin: 10px 0 10px 0;
 }
 
 .mail {
@@ -126,6 +127,7 @@ input:focus {
   color: white;
   padding-left: 40px;
   opacity: 0.5;
+  cursor: pointer;
 }
 .footer-legal {
   display: flex;
@@ -148,7 +150,23 @@ input:focus {
   font-size: 14px;
   color: #52596b;
 }
+.title-modal {
+	font-size: 30px;
+	background: -webkit-linear-gradient(#fa2b56, #f91c3d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  text-align: center;
+	margin-top: 37px;
+}
+.modal-body {
+  color: white;
+}
 
+/* ::ng-host.modal-body {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+} */
 
 @media only screen and (max-device-width: 480px) {
   .crown {

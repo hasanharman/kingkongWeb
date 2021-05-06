@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-section3',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Section3Component implements OnInit {
 
-  constructor() { }
+  constructor(private modals: NgbModal) { }
 
   ngOnInit(): void {
   }
+
+  openVid2(vid2: any) {
+		this.modals.open(vid2, {
+			centered: true,
+			size: 'lg',
+			windowClass: 'dark-modal',
+			backdropClass: 'dark-backdrop',
+		});
+		}
 
 }

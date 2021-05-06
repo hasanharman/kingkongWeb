@@ -3,7 +3,10 @@
     <h1 class="text-head">KingKong Dünyasında</h1>
     <h1 class="text-bold">Her Şey Çok Farklı!</h1>
     <h5 class="text-3">
-        Yazılımdan tasarıma her şey size özel olacak. <b style="font-weight: 700;">KingKong</b> tasarımları ve uzmanlığı size farklı bir toplantı deneyimi sunacak.
+      Akıllı etkinlik sistemi KingKong dünyasında yazılımdan tasarıma her şey size özeldir. <br>
+
+      KingKong tasarımları ve uzmanlığı size unutulmaz bir toplantı deneyimi yaşatır.
+      
     </h5>
     <div class="bullet">
         <img src="../../../assets/red-crown.svg" alt="" class="list-bullet" >
@@ -23,6 +26,36 @@
     </div> -->
   </div>
   <div class="img-container">
-    <img src="../../../assets/video.webp" alt="" class="left-img" />
+    <div class="play" (click)="openVid2(vid2)" >
+      <img src="../../../assets/video/play.svg" alt="" class="play-button">
+    </div>
+    <div class="video1">
+      <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="video1">
+        <source src="../../../assets/video/video-short.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="video-back">
+      <img src="../../../assets/video/video-back.webp" alt="" class="video2" >
+    </div>
   </div>
 </div>
+
+
+
+<ng-template #vid2 let-modal>
+  <div class="header-modal">
+    <div></div>
+    <h4 class="title-modal"></h4>
+
+      <button href="" class="close-button"  (click)="modal.close('Cross click')" aria-hidden="true" ><img src="../../../assets/modal-close.svg" alt=""></button>
+
+    <!-- <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button> -->
+  </div>
+  <div class="modal-body">
+    <video loop muted autoplay controls oncanplay="this.play()" class="video-pop">
+      <source src="https://player.vimeo.com/external/546007863.hd.mp4?s=e45ccf0c4b0a89930027e4cc87569d2abd9a5c6d&profile_id=175" type="video/mp4" />
+    </video>
+  </div>
+</ng-template>

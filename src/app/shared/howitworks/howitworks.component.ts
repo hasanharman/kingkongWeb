@@ -10,6 +10,9 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 		`
     .dark-modal .modal-content {
       background-color: #222127;
+	  display: flex;
+	  flex-direction: column;
+	  overflow: hidden
     }
     .dark-modal .close {
       color: white;

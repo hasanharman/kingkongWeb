@@ -43,10 +43,11 @@
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
+  color: black;
 }
 
-.menu-text:active {
-  color: var(--main-red);
+.active {
+  color: var(--main-red)!important;
 }
 .gallery-masonry {
   margin: 3%

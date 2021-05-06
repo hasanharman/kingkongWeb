@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-gallery',
@@ -10,9 +11,9 @@ export class GalleryComponent implements OnInit {
   isShown2: boolean = false ;
   isShown3: boolean = false ;
   isShown4: boolean = false ;
+  isActive: boolean = true ;
 
-  constructor() { 
-
+  constructor() {
   }
 
   ngOnInit(): void {
@@ -23,12 +24,7 @@ export class GalleryComponent implements OnInit {
     this.isShown2 = false;
     this.isShown3 = false;
     this.isShown4 = false;
-
-    TweenMax.to(`.menu-text`, {
-      css: {
-        color: 'var(--main-red)',
-      },
-    });
+    this.isActive = true;
   } 
   show2() {
     this.isShown2 = ! this.isShown2;
