@@ -44,7 +44,7 @@ export class FooterComponent implements OnInit {
 		this.modalService.open(legal, {
 			scrollable: true,
 			centered: true,
-			size: 'xl',
+			size: 'lg',
 			windowClass: 'dark-modal',
 			backdropClass: 'dark-backdrop'
 		});
@@ -54,7 +54,7 @@ export class FooterComponent implements OnInit {
 		this.modalService.open(privacy, {
 			scrollable: true,
 			centered: true,
-			size: 'xl',
+			size: 'lg',
 			windowClass: 'dark-modal',
 			backdropClass: 'dark-backdrop'
 		});
