@@ -19,7 +19,7 @@ export class FooterComponent implements OnInit {
 	openWeb(web: any) {
 		this.modalService.open(web, {
 			centered: true,
-			size: 'lg',
+			size: 'm',
 			windowClass: 'dark-modal',
 			backdropClass: 'dark-backdrop'
 		});
@@ -28,7 +28,7 @@ export class FooterComponent implements OnInit {
 	openDev(dev: any) {
 		this.modalService.open(dev, {
 			centered: true,
-			size: 'lg',
+			size: 'm',
 			windowClass: 'dark-modal',
 			backdropClass: 'dark-backdrop'
 		});

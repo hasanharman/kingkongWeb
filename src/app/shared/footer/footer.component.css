@@ -41,6 +41,7 @@
   color: white;
   opacity: 0.8;
   margin: 10px 0 10px 0;
+  text-align: center;
 }
 
 .mail {
@@ -132,6 +133,7 @@ input:focus {
 .footer-legal {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .legal-text {
   font-family: Gilroy;
@@ -159,7 +161,9 @@ input:focus {
 	margin-top: 37px;
 }
 .modal-body {
-  color: white;
+  color: #f0f0f0;
+  font-size: 16px;
+  font-weight: 200;
 }
 
 /* ::ng-host.modal-body {

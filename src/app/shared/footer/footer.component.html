@@ -39,12 +39,12 @@
           <h1 class="menu-text">Neden KingKong?</h1>
           <h1 class="menu-text" (click)="openWeb(web)">Webinar</h1>
           <h1 class="menu-text" (click)="openDev(dev)">Dewcon</h1>
-          <h1 class="menu-text">İletişim</h1>
+          <!-- <h1 class="menu-text">İletişim</h1> -->
         </div>
         <div class="footer-legal">
           <h1 class="legal-text" (click)="openLegal(legal)">Çerezler</h1>
           <h1 class="legal-text" (click)="openPrivacy(privacy)">Gizlilik Politikası</h1>
-          <h1 class="legal-text">İletişim</h1>
+          <!-- <h1 class="legal-text">İletişim</h1> -->
         </div>
       </div>
       <div>
@@ -59,22 +59,18 @@
 <ng-template #web let-modal>
   <div class="header-modal">
     <div></div>
-    <h4 class="title-modal">Dewcon</h4>
+    <h4 class="title-modal">Webinar</h4>
 
     <button href="" class="close-button" (click)="modal.close('Cross click')" aria-hidden="true"><img
         src="../../../assets/modal-close.svg" alt=""></button>
   </div>
   <div class="modal-body">
-    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:19px;">Sekt&ouml;r
-        odaklı &ccedil;&ouml;z&uuml;mlerimizle birlikte Profesyonel KingKong Prod&uuml;ksiyon ekibi toplantılarınızda
-        sizinle yakın &ccedil;alışmaya ve ihtiya&ccedil;larınızı sekt&ouml;r odaklı &ccedil;&ouml;zmeye daima
-        hazır.&nbsp;</span></p>
-    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:19px;">&nbsp;</span>
-    </p>
-    <ul style="list-style-type: undefined;margin-left:26px;">
-      <li><span style="font-family:Calibri;">İnteraktif paneller&nbsp;</span></li>
-      <li><span style="font-family:Calibri;">soru-cevap etkinlikleri&nbsp;</span></li>
-      <li><span style="font-family:Calibri;">Katılımcılarla canlı sohbet imkanları&nbsp;</span></li>
+    <p>Sektör odaklı çözümlerimizle birlikte Profesyonel KingKong Prodüksiyon ekibi toplantılarınızda sizinle yakın
+      çalışmaya ve ihtiyaçlarınızı sektör odaklı çözmeye daima hazır. </p>
+    <ul>
+      <li>İnteraktif paneller</li>
+      <li>Soru-cevap etkinlikleri</li>
+      <li>Katılımcılarla canlı sohbet imkanları</li>
     </ul>
   </div>
 </ng-template>
@@ -89,20 +85,14 @@
         src="../../../assets/modal-close.svg" alt=""></button>
   </div>
   <div class="modal-body">
-    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:19px;">Konuşmalar,
-        paneller, stand alanları ve partilerden oluşan g&uuml;nl&uuml;k veya birka&ccedil; g&uuml;nl&uuml;k sanal
-        d&uuml;nyanızı yaratarak katılımcılarınıza eşsiz imkanlar sunabilirsiniz.&nbsp;</span></p>
-    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:19px;">&nbsp;</span>
-    </p>
-    <ul style="list-style-type: undefined;margin-left:26px;">
-      <li><span style="font-family:Calibri;">Kitlenizle &ouml;zel paneller, konuşmalar, lansmanlar&nbsp;</span></li>
-      <li><span style="font-family:Calibri;">Ger&ccedil;ek zamanlı soru - cevap etkinlikleri</span></li>
-      <li><span style="font-family:Calibri;">Katılımcılara sunumlar s&uuml;resince canlı g&ouml;r&uuml;şme ve oylama
-          imkanı</span></li>
-      <li><span style="font-family:Calibri;">Simultane terc&uuml;me ile kitleleriniz arasındaki iletişim engelini
-          ortadan kaldırma imkanı</span></li>
+    <p>Konuşmalar, paneller, stand alanları ve partilerden oluşan günlük veya birkaç günlük sanal dünyanızı yaratarak
+      katılımcılarınıza eşsiz imkanlar sunabilirsiniz. </p>
+    <ul>
+      <li>Kitlenizle özel paneller, konuşmalar, lansmanlar</li>
+      <li>Gerçek zamanlı soru - cevap etkinlikleri</li>
+      <li>Katılımcılara sunumlar süresince canlı görüşme ve oylama imkanı</li>
+      <li>Simultane tercüme ile kitleleriniz arasındaki iletişim engelini ortadan kaldırma imkanı</li>
     </ul>
-    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
   </div>
 </ng-template>
 
@@ -111,7 +101,7 @@
 <ng-template #legal let-modal>
   <div class="header-modal">
     <div></div>
-    <h4 class="title-modal">Çerezler</h4>
+    <h4 class="title-modal">KİNG KONG &Ccedil;EREZ BİLGİLENDİRME METNİ</h4>
 
     <button href="" class="close-button" (click)="modal.close('Cross click')" aria-hidden="true"><img
         src="../../../assets/modal-close.svg" alt=""></button>
@@ -121,8 +111,6 @@
     </button> -->
   </div>
   <div class="modal-body">
-    <p style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;"><strong><span
-          style='font-family:"Times New Roman",serif;'>KİNG KONG &Ccedil;EREZ BİLGİLENDİRME METNİ</span></strong></p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
       <span style='font-family:"Times New Roman",serif;'>King Kong Kongre Eğitim ve Organizasyon Ticaret Ltd. Şti.
@@ -130,7 +118,8 @@
         &ldquo;https://www.kingkongistanbul.com&rdquo; (&ldquo;<strong>Sitemiz</strong>&rdquo;) adresini ziyaret
         ettiğiniz takdirde siz ziyaret&ccedil;ilerimize ait kişisel verilerin 6698 sayılı Kişisel Verilerin Korunması
         Kanunu (&ldquo;<strong>KVKK</strong>&rdquo;) ve ikincil d&uuml;zenlemelerine uygun olarak işlenmesi ve korunması
-        i&ccedil;in azami hassasiyeti g&ouml;stermekteyiz. &nbsp;&nbsp;</span></p>
+        i&ccedil;in azami hassasiyeti g&ouml;stermekteyiz. &nbsp;&nbsp;</span>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
       <span style='font-family:"Times New Roman",serif;'>Şirketimiz&rsquo;in KVKK&rsquo;dan doğan aydınlatma
@@ -138,7 +127,8 @@
         (&ldquo;</span><strong><span style='font-family:"Times New Roman",serif;'>&Ccedil;erez Bilgilendirme
           Metni</span></strong><a href="#_msocom_1" id="_anchor_1" language="JavaScript" name="_msoanchor_1">[1]</a>
       <span style='font-family:"Times New Roman",serif;'>&rdquo;) ile birlikte Şirketimiz tarafından kullanılan
-        &ccedil;erezler ve bu vasıtayla işlenen kişisel verileriniz hakkında bilgilendirmek isteriz. &nbsp;</span></p>
+        &ccedil;erezler ve bu vasıtayla işlenen kişisel verileriniz hakkında bilgilendirmek isteriz. &nbsp;</span>
+    </p>
     <p style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;"><strong><span
           style='font-size:15px;line-height:150%;font-family:"Times New Roman",serif;'>&Ccedil;erezler Vasıtasıyla
           İşlenen Kişisel Verileriniz&nbsp;</span></strong></p>
@@ -151,28 +141,33 @@
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;border:none;">
       <strong><span style='font-family:"Times New Roman",serif;color:white;'>Hangi &Ccedil;erez T&uuml;rlerini
-          Kullanmaktayız?</span></strong></p>
+          Kullanmaktayız?</span></strong>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;border:none;">
       <span style='font-family:"Times New Roman",serif;color:white;'>&Ccedil;erezler <em>(cookies)</em> bir internet
         sitesi tarafından cihazınızda oluşturulan ve isim-değer formatında veri barındıran k&uuml;&ccedil;&uuml;k metin
         dosyalarıdır. Dolayısıyla, Sitemiz&rsquo;i ziyaret etmenizle birlikte kullandığımız &ccedil;erezler cihazınızda
         site ziyaretinize ilişkin bilgi saklanmasını ve bu bilgilerin sonraki ziyaretleriniz sırasında kullanılmasını
-        m&uuml;mk&uuml;n kılmaktadır.&nbsp;</span></p>
+        m&uuml;mk&uuml;n kılmaktadır.&nbsp;</span>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;border:none;">
       <span style='font-family:"Times New Roman",serif;color:white;'>Sitemiz tarafından oluşturulan ve sadece Sitemiz
-        tarafından okunabilen &ccedil;erezler <strong>birincil &ccedil;erezlerdir.</strong></span></p>
+        tarafından okunabilen &ccedil;erezler <strong>birincil &ccedil;erezlerdir.</strong></span>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
       <span style='font-family:"Times New Roman",serif;'>Sitemiz&rsquo;de sunulan i&ccedil;erik, erişim adresindeki alan
         adı dışında başka alan adları &uuml;zerinden de sağlanmaktadır. Bu gibi durumlarda her bir alan adı kendine
         m&uuml;nhasır <strong>&uuml;&ccedil;&uuml;nc&uuml; taraf &ccedil;erezler&nbsp;</strong>yaratmaktadır.</span><a
-        href="#_msocom_3" id="_anchor_3" language="JavaScript" name="_msoanchor_3">[3]</a>&nbsp;</p>
+        href="#_msocom_3" id="_anchor_3" language="JavaScript" name="_msoanchor_3">[3]</a>&nbsp;
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;border:none;">
       <span style='font-family:"Times New Roman",serif;color:white;'>Sitemiz&rsquo;de kullandığımız &ccedil;erez
-        t&uuml;rleri ile bu &ccedil;erezleri kullanım ama&ccedil;larımız aşağıdaki gibidir:</span></p>
+        t&uuml;rleri ile bu &ccedil;erezleri kullanım ama&ccedil;larımız aşağıdaki gibidir:</span>
+    </p>
     <table style="width: 4.9e+2pt;border-collapse:collapse;border:none;">
       <tbody>
         <tr>
@@ -180,21 +175,24 @@
             style="width: 30.75pt;border-width: 1pt;border-style: solid;border-color: rgb(217, 234, 211) rgb(217, 149, 148) rgb(217, 234, 211) rgb(217, 234, 211);border-image: initial;background: rgb(109, 158, 235);padding: 0cm 5.4pt;height: 48pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
-              <strong><span style='font-family:"Times New Roman",serif;'>No.</span></strong></p>
+              <strong><span style='font-family:"Times New Roman",serif;'>No.</span></strong>
+            </p>
           </td>
           <td
             style="width: 87.75pt;border-top: 1pt solid rgb(217, 234, 211);border-left: none;border-bottom: 1pt solid rgb(217, 234, 211);border-right: 1pt solid rgb(217, 149, 148);background: rgb(109, 158, 235);padding: 0cm 5.4pt;height: 48pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
               <strong><span style='font-family:"Times New Roman",serif;color:white;'>&Ccedil;erez
-                  T&uuml;r&uuml;</span></strong></p>
+                  T&uuml;r&uuml;</span></strong>
+            </p>
           </td>
           <td
             style="width: 368.25pt;border-top: 1pt solid rgb(217, 234, 211);border-right: 1pt solid rgb(217, 234, 211);border-bottom: 1pt solid rgb(217, 234, 211);border-image: initial;border-left: none;background: rgb(109, 158, 235);padding: 0cm 5.4pt;height: 48pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
               <strong><span style='font-family:"Times New Roman",serif;color:white;'>Kullanım
-                  Ama&ccedil;ları</span></strong></p>
+                  Ama&ccedil;ları</span></strong>
+            </p>
           </td>
         </tr>
         <tr>
@@ -202,13 +200,15 @@
             style="width: 30.75pt;border-right: 1pt solid rgb(217, 234, 211);border-bottom: 1pt solid rgb(217, 234, 211);border-left: 1pt solid rgb(217, 234, 211);border-image: initial;border-top: none;padding: 0cm 5.4pt;height: 29pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
-              <strong><span style='font-family:"Times New Roman",serif;'>1.</span></strong></p>
+              <strong><span style='font-family:"Times New Roman",serif;'>1.</span></strong>
+            </p>
           </td>
           <td
             style="width: 87.75pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(217, 234, 211);border-right: 1pt solid rgb(217, 234, 211);padding: 0cm 5.4pt;height: 29pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
-              <strong><span style='font-family:"Times New Roman",serif;'>Oturum &Ccedil;erezleri</span></strong></p>
+              <strong><span style='font-family:"Times New Roman",serif;'>Oturum &Ccedil;erezleri</span></strong>
+            </p>
           </td>
           <td
             style="width: 368.25pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(217, 234, 211);border-right: 1pt solid rgb(217, 234, 211);padding: 0cm 5.4pt;height: 29pt;vertical-align: top;">
@@ -216,7 +216,8 @@
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:  6.0pt;margin-left:0cm;text-align:justify;line-height:150%;border:none;">
               <span style='font-family:"Times New Roman",serif;'>Oturum &ccedil;erezleri, Sitemiz&rsquo;i kullanımınız
                 sırasında ge&ccedil;erli olan &ccedil;erezler olup internet tarayıcınızı kapatıncaya kadar
-                ge&ccedil;erliliklerini korurlar.</span></p>
+                ge&ccedil;erliliklerini korurlar.</span>
+            </p>
           </td>
         </tr>
         <tr>
@@ -224,14 +225,16 @@
             style="width: 30.75pt;border-right: 1pt solid rgb(217, 234, 211);border-bottom: 1pt solid rgb(217, 234, 211);border-left: 1pt solid rgb(217, 234, 211);border-image: initial;border-top: none;background: rgb(201, 218, 248);padding: 0cm 5.4pt;height: 42pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
-              <strong><span style='font-family:"Times New Roman",serif;color:white;'>2.</span></strong></p>
+              <strong><span style='font-family:"Times New Roman",serif;color:white;'>2.</span></strong>
+            </p>
           </td>
           <td
             style="width: 87.75pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(217, 234, 211);border-right: 1pt solid rgb(217, 234, 211);background: rgb(201, 218, 248);padding: 0cm 5.4pt;height: 42pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
               <strong><span style='font-family:"Times New Roman",serif;color:white;'>Kalıcı
-                  &Ccedil;erezler</span></strong></p>
+                  &Ccedil;erezler</span></strong>
+            </p>
           </td>
           <td
             style="width: 368.25pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(217, 234, 211);border-right: 1pt solid rgb(217, 234, 211);background: rgb(201, 218, 248);padding: 0cm 5.4pt;height: 42pt;vertical-align: top;">
@@ -239,7 +242,8 @@
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:  6.0pt;margin-left:0cm;text-align:justify;line-height:150%;border:none;">
               <span style='font-family:"Times New Roman",serif;color:white;'>Bu &ccedil;erezler tarayıcınızda saklanan
                 ve tarafınızca silininceye dek veya son kullanım tarihine kadar ge&ccedil;erliliğini koruyan
-                &ccedil;erezlerdir.&nbsp;</span></p>
+                &ccedil;erezlerdir.&nbsp;</span>
+            </p>
           </td>
         </tr>
         <tr>
@@ -247,13 +251,15 @@
             style="width: 30.75pt;border-right: 1pt solid rgb(217, 234, 211);border-bottom: 1pt solid rgb(217, 234, 211);border-left: 1pt solid rgb(217, 234, 211);border-image: initial;border-top: none;padding: 0cm 5.4pt;height: 58pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
-              <strong><span style='font-family:"Times New Roman",serif;'>3.</span></strong></p>
+              <strong><span style='font-family:"Times New Roman",serif;'>3.</span></strong>
+            </p>
           </td>
           <td
             style="width: 87.75pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(217, 234, 211);border-right: 1pt solid rgb(217, 234, 211);padding: 0cm 5.4pt;height: 58pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
-              <strong><span style='font-family:"Times New Roman",serif;'>Zorunlu &Ccedil;erezler</span></strong></p>
+              <strong><span style='font-family:"Times New Roman",serif;'>Zorunlu &Ccedil;erezler</span></strong>
+            </p>
           </td>
           <td
             style="width: 368.25pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(217, 234, 211);border-right: 1pt solid rgb(217, 234, 211);padding: 0cm 5.4pt;height: 58pt;vertical-align: top;">
@@ -261,7 +267,8 @@
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:  6.0pt;margin-left:0cm;text-align:justify;line-height:150%;border:none;">
               <span style='font-family:"Times New Roman",serif;'>Sitemiz&rsquo;in d&uuml;zg&uuml;n bir şekilde
                 &ccedil;alışabilmesi, Sitemiz&rsquo;in &ouml;zelliklerinden ve sunulan hizmetlerden yararlanabilmeniz
-                i&ccedil;in kullanımı mecburi olan &ccedil;erezlerdir.</span></p>
+                i&ccedil;in kullanımı mecburi olan &ccedil;erezlerdir.</span>
+            </p>
           </td>
         </tr>
         <tr>
@@ -269,14 +276,16 @@
             style="width: 30.75pt;border-right: 1pt solid rgb(217, 234, 211);border-bottom: 1pt solid rgb(217, 234, 211);border-left: 1pt solid rgb(217, 234, 211);border-image: initial;border-top: none;background: rgb(201, 218, 248);padding: 0cm 5.4pt;height: 97pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
-              <strong><span style='font-family:"Times New Roman",serif;color:white;'>4.</span></strong></p>
+              <strong><span style='font-family:"Times New Roman",serif;color:white;'>4.</span></strong>
+            </p>
           </td>
           <td
             style="width: 87.75pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(217, 234, 211);border-right: 1pt solid rgb(217, 234, 211);background: rgb(201, 218, 248);padding: 0cm 5.4pt;height: 97pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
               <strong><span style='font-family:"Times New Roman",serif;color:white;'>İşlevsel ve Analitik
-                  &Ccedil;erezler</span></strong></p>
+                  &Ccedil;erezler</span></strong>
+            </p>
           </td>
           <td
             style="width: 368.25pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(217, 234, 211);border-right: 1pt solid rgb(217, 234, 211);background: rgb(201, 218, 248);padding: 0cm 5.4pt;height: 97pt;vertical-align: top;">
@@ -287,7 +296,8 @@
                 Sitemiz&rsquo;in isteklerinize cevap verecek şekilde optimize edilmesi gibi ama&ccedil;larla kullanılan
                 ve siteyi nasıl kullandığınız hakkında verileri i&ccedil;eren &ccedil;erezlerdir. Nitelikleri gereği bu
                 t&uuml;rdeki &ccedil;erezler kişisel verilerinizi i&ccedil;erebilir. Bu &ccedil;erezler vasıtasıyla
-                &ouml;rneğin Sitelerimizin g&ouml;r&uuml;nt&uuml;lenme dil tercihiniz işlenir.&nbsp;</span></p>
+                &ouml;rneğin Sitelerimizin g&ouml;r&uuml;nt&uuml;lenme dil tercihiniz işlenir.&nbsp;</span>
+            </p>
           </td>
         </tr>
         <tr>
@@ -295,25 +305,29 @@
             style="width: 30.75pt;border-right: 1pt solid rgb(217, 234, 211);border-bottom: 1pt solid rgb(217, 234, 211);border-left: 1pt solid rgb(217, 234, 211);border-image: initial;border-top: none;padding: 0cm 5.4pt;height: 97pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
-              <strong><span style='font-family:"Times New Roman",serif;color:white;'>5.</span></strong></p>
+              <strong><span style='font-family:"Times New Roman",serif;color:white;'>5.</span></strong>
+            </p>
           </td>
           <td
             style="width: 87.75pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(217, 234, 211);border-right: 1pt solid rgb(217, 234, 211);padding: 0cm 5.4pt;height: 97pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
               <strong><span style='font-family:"Times New Roman",serif;'>Pazarlama &Ccedil;erezleri</span></strong><a
-                href="#_msocom_4" id="_anchor_4" language="JavaScript" name="_msoanchor_4">[4]</a>&nbsp;</p>
+                href="#_msocom_4" id="_anchor_4" language="JavaScript" name="_msoanchor_4">[4]</a>&nbsp;
+            </p>
           </td>
           <td
             style="width: 368.25pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(217, 234, 211);border-right: 1pt solid rgb(217, 234, 211);padding: 0cm 5.4pt;height: 97pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:  6.0pt;margin-left:0cm;text-align:justify;line-height:150%;border:none;">
               <span style='font-family:"Times New Roman",serif;color:white;'>6563 Sayılı Elektronik Ticaretin
-                D&uuml;zenlenmesi Hakkında Kanun uyarınca</span></p>
+                D&uuml;zenlenmesi Hakkında Kanun uyarınca</span>
+            </p>
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:  6.0pt;margin-left:0cm;text-align:justify;line-height:150%;border:none;">
               <span style='font-family:"Times New Roman",serif;color:white;'>Ticari İletişim i&ccedil;in kullanıcı
-                nezdinde yerleştirilen &ccedil;erezler.</span></p>
+                nezdinde yerleştirilen &ccedil;erezler.</span>
+            </p>
           </td>
         </tr>
       </tbody>
@@ -326,7 +340,8 @@
         KVK</span><span style='font-family:"Times New Roman",serif;'>K<span style="color:white;">&nbsp;uyarınca
           KVK&nbsp;</span>Protokol&uuml;<span style="color:white;">&nbsp;akdedilmiş olup bu kişiler tarafından
           Şirketimiz adına elde edilen kişisel verilerinizin g&uuml;venliği garanti altına
-          alınmıştır.&nbsp;</span></span></p>
+          alınmıştır.&nbsp;</span></span>
+    </p>
     <p style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;"><strong><span
           style='font-size:15px;line-height:150%;font-family:"Times New Roman",serif;'>&Ccedil;erezlerin Saklanması ve
           Erişilmesi</span></strong></p>
@@ -339,7 +354,8 @@
             style="color:white;">)</span></span></em><span
         style='font-family:"Times New Roman",serif;color:white;'>&nbsp;altında sunulan Sitemiz</span><span
         style='font-family:"Times New Roman",serif;'>&nbsp;<span style="color:white;">tarafından ve aynı tarayıcıyı
-          kullandığınız takdirde uzaktan erişim m&uuml;mk&uuml;nd&uuml;r.</span></span></p>
+          kullandığınız takdirde uzaktan erişim m&uuml;mk&uuml;nd&uuml;r.</span></span>
+    </p>
     <p style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;"><strong><span
           style='font-size:15px;line-height:150%;font-family:"Times New Roman",serif;'>&Ccedil;erezleri Kabul Etmek
           Sizin Elinizde</span></strong></p>
@@ -349,19 +365,22 @@
         ettiğiniz sitelerde kullanılan &ccedil;erezleri otomatik olarak kabul etmektedir. İnternet sitelerimizi
         kullanabilmek i&ccedil;in &ccedil;erez kullanımı zorunlu değildir fakat tarayıcınızı t&uuml;m &ccedil;erezleri
         engelleyecek şekilde ayarlamanız halinde kullanıcı deneyiminizin kalitesi d&uuml;şebilir ve Sitemiz&rsquo;e
-        erişim sağlamanızı ya da Sitemiz&rsquo;in &ccedil;eşitli işlevlerinden yararlanmanızı engelleyebilir.</span></p>
+        erişim sağlamanızı ya da Sitemiz&rsquo;in &ccedil;eşitli işlevlerinden yararlanmanızı engelleyebilir.</span>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;border:none;">
       <span style='font-family:"Times New Roman",serif;color:white;'>Tarayıcınızı &ccedil;erezleri t&uuml;m siteler veya
         belirli siteler i&ccedil;in engelleyecek, &ccedil;erez oluşturulduğunda uyarı verecek,
         &uuml;&ccedil;&uuml;nc&uuml; taraf &ccedil;erezleri engelleyecek veya t&uuml;m &ccedil;erezleri oturum
-        &ccedil;erezi gibi sayacak şekilde yapılandırabilirsiniz.&nbsp;</span></p>
+        &ccedil;erezi gibi sayacak şekilde yapılandırabilirsiniz.&nbsp;</span>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;border:none;">
       <span style='font-family:"Times New Roman",serif;color:white;'>Diğer yandan, tarayıcınız &uuml;zerinden
         cihazınızda kaydedilen &ccedil;erezleri silebilir veya bu &ccedil;erezlerin listesini ve değerlerini
         g&ouml;rebilir ve takip edebilirsiniz. Aşağıda listelenen tarayıcılardan kullanmakta olduğunuza tıklayarak
-        &ccedil;erez y&ouml;netimlerine ilişkin detaylı bilgi alabilirsiniz.</span></p>
+        &ccedil;erez y&ouml;netimlerine ilişkin detaylı bilgi alabilirsiniz.</span>
+    </p>
     <table style="width: 3.3e+2pt;border-collapse:collapse;border:none;">
       <tbody>
         <tr>
@@ -375,12 +394,14 @@
           <td style="width: 65.2pt;border: none;padding: 0cm 5.4pt;height: 75pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:  6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-              <a href="https://support.google.com/chrome/answer/95647?hl=tr"></a></p>
+              <a href="https://support.google.com/chrome/answer/95647?hl=tr"></a>
+            </p>
           </td>
           <td style="width: 65.2pt;border: none;padding: 0cm 5.4pt;height: 75pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:  6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-              <a href="https://support.apple.com/kb/PH21411?viewlocale=tr_TR&locale=tr_TR"></a></p>
+              <a href="https://support.apple.com/kb/PH21411?viewlocale=tr_TR&locale=tr_TR"></a>
+            </p>
           </td>
           <td style="width: 65.25pt;border: none;padding: 0cm 5.4pt;height: 75pt;vertical-align: top;">
             <p
@@ -392,7 +413,8 @@
           <td style="width: 65.25pt;border: none;padding: 0cm 5.4pt;height: 75pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:  6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-              <a href="http://www.opera.com/help/tutorials/security/privacy/"></a></p>
+              <a href="http://www.opera.com/help/tutorials/security/privacy/"></a>
+            </p>
           </td>
         </tr>
       </tbody>
@@ -404,7 +426,8 @@
         style='font-family:"Times New Roman",serif;'>K&rsquo;ya<span style="color:white;">&nbsp;uygun olarak
           y&uuml;r&uuml;t&uuml;lmektedir. &Ccedil;erezler vasıtasıyla elde edilen kişisel verileriniz Şirketimiz
           tarafından KVK</span>K&rsquo;ya <span style="color:white;">uygun olarak işlenmekte, saklanmakta ve
-          g&uuml;venliği sağlanmaktadır.</span></span></p>
+          g&uuml;venliği sağlanmaktadır.</span></span>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;border:none;">
       <span style='font-family:"Times New Roman",serif;color:white;'>Sitemiz tarafından işlenen kişisel verileriniz
@@ -412,10 +435,12 @@
         l&uuml;tfen&nbsp;</span><em><span style='font-family:"Times New Roman",serif;'>King Kong İnternet Sitesi KVK
           Bilgilendirme Metni</span></em><a href="#_msocom_5" id="_anchor_5" language="JavaScript"
         name="_msoanchor_5">[5]</a> <span style='font-family:"Times New Roman",serif;'>&rsquo;ni<span
-          style="color:white;">&nbsp;okuyunuz.</span></span></p>
+          style="color:white;">&nbsp;okuyunuz.</span></span>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <strong><span style='font-family:"Times New Roman",serif;'>Bilgi Edinme Hakkınız</span></strong></p>
+      <strong><span style='font-family:"Times New Roman",serif;'>Bilgi Edinme Hakkınız</span></strong>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
       <span style='font-family:"Times New Roman",serif;'>KVKK&rsquo;nın 11. maddesi kapsamında, Şirketimiz&rsquo;e
@@ -430,7 +455,8 @@
         bildirilmesini isteme, <strong><em>(vi)</em></strong> m&uuml;nhasıran otomatik sistemler ile analiz edilmesi
         nedeniyle aleyhinize bir sonucun ortaya &ccedil;ıkmasına itiraz etme, <strong><em>(vii)</em></strong> kanuna
         aykırı olarak işlenmesi sebebiyle zarara uğramanız h&acirc;linde zararın giderilmesini talep etme haklarına
-        sahip olduğunuzu bildiririz. &nbsp;</span></p>
+        sahip olduğunuzu bildiririz. &nbsp;</span>
+    </p>
     <p
       style="margin-top:14.4pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:0cm;text-align:justify;line-height:150%;">
       <span style='font-family:"Times New Roman",serif;'>&Ccedil;erezler ile ilgili daha detaylı bilgi almak isteyen
@@ -438,15 +464,18 @@
           style='font-family:"Times New Roman",serif;color:windowtext;text-decoration:none;'>www.aboutcookies.org</span></a><span
         style='font-family:"Times New Roman",serif;'>,&nbsp;</span><a href="http://www.youronlinechoices.eu"><span
           style='font-family:"Times New Roman",serif;color:windowtext;text-decoration:none;'>www.youronlinechoices.eu</span></a><span
-        style='font-family:"Times New Roman",serif;'>&nbsp;adreslerini ziyaret etmeleri &ouml;nerilir.</span></p>
+        style='font-family:"Times New Roman",serif;'>&nbsp;adreslerini ziyaret etmeleri &ouml;nerilir.</span>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
       <span style='font-family:"Times New Roman",serif;'>İşbu &Ccedil;erez Bilgilendirme Metni hakkında sorunuz olması
-        halinde l&uuml;tfen KVK Yetkilisi ile irtibata ge&ccedil;iniz.</span></p>
+        halinde l&uuml;tfen KVK Yetkilisi ile irtibata ge&ccedil;iniz.</span>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
       <strong><span style='font-family:"Times New Roman",serif;'>KVK Yetkilisi:</span></strong><a href="#_msocom_6"
-        id="_anchor_6" language="JavaScript" name="_msoanchor_6">[6]</a>&nbsp;</p>
+        id="_anchor_6" language="JavaScript" name="_msoanchor_6">[6]</a>&nbsp;
+    </p>
     <table style="width: 4.5e+2pt;border-collapse:collapse;border:none;">
       <tbody>
         <tr>
@@ -454,39 +483,45 @@
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;">
               <strong><span style='font-family:"Times New Roman",serif;'>[<span
-                    style="background:yellow;">.</span>]</span></strong></p>
+                    >.</span>]</span></strong>
+            </p>
           </td>
           <td
             style="width:145.5pt;border:solid white 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt;">
             <p
               style="margin-top:10.0pt;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;text-align:center;line-height:150%;">
               <strong><span style='font-family:"Times New Roman",serif;'>[<span
-                    style="background:yellow;">.</span>]</span></strong></p>
+                    >.</span>]</span></strong>
+            </p>
           </td>
           <td
             style="width:159.85pt;border:solid white 1.0pt;border-left:  none;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;">
               <strong><span style='font-family:"Times New Roman",serif;'>[<span
-                    style="background:yellow;">.</span>]</span></strong></p>
+                    >.</span>]</span></strong>
+            </p>
           </td>
         </tr>
       </tbody>
     </table>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+      <span style='font-family:"Times New Roman",serif;'>&nbsp;</span>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
       <span style='font-family:"Times New Roman",serif;'>İşbu &Ccedil;erez Bilgilendirme Metni, değişen
         s&uuml;re&ccedil;lerimiz dolayısıyla KVKK&rsquo;ya uyum sağlamak amacıyla g&uuml;ncellenebilecektir. Otomatik
         e-posta g&ouml;nderim listemizde yer alıyorsanız, g&uuml;ncellemelerimiz size e-posta yolu ile bildirilecektir.
         Otomatik e-posta g&ouml;nderim listemizde yer almıyor iseniz g&uuml;ncellemeler i&ccedil;in belirli aralıklarla
-        sitemizi ziyaret etmenizi rica ederiz.</span></p>
+        sitemizi ziyaret etmenizi rica ederiz.</span>
+    </p>
     <p
       style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:150%;border:none;">
       <strong><span style='font-size:16px;line-height:150%;font-family:"Times New Roman",serif;'>King Kong Kongre Eğitim
-          ve Organizasyon Ticaret Ltd. Şti<span style="color:white;">.</span></span></strong></p>
+          ve Organizasyon Ticaret Ltd. Şti<span style="color:white;">.</span></span></strong>
+    </p>
     <div id="_com_1" language="JavaScript">
       <p style="line-height:normal;border:none;"><span style="color:white;">İşbu metni King Kong İnternet Sitesi
           Bilgilendirme Metni ile birlikte değerlendirmenizi rica ederiz.</span></p>
@@ -519,46 +554,23 @@
         src="../../../assets/modal-close.svg" alt=""></button>
   </div>
   <div class="modal-body">
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      &nbsp; &nbsp; &nbsp;<span style='font-family:"Times New Roman",serif;'>King Kong Kongre Eğitim ve Organizasyon
-        Ticaret Ltd. Şti.</span><a href="#_msocom_1" id="_anchor_1" language="JavaScript" name="_msoanchor_1">[1]</a>
-      <strong><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></strong><span
-        style='font-family:"Times New Roman",serif;'>(&ldquo;<strong>Şirketimiz</strong>&rdquo; veya &ldquo;<strong>King
-          Kong</strong>&rdquo;) olarak, resmi internet sitemiz olan &ldquo;</span><span
-        style='font-family:"Times New Roman",serif;'>https://www.kingkongistanbul.com</span><a href="#_msocom_2"
-        id="_anchor_2" language="JavaScript" name="_msoanchor_2">[2]</a> <span
-        style='font-family:"Times New Roman",serif;color:white;'>&rdquo;&nbsp;</span><span
-        style='font-family:"Times New Roman",serif;'>(&ldquo;<strong>Sitemiz</strong>&rdquo;) adresini ziyaret ettiğiniz
-        takdirde siz ziyaret&ccedil;ilerimize ait kişisel verilerin 6698 sayılı Kişisel Verilerin Korunması Kanunu
-        (&ldquo;<strong>KVKK</strong>&rdquo;) ve ikincil d&uuml;zenlemelerine uygun olarak işlenmesi ve korunması
-        i&ccedil;in azami hassasiyeti g&ouml;stermekteyiz.&nbsp;</span>
+    <p> King Kong Kongre Eğitim ve Organizasyon Ticaret Ltd. Şti. (“Şirketimiz” veya “King Kong”) olarak, resmi internet
+      sitemiz olan “https://www.kingkongistanbul.com” (“Sitemiz”) adresini ziyaret ettiğiniz takdirde siz
+      ziyaretçilerimize ait kişisel verilerin 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) ve ikincil
+      düzenlemelerine uygun olarak işlenmesi ve korunması için azami hassasiyeti göstermekteyiz. </p>
+    <p>
+      Şirketimiz’in KVKK’dan doğan aydınlatma yükümlülüğü kapsamında siz internet sitesi ziyaretçilerimizi işbu King
+      Kong İnternet Sitesi KVK Bilgilendirme Metni (“Bilgilendirme Metni”) aracılığıyla bilgilendirmek isteriz.
     </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>Şirketimiz&rsquo;in KVKK&rsquo;dan doğan aydınlatma
-        y&uuml;k&uuml;ml&uuml;l&uuml;ğ&uuml; kapsamında siz internet sitesi ziyaret&ccedil;ilerimizi işbu King Kong
-        İnternet Sitesi KVK Bilgilendirme Metni (&ldquo;<strong>Bilgilendirme Metni</strong>&rdquo;) aracılığıyla
-        bilgilendirmek isteriz.</span>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <strong><span style='font-family:"Times New Roman",serif;'>Kişisel verilerinizi hangi ama&ccedil;larla ve hangi
-          yollarla elde ediyor ve işliyoruz?</span></strong>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>Şirketimiz tarafından,
-        &ldquo;https://www.kingkongistanbul.com&rdquo; adresini ziyaret etmenizle birlikte başta trafik verileriniz
-        olmak &uuml;zere aşağıda belirtilen kişisel verileriniz, beraberinde a&ccedil;ıklanan ama&ccedil;larla
-        bağlantılı, sınırlı ve &ouml;l&ccedil;&uuml;l&uuml; bir şekilde elektronik ve fiziki ortamlarda yazılı olarak,
-        otomatik ve otomatik olmayan y&ouml;ntemlerle KVKK&rsquo;ya uygun olarak Şirketimiz tarafından işlenmektedir.
-        &nbsp;</span>
-    </p>
-    <table style="width: 4.9e+2pt;border-collapse:collapse;border:none;">
+    <p><b>Kişisel verilerinizi hangi amaçlarla ve hangi yollarla elde ediyor ve işliyoruz?</b></p>
+    <p>Şirketimiz tarafından, “https://www.kingkongistanbul.com” adresini ziyaret etmenizle birlikte başta trafik
+      verileriniz olmak üzere aşağıda belirtilen kişisel verileriniz, beraberinde açıklanan amaçlarla bağlantılı,
+      sınırlı ve ölçülü bir şekilde elektronik ve fiziki ortamlarda yazılı olarak, otomatik ve otomatik olmayan
+      yöntemlerle KVKK’ya uygun olarak Şirketimiz tarafından işlenmektedir. </p>
+    <table style="border-collapse:collapse;border:none;">
       <tbody>
         <tr>
-          <td style="width: 89.75pt;border: 1pt solid white;padding: 0cm 5.4pt;vertical-align: top;">
+          <td style="width: 151pt;border: 1pt solid white;padding: 0cm 5.4pt;vertical-align: top;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;border:none;">
               <strong><span style='font-family:"Times New Roman",serif;color:white;'>Kişisel Veriniz</span></strong>
@@ -582,10 +594,10 @@
           </td>
         </tr>
         <tr>
-          <td style="width:89.75pt;border:solid white 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:40.0pt;">
+          <td style="width:151pt;border:solid white 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:40.0pt;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:  6.0pt;margin-left:0cm;line-height:150%;border:none;">
-              <a href="#_msocom_3" id="_anchor_3" language="JavaScript" name="_msoanchor_3">[3]</a> <span
+              <a href="#_msocom_3" id="_anchor_3" language="JavaScript" name="_msoanchor_3"></a> <span
                 style='font-family:"Times New Roman",serif;color:white;'>Adınız, soyadınız, telefon numaranız ve şahıs
                 şirketi olmanız halinde şirket adınız</span>
             </p>
@@ -593,9 +605,9 @@
           <td
             style="width:205.35pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.0pt;">
             <p style="line-height:150%;"><span
-                style='font-family:  "Times New Roman",serif;color:blue;background:white;'>&nbsp;</span></p>
-            <ul style="list-style-type: undefined;margin-left:8px;">
-              <li><span style='font-family:"Times New Roman",serif;background:white;'>&nbsp; &nbsp;&nbsp;</span><span
+                style='font-family:  "Times New Roman",serif;color:blue;'>&nbsp;</span></p>
+            <ul style="list-style-type: none;margin-left:8px;">
+              <li><span style='font-family:"Times New Roman",serif'>&nbsp; &nbsp;&nbsp;</span><span
                   style='font-family:"Times New Roman",serif;'>[.]</span><a href="#_msocom_4" id="_anchor_4"
                   language="JavaScript" name="_msoanchor_4">[4]</a>&nbsp;</li>
             </ul>
@@ -612,7 +624,7 @@
           </td>
         </tr>
         <tr>
-          <td style="width:89.75pt;border:solid white 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:40.0pt;">
+          <td style="width:151pt;border:solid white 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:40.0pt;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:  6.0pt;margin-left:0cm;line-height:150%;border:none;">
               <span style='font-family:"Times New Roman",serif;color:white;'>Adınız, soyadınız, e-posta adresiniz ve
@@ -622,9 +634,9 @@
           </td>
           <td
             style="width:205.35pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.0pt;">
-            <ul style="list-style-type: undefined;margin-left:8px;">
+            <ul style="list-style-type:none;margin-left:8px;">
               <li><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp;<span
-                    style="background:yellow;">[.]</span></span></li>
+                    >[.]</span></span></li>
             </ul>
           </td>
           <td
@@ -638,7 +650,7 @@
           </td>
         </tr>
         <tr>
-          <td style="width:89.75pt;border:solid white 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
+          <td style="width:151pt;border:solid white 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:  6.0pt;margin-left:0cm;line-height:150%;border:none;">
               <span style='font-family:"Times New Roman",serif;color:white;'>Trafik verisi</span>
@@ -646,7 +658,7 @@
           </td>
           <td
             style="width:205.35pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-            <ul style="list-style-type: undefined;margin-left:8px;">
+            <ul style="list-style-type: none;margin-left:8px;">
               <li><span style='font-family:"Times New Roman",serif;'>https://www.kingkongistanbul.com</span></li>
             </ul>
           </td>
@@ -663,108 +675,27 @@
         </tr>
       </tbody>
     </table>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>&nbsp;</span>
+
+    <p>İşbu Bilgilendirme Metni’nde sayılan kişisel verileriniz, yine bu metinde belirtilen amaçların yanı sıra
+      Şirketimiz’in ticari faaliyetlerinin yürütülebilmesi amacıyla bağlantılı, sınırlı ve ölçülü olarak dış hizmet
+      sağlayıcıları (IT uzmanları, veri tabanı sağlayıcıları, reklam ajansları, yedekleme ve kurtarma uzmanları vb.) ile
+      KVKK’ya uygun olarak paylaşılmaktadır. </p>
+    <p>Kişisel verilerinizi paylaştığımız üçüncü kişiler KVKK’da aksi öngörülmedikçe paylaşım amacıyla bağlı ve sınırlı
+      olarak kişisel verilerinizi işlemek ve korumakla sözleşme ilişkimiz kapsamında yükümlü olup bu husus King Kong’un
+      denetimindedir.
+      Kişisel verilerinizi son olarak hukuki sorumluluk ve yükümlülüklerimizi yerine getirmek amacıyla resmi kurum ve
+      kuruluşlar ve yargı makamları ile KVKK’ya uygun olarak paylaşmaktayız.
     </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>İşbu Bilgilendirme Metni&rsquo;nde sayılan kişisel verileriniz,
-        yine bu metinde belirtilen ama&ccedil;ların yanı sıra Şirketimiz&rsquo;in ticari faaliyetlerinin
-        y&uuml;r&uuml;t&uuml;lebilmesi amacıyla bağlantılı, sınırlı ve &ouml;l&ccedil;&uuml;l&uuml; olarak dış hizmet
-        sağlayıcıları (IT uzmanları, veri tabanı sağlayıcıları, reklam ajansları, yedekleme ve kurtarma uzmanları vb.)
-        ile KVKK&rsquo;ya uygun olarak paylaşılmaktadır.&nbsp;</span>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>Kişisel verilerinizi paylaştığımız &uuml;&ccedil;&uuml;nc&uuml;
-        kişiler KVKK&rsquo;da aksi &ouml;ng&ouml;r&uuml;lmedik&ccedil;e paylaşım amacıyla bağlı ve sınırlı olarak
-        kişisel verilerinizi işlemek ve korumakla s&ouml;zleşme ilişkimiz kapsamında y&uuml;k&uuml;ml&uuml; olup bu
-        husus King Kong&rsquo;un denetimindedir.</span>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>Kişisel verilerinizi son olarak hukuki sorumluluk ve
-        y&uuml;k&uuml;ml&uuml;l&uuml;klerimizi yerine getirmek amacıyla resmi kurum ve kuruluşlar ve yargı makamları ile
-        KVKK&rsquo;ya uygun olarak paylaşmaktayız.</span>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <strong><span style='font-family:"Times New Roman",serif;'>Kişisel verileriniz yurtdışına aktarılıyor
-          mu?</span></strong><a href="#_msocom_5" id="_anchor_5" language="JavaScript" name="_msoanchor_5">[5]</a>&nbsp;
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>Şirketimiz&rsquo;e elektronik posta aracılığıyla ile ulaşmanız
-        durumunda, Şirketimiz kişisel verilerinizi iş s&uuml;rekliliğinin sağlanması ve sizinle iletişime
-        ge&ccedil;ebilmek ama&ccedil;larıyla a&ccedil;ık rızanız dahilinde yurtdışında mukim
-        &uuml;&ccedil;&uuml;nc&uuml; kişilere (Microsoft Office 365) aktarmaktadır.</span>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>Şirketimiz toplamış olduğu kişisel verilerinizi yukarıda yer
-        alan alıcı grupları haricinde yurt dışında mukim herhangi bir &uuml;&ccedil;&uuml;nc&uuml; kişiye
-        aktarmamaktadır.&nbsp;</span>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <strong><span style='font-family:"Times New Roman",serif;'>Kişisel verilerinizin g&uuml;venliği, muhafazası ve
-          imhası</span></strong>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>Şirketimiz, kişisel veri g&uuml;venliği ve mahremiyetinin
-        korunması konusunda olduk&ccedil;a y&uuml;ksek bir farkındalığa sahiptir. King Kong işbu Bilgilendirme
-        Metni&rsquo;nde belirtilen siz ziyaret&ccedil;ilerimize ait kişisel verileri, başta <span
-          style="color:white;">KVK</span>K<span style="color:white;">&nbsp;olmak &uuml;zere
-          Şirketimiz</span>&rsquo;<span style="color:white;">in Kişisel Veri Saklama ve İmha Politikası&rsquo;na uygun
-          şekilde g&uuml;venliğini sağlayarak işlemektedir.&nbsp;</span></span>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>Kişisel verileriniz, işbu Bilgilendirme Metni&rsquo;nde
-        belirtilen işleme ama&ccedil;ları i&ccedil;in gerekli olan s&uuml;re ve her hal&uuml;karda yasal
-        d&uuml;zenlemelerde belirtilen kanuni zamanaşımı s&uuml;releri boyunca muhafaza edilmektedir. Şirketimiz, anılan
-        s&uuml;relerin sona ermesi halinde King Kong Kişisel Veri Saklama ve İmha Politikası doğrultusunda kişisel
-        verilerinizi siler, yok eder veya anonim hale getirir.</span>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>Kişisel verilerinize yetkisiz kişiler tarafından erişilmesini,
-        kişisel verilerinizin hatalı işlenmesini, ifşa edilmesini, hukuka uygun olmayan sebeplerle
-        değiştirilmesini/silinmesini &ouml;nlemek, korunmasını ve g&uuml;venliğini sağlamak amacıyla Şirketimiz KVKK
-        uyarınca gerekli t&uuml;m teknik ve idari tedbirleri alır. KVKK uyarınca gereken hallerde King Kong sizleri ve
-        Kişisel Verileri Koruma Kurulu&rsquo;nu derhal bilgilendirir.</span>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <strong><span style='font-family:"Times New Roman",serif;'>Bilgi Edinme Hakkınız</span></strong>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>KVKK&rsquo;nın 11. maddesi kapsamında Şirketimiz&rsquo;e
-        başvurarak kişisel verilerinizin; <strong><em>(i)</em></strong> işlenip işlenmediğini &ouml;ğrenme,
-        <strong><em>(ii)</em></strong> işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına uygun
-        kullanılıp kullanılmadığını &ouml;ğrenme, <strong><em>(iii)</em></strong> yurt i&ccedil;inde/yurt dışında
-        aktarıldığı 3. kişileri bilme, eksik/yanlış işlenmişse d&uuml;zeltilmesini isteme,
-        <strong><em>(iv)</em></strong> KVKK&rsquo;nın 7. maddesinde &ouml;ng&ouml;r&uuml;len şartlar
-        &ccedil;er&ccedil;evesinde silinmesini/yok edilmesini isteme, <strong><em>(v)</em></strong> kişisel
-        verilerinizin KVKK&rsquo;nın 7. maddesi kapsamında silinmesi ve yok edilmesi ve eksik/yanlış işlenmiş kişisel
-        verilerinin d&uuml;zeltilmesi taleplerinin, kişisel verilerin aktarıldığı &uuml;&ccedil;&uuml;nc&uuml; kişilere
-        bildirilmesini isteme, <strong><em>(vi)</em></strong> m&uuml;nhasıran otomatik sistemler ile analiz edilmesi
-        nedeniyle aleyhinize bir sonucun ortaya &ccedil;ıkmasına itiraz etme, <strong><em>(vii)</em></strong> kanuna
-        aykırı olarak işlenmesi sebebiyle zarara uğramanız h&acirc;linde zararın giderilmesini talep etme haklarına
-        sahip olduğunuzu bildiririz.&nbsp;</span>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;'>İşbu Bilgilendirme Metni hakkında sorunuz olması halinde
-        l&uuml;tfen KVK Yetkilisi ile irtibata ge&ccedil;iniz.&nbsp;</span>
-    </p>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <strong><span style='font-family:"Times New Roman",serif;'>KVK Yetkilisi:&nbsp;</span></strong><a
-        href="#_msocom_6" id="_anchor_6" language="JavaScript" name="_msoanchor_6">[6]</a>&nbsp;
+    <p><b>Kişisel verileriniz yurtdışına aktarılıyor mu?</b></p>
+    <p>Şirketimiz’e elektronik posta aracılığıyla ile ulaşmanız durumunda, Şirketimiz kişisel verilerinizi iş sürekliliğinin sağlanması ve sizinle iletişime geçebilmek amaçlarıyla açık rızanız dahilinde yurtdışında mukim üçüncü kişilere (Microsoft Office 365) aktarmaktadır.</p>
+    <p>Şirketimiz toplamış olduğu kişisel verilerinizi yukarıda yer alan alıcı grupları haricinde yurt dışında mukim herhangi bir üçüncü kişiye aktarmamaktadır.</p>
+   <p><b>Kişisel verilerinizin güvenliği, muhafazası ve imhası</b></p>
+   <p>sahiptir. King Kong işbu Bilgilendirme Metni’nde belirtilen siz ziyaretçilerimize ait kişisel verileri, başta KVKK olmak üzere Şirketimiz’in Kişisel Veri Saklama ve İmha Politikası’na uygun şekilde güvenliğini sağlayarak işlemektedir. </p>
+   <p>Kişisel verileriniz, işbu Bilgilendirme Metni’nde belirtilen işleme amaçları için gerekli olan süre ve her halükarda yasal düzenlemelerde belirtilen kanuni zamanaşımı süreleri boyunca muhafaza edilmektedir. Şirketimiz, anılan sürelerin sona ermesi halinde King Kong Kişisel Veri Saklama ve İmha Politikası doğrultusunda kişisel verilerinizi siler, yok eder veya anonim hale getirir.</p>
+   <p>Kişisel verilerinize yetkisiz kişiler tarafından erişilmesini, kişisel verilerinizin hatalı işlenmesini, ifşa edilmesini, hukuka uygun olmayan sebeplerle değiştirilmesini/silinmesini önlemek, korunmasını ve güvenliğini sağlamak amacıyla Şirketimiz KVKK uyarınca gerekli tüm teknik ve idari tedbirleri alır. KVKK uyarınca gereken hallerde King Kong sizleri ve Kişisel Verileri Koruma Kurulu’nu derhal bilgilendirir.</p>
+   <p><b>Bilgi Edinme Hakkınız</b></p>
+   <p>KVKK’nın 11. maddesi kapsamında Şirketimiz’e başvurarak kişisel verilerinizin; (i) işlenip işlenmediğini öğrenme, (ii) işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, (iii) yurt içinde/yurt dışında aktarıldığı 3. kişileri bilme, eksik/yanlış işlenmişse düzeltilmesini isteme, (iv) KVKK’nın 7. maddesinde öngörülen şartlar çerçevesinde silinmesini/yok edilmesini isteme, (v) kişisel verilerinizin KVKK’nın 7. maddesi kapsamında silinmesi ve yok edilmesi ve eksik/yanlış işlenmiş kişisel verilerinin düzeltilmesi taleplerinin, kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme, (vi) münhasıran otomatik sistemler ile analiz edilmesi nedeniyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme, (vii) kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme haklarına sahip olduğunuzu bildiririz. 
+    İşbu Bilgilendirme Metni hakkında sorunuz olması halinde lütfen KVK Yetkilisi ile irtibata geçiniz. 
     </p>
     <table style="width: 4.5e+2pt;border-collapse:collapse;border:none;">
       <tbody>
@@ -773,7 +704,7 @@
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;">
               <strong><span style='font-family:"Times New Roman",serif;'>[<span
-                    style="background:yellow;">.</span>]</span></strong>
+                  >.</span>]</span></strong>
             </p>
           </td>
           <td
@@ -781,7 +712,7 @@
             <p
               style="margin-top:10.0pt;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;text-align:center;line-height:150%;">
               <strong><span style='font-family:"Times New Roman",serif;'>[<span
-                    style="background:yellow;">.</span>]</span></strong>
+                  >.</span>]</span></strong>
             </p>
           </td>
           <td
@@ -789,18 +720,13 @@
             <p
               style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:150%;">
               <strong><span style='font-family:"Times New Roman",serif;'>[<span
-                    style="background:yellow;">.</span>]</span></strong>
+                    >.</span>]</span></strong>
             </p>
           </td>
         </tr>
       </tbody>
     </table>
-    <p
-      style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%;">
-      <span style='font-family:"Times New Roman",serif;color:white;'>İşbu Bilgilendirme Metni, değişen
-        s&uuml;re&ccedil;lerimiz dolayısıyla KVKK&rsquo;ya uyum sağlamak amacıyla g&uuml;ncellenebilecektir.
-        Ger&ccedil;ekleşebilecek g&uuml;ncellemeler i&ccedil;in sitemizi ziyaret etmenizi rica ederiz.</span>
-    </p>
+    <p>İşbu Bilgilendirme Metni, değişen süreçlerimiz dolayısıyla KVKK’ya uyum sağlamak amacıyla güncellenebilecektir. Gerçekleşebilecek güncellemeler için sitemizi ziyaret etmenizi rica ederiz.</p>
     <p style="margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:150%;">
       <strong><span style='font-family:"Times New Roman",serif;'>King Kong Kongre Eğitim ve Organizasyon Ticaret Ltd.
           Şti.</span></strong>

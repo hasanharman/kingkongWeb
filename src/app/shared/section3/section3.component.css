@@ -17,7 +17,7 @@
 .video-back {
   position: absolute;
   z-index: 1;
-  margin-top: 300px;
+  margin-top: 340px;
   right: 0;
 }
 .video2 {
@@ -32,7 +32,20 @@
   margin-left: -50px;
   cursor: pointer;
 }
+.dot-red {
+  position: absolute;
+  z-index: 12;
+  margin-top: 200px;
+  margin-left: 400px;
+}
 
+.dot-white {
+  position: absolute;
+  z-index: 12;
+  margin-top: 400px;
+  right: 0;
+  margin-right: 100px;
+}
 
 .modal-body {
   display: flex;
