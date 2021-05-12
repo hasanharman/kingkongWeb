@@ -15,6 +15,7 @@ import { HowitworksComponent } from './shared/howitworks/howitworks.component';
 import { GalleryComponent } from './shared/gallery/gallery.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { ComingSoonComponent } from './shared/coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     Section3Component,
     SliderComponent,
     HowitworksComponent,
-    GalleryComponent
+    GalleryComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,

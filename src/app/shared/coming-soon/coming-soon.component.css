@@ -1,0 +1,53 @@
+.collapser {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    /* background */
+    /* background: linear-gradient(113.32deg, #3f3d48 0%, #222127 100%); */
+  }
+
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .carousel-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .img-content {
+      width: 400px;
+      margin-bottom: 20px;
+  }
+    
+  .carousel-sub {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    margin: 0;
+  }
+  
+  /* Phone Screen */
+  @media only screen and (max-width: 450px) {
+    .img-content {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    .carousel-sub {
+      font-size: 30px;
+    }
+  }
