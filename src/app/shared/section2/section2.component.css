@@ -20,14 +20,14 @@
 	flex-wrap: wrap;
 	margin-top: 10%;
 	margin-left: 55%;
-	width: 40%;
+	width: 35%;
 }
 .text-head {
 	font-family: "Playfair Display";
 	font-weight: 400;
-	font-size: 50px;
+	font-size: 62px;
 	color: var(--main-black);
-	margin: 20px 0 0 0;
+	margin: 20px 0 35 0;
 }
 .text-head-bold {
 	font-family: "Playfair Display";
@@ -40,20 +40,20 @@
 .text-2 {
 	font-family: Gilroy;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 500;
 	font-size: 28px;
 	color: var(--main-black);
 	margin: 20px 0 0 0;
 }
 
-.text-3 {
+/* .text-3 {
 	font-family: Gilroy;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
 	color: var(--main-grey);
 	margin: 20px 0 0 0;
-}
+} */
 
 .carousel-viewmore {
 	margin-top: 60px;

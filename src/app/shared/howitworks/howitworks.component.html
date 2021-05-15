@@ -1,9 +1,9 @@
 <div class="main-container3">
   <div class="header">
-    <img src="../../../assets/how/crown.svg" alt="" class="logo" />
+    <img src="../../../assets/red-crown.svg" alt="" class="logo-red" />
     <div class="heading">
       <h1 class="text-head1">KingKong</h1>
-      <h1 class="text-head2">&nbsp;Nasıl&nbsp;Çalışır?</h1>
+      <h1 class="text-head1">&nbsp;Nasıl&nbsp;Çalışır?</h1>
     </div>
   </div>
   <div class="contents">
@@ -14,10 +14,6 @@
         Etkinliğinizin detaylarını ve gereksinimlerini öğrenmek için sizinle bir
         toplantı organize eder.
       </p>
-      <div class="carousel-viewmore only-show-on-hover1">
-        <div (click)="openModal(content)">Bize Ulaşın</div>
-        <div>></div>
-      </div>
     </div>
 
     <div class="card-container2">
@@ -28,8 +24,8 @@
         Bu detaylar ve ihtiyaçlar doğrultusunda size özel bir paket ve bütçe
         hazırlar.
       </p>
-      <div class="carousel-viewmore only-show-on-hover1">
-        <div (click)="openModal(content)">Bize Ulaşın</div>
+      <div class="carousel-viewmore">
+        <div>Bize Ulaşın</div>
         <div>></div>
       </div>
     </div>
@@ -41,48 +37,6 @@
         Etkinliğinizi tüm yönleriyle başarıya ulaşmasını sağlayacak teknik ve
         lojistik unsurları yönetir.
       </p>
-      <div class="carousel-viewmore only-show-on-hover1">
-        <div (click)="openModal(content)">Bize Ulaşın</div>
-        <div>></div>
-      </div>
     </div>
   </div>
 </div>
-
-<ng-template #content let-modal>
-  <div class="header-modal">
-    <div></div>
-    <h4 class="title-modal">Bizimle İletişime Geçin</h4>
-
-      <button href="" class="close-button"  (click)="modal.close('Cross click')" aria-hidden="true" ><img src="../../../assets/modal-close.svg" alt=""></button>
-
-    <!-- <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button> -->
-  </div>
-  <div class="body-modal" *ngIf="!sended">
-    <label for="typeahead-basic">İsim-Soyisim</label>
-    <input id="typeahead" type="text" class="form-control"/>
-    <div class="d-flex flex-row justify-content-between align-items-center">
-     <div>
-      <label for="typeahead-basic">E-posta Adresi</label>
-      <input id="typeahead2" type="text" class="form-control" />
-     </div>
-     <div>
-      <label for="typeahead-basic">Şirket (Zorunlu Değil)</label>
-      <input id="typeahead2" type="text" class="form-control" />
-     </div>
-    </div>
-    <label for="typeahead-basic">Mesajınız</label>
-    <textarea id="typeahead" type="text" class="form-control" rows="5"></textarea>
-  </div>
-  <div class="body-modal" *ngIf="sended">
-    <div class="d-flex flex-column align-items-center">
-      <img src="../../../assets/successful.svg" alt="">
-      <h1 class="success-msg">Mesajınız Başarıyla<br>Gönderilmiştir</h1>
-    </div>
-  </div>
-  <div class="footer-modal" *ngIf="!sended">
-    <button type="button" class="send-button" (click)="sendButton()">Mesaj Gönder</button>
-  </div>
-</ng-template>

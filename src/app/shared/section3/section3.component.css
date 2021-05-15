@@ -9,27 +9,30 @@
 }
 
 .video1 {
-  width: 500px;
-  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 595px;
+  height: 397px;
   z-index: 3;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .video-back {
   position: absolute;
   z-index: 1;
-  margin-top: 340px;
+  margin-top: 450px;
   right: 0;
 }
 .video2 {
-  width: 600px;
-  height: 350px;
+  width: 586px;
+  height: 391px;
   border-radius: 10px;
 }
 .play-button {
   position: absolute;
+  margin-left: 230px;
   z-index: 5;
-  margin-top: 320px;
-  margin-left: -50px;
   cursor: pointer;
 }
 .dot-red {
@@ -77,7 +80,7 @@
 .text-head {
   font-family: "Playfair Display";
   font-weight: 400;
-  font-size: 30px;
+  font-size: 62px;
   color: var(--main-black);
   margin: 20px 0 0 0;
 }
@@ -92,19 +95,19 @@
 .text-2 {
   font-family: Gilroy;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  color: var(--main-black);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 45px;
   margin: 20px 0 0 0;
 }
 
 .text-3 {
   font-family: Gilroy;
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
   color: var(--main-grey);
-  margin: 20px 0 0 0;
 }
 .bullet {
   display: flex;

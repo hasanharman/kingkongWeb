@@ -25,12 +25,11 @@
 
 <div class="main-container4">
   <div class="text-container">
-    <h5 class="text-1">NEDEN KINGKONG?</h5>
-    <h1 class="text-2">KingKong Dünyasında</h1>
-    <h1 class="text-3">Neler Yapabilirsiniz?</h1>
+    <h5 class="text-1">Neden KingKong?</h5>
+    <h1 class="text-2">KingKong Dünyasında <br> Neler Yapabilirsiniz?</h1>
   </div>
   <div id="slider-cover">
-    <div class="card-cont" [ngClass]="'card-cont-'+i" *ngFor="let item of imgs; let i = index">
+    <div class="card-cont" [ngClass]="'card-cont-'+i" *ngFor="let item of imgs1; let i = index" >
       <img [src]="'../../../assets/cards/'+item.img" alt="" class="card-image" />
       <div class="card-content">
         <img [src]="'../../../assets/cards/'+item.icon" alt="" class="card-icon" />
@@ -39,33 +38,138 @@
         <!-- <p class="card-detail">Detaylı Bilgi</p> -->
       </div>
     </div>
-  </div>
+    <!-- 12 cards -->
+    <div class="d-flex flex-row justify-content-center align-items-center flex-wrap" *ngIf="isShown1">
 
-  <div class="specs">
+      <div class="card-cont" [ngClass]="'card-cont-'+i" *ngFor="let item of imgs; let i = index" >
+        <img [src]="'../../../assets/cards/'+item.img" alt="" class="card-image" />
+        <div class="card-content">
+          <img [src]="'../../../assets/cards/'+item.icon" alt="" class="card-icon" />
+          <h3 class="card-text"> {{item.title}} </h3>
+          <p class="card-sub"> {{item.sub}} </p>
+          <!-- <p class="card-detail">Detaylı Bilgi</p> -->
+        </div>
+      </div>
+
+
+      <!-- <div class="card-cont">
+        <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
+        <div class="card-content">
+          <img src="../../../assets/cards/chat.svg" alt="" class="card-icon" />
+          <h3 class="card-text"> Title</h3>
+          <p class="card-sub"> Subtitle</p>
+        </div>
+      </div>
+      <div class="card-cont">
+        <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
+        <div class="card-content">
+          <img src="../../../assets/cards/chat.svg" alt="" class="card-icon" />
+          <h3 class="card-text"> Title</h3>
+          <p class="card-sub"> Subtitle</p>
+        </div>
+      </div>
+      <div class="card-cont">
+        <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
+        <div class="card-content">
+          <img src="../../../assets/cards/chat.svg" alt="" class="card-icon" />
+          <h3 class="card-text"> Title</h3>
+          <p class="card-sub"> Subtitle</p>
+        </div>
+      </div>
+      <div class="card-cont">
+        <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
+        <div class="card-content">
+          <img src="../../../assets/cards/chat.svg" alt="" class="card-icon" />
+          <h3 class="card-text"> Title</h3>
+          <p class="card-sub"> Subtitle</p>
+        </div>
+      </div>
+      <div class="card-cont">
+        <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
+        <div class="card-content">
+          <img src="../../../assets/cards/chat.svg" alt="" class="card-icon" />
+          <h3 class="card-text"> Title</h3>
+          <p class="card-sub"> Subtitle</p>
+        </div>
+      </div>
+      <div class="card-cont">
+        <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
+        <div class="card-content">
+          <img src="../../../assets/cards/chat.svg" alt="" class="card-icon" />
+          <h3 class="card-text"> Title</h3>
+          <p class="card-sub"> Subtitle</p>
+        </div>
+      </div>
+      <div class="card-cont">
+        <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
+        <div class="card-content">
+          <img src="../../../assets/cards/chat.svg" alt="" class="card-icon" />
+          <h3 class="card-text"> Title</h3>
+          <p class="card-sub"> Subtitle</p>
+        </div>
+      </div>
+      <div class="card-cont">
+        <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
+        <div class="card-content">
+          <img src="../../../assets/cards/chat.svg" alt="" class="card-icon" />
+          <h3 class="card-text"> Title</h3>
+          <p class="card-sub"> Subtitle</p>
+        </div>
+      </div>
+      <div class="card-cont">
+        <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
+        <div class="card-content">
+          <img src="../../../assets/cards/chat.svg" alt="" class="card-icon" />
+          <h3 class="card-text"> Title</h3>
+          <p class="card-sub"> Subtitle</p>
+        </div>
+      </div>
+      <div class="card-cont">
+        <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
+        <div class="card-content">
+          <img src="../../../assets/cards/chat.svg" alt="" class="card-icon" />
+          <h3 class="card-text"> Title</h3>
+          <p class="card-sub"> Subtitle</p>
+        </div>
+      </div>
+      <div class="card-cont">
+        <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
+        <div class="card-content">
+          <img src="../../../assets/cards/chat.svg" alt="" class="card-icon" />
+          <h3 class="card-text"> Title</h3>
+          <p class="card-sub"> Subtitle</p>
+        </div>
+      </div>
+      <div class="card-cont">
+        <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
+        <div class="card-content">
+          <img src="../../../assets/cards/chat.svg" alt="" class="card-icon" />
+          <h3 class="card-text"> Title</h3>
+          <p class="card-sub"> Subtitle</p>
+        </div>
+      </div> -->
+
+    </div>
+
+  </div>
+  <div class="viewmore" (click)="loadmore()">
+    <div>Daha fazla</div>
+  </div>
+</div>
+
+  <!-- <div class="specs">
     <div class="viewmore" (click)="openSmart(specs)">
       <div>Akıllı KingKong Özellikleri</div>
     </div>
-  </div>
-
-  <!-- <div class="buttons" >
-    <img src="../../../assets/cards/l-arrow.svg" alt="" class="arrow" (click)="activeImg < imgs.length + 1 ? prev() : null "/>
-    <img src="../../../assets/cards/seperator.svg" alt="" class="seperator" />
-    <img src="../../../assets/cards/r-arrow.svg" alt="" class="arrow" (click)="activeImg < imgs.length - 1 ? next() : prev()"/>
   </div> -->
-</div>
 
-
-<ng-template #specs let-modal>
+<!-- <ng-template #specs let-modal>
   <div class="header-modal">
     <div></div>
     <h4 class="title-modal">Akıllı KingKong Özellikleri</h4>
 
     <button href="" class="close-button" (click)="modal.close('Cross click')" aria-hidden="true"><img
         src="../../../assets/modal-close.svg" alt=""></button>
-
-    <!-- <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button> -->
   </div>
   <div class="modal-body">
    <p><b>Akıllı Sanal Asistan</b></p>
@@ -96,4 +200,4 @@
     <p>Gerçek zamanlı anketler düzenlenerek, sonuçların istenildiği anda ve kullanıcıları odadan çıkarmadan paylaşılabilmesi </p>
 
   </div>
-</ng-template>
+</ng-template> -->

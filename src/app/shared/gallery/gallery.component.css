@@ -15,8 +15,9 @@
 .text-head1 {
   font-family: Playfair Display;
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 129%;
   margin: 10px 0 0 0;
 }
 .text-head2 {
@@ -29,8 +30,8 @@
 
 .menu {
   display: flex;
-  flex: row;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 43px;
 }
@@ -38,9 +39,9 @@
 .menu-text {
   font-family: Gilroy;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  margin-left: 20px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 24px;
   cursor: pointer;
   text-decoration: none;
   color: black;

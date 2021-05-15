@@ -1,20 +1,20 @@
 <div class="main">
   <div class="header">
     <h1 class="text-head1">KingKong</h1>
-    <h1 class="text-head2">Platformundan Görüntüler</h1>
+    <h1 class="text-head1">Platformundan Görüntüler</h1>
   </div>
   <div class="gallery-main">
     <div class="menu">
-      <a (click)="show1()" class="menu-text" [class.active]="isActive && isShown1">Ana Giriş</a>
-      <a (click)="show2()" class="menu-text" [class.active]="isActive && isShown2">Networking Alanı</a>
-      <a (click)="show3()" class="menu-text" [class.active]="isActive && isShown3">Stand Alanı</a>
-      <a (click)="show4()" class="menu-text" [class.active]="isActive && isShown4">Toplantı Salonları</a>
-
-      <!-- <a class="menu-text active">Ana Giriş</a>
-      <a class="menu-text">Networking Alanı</a>
-      <a class="menu-text">Stand Alanı</a>
-      <a class="menu-text">Toplantı Salonları</a> -->
-
+      <div class="d-flex flex-row justify-content-between" style="width: 750px;">
+        <a (click)="show1()" class="menu-text" [class.active]="isActive && isShown1">Ana Giriş</a>
+        <a (click)="show2()" class="menu-text" [class.active]="isActive && isShown2">Networking Alanı</a>
+        <a (click)="show3()" class="menu-text" [class.active]="isActive && isShown3">Stand Alanı</a>
+        <a (click)="show4()" class="menu-text" [class.active]="isActive && isShown4">Toplantı Salonları</a>
+        <!-- <a class="menu-text active">Ana Giriş</a>
+    <a class="menu-text">Networking Alanı</a>
+    <a class="menu-text">Stand Alanı</a>
+    <a class="menu-text">Toplantı Salonları</a> -->
+      </div>
     </div>
     <div class="gallery-masonry">
       <div *ngIf="isShown1" class="masonry">
@@ -27,10 +27,10 @@
           <img class="item-img4" src="../../../assets/gallery/ag4.webp" alt="" />
         </div>
         <div class="item">
-         <div class="item-double">
-          <img class="item-img5" src="../../../assets/gallery/ag5.webp" alt="" />
-          <img class="item-img6" src="../../../assets/gallery/ag6.webp" alt="" />
-         </div>
+          <div class="item-double">
+            <img class="item-img5" src="../../../assets/gallery/ag5.webp" alt="" />
+            <img class="item-img6" src="../../../assets/gallery/ag6.webp" alt="" />
+          </div>
           <img class="item-img7" src="../../../assets/gallery/ag7.webp" alt="" />
         </div>
       </div>
@@ -45,11 +45,11 @@
         </div>
         <div class="item">
           <div class="item-double">
-           <img class="item-img5" src="../../../assets/gallery/na5.webp" alt="" />
-           <img class="item-img6" src="../../../assets/gallery/na6.webp" alt="" />
+            <img class="item-img5" src="../../../assets/gallery/na5.webp" alt="" />
+            <img class="item-img6" src="../../../assets/gallery/na6.webp" alt="" />
           </div>
-           <img class="item-img7" src="../../../assets/gallery/na7.webp" alt="" />
-         </div>
+          <img class="item-img7" src="../../../assets/gallery/na7.webp" alt="" />
+        </div>
       </div>
       <div *ngIf="isShown3" id="stand" class="masonry">
         <div class="item">
@@ -61,10 +61,10 @@
           <img class="item-img4" src="../../../assets/gallery/sa4.webp" alt="" />
         </div>
         <div class="item">
-         <div class="item-double">
-          <img class="item-img5" src="../../../assets/gallery/sa5.webp" alt="" />
-          <img class="item-img6" src="../../../assets/gallery/sa6.webp" alt="" />
-         </div>
+          <div class="item-double">
+            <img class="item-img5" src="../../../assets/gallery/sa5.webp" alt="" />
+            <img class="item-img6" src="../../../assets/gallery/sa6.webp" alt="" />
+          </div>
           <img class="item-img7" src="../../../assets/gallery/sa7.webp" alt="" />
         </div>
       </div>
@@ -78,10 +78,10 @@
           <img class="item-img4" src="../../../assets/gallery/ts4.webp" alt="" />
         </div>
         <div class="item">
-         <div class="item-double">
-          <img class="item-img5" src="../../../assets/gallery/ts5.webp" alt="" />
-          <img class="item-img6" src="../../../assets/gallery/ts6.webp" alt="" />
-         </div>
+          <div class="item-double">
+            <img class="item-img5" src="../../../assets/gallery/ts5.webp" alt="" />
+            <img class="item-img6" src="../../../assets/gallery/ts6.webp" alt="" />
+          </div>
           <img class="item-img7" src="../../../assets/gallery/ts7.webp" alt="" />
         </div>
       </div>

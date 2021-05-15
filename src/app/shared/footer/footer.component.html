@@ -1,26 +1,48 @@
 <div class="main">
   <div class="center">
-    <div class="crown">
-      <h1 class="text-head">İhtiyacınız Neyse KingKong O!</h1>
-      <h4 class="text1">İhtiyacınıza özel tüm uygulamalar Akıllı etkinlik sistemi KingKong’da!</h4>
-      <h4 class="text1">
-        KingKong’da deneyim yaşamak için herhangi bir program indirilmesi gerekmez.
-      </h4>
-      <h4 class="text1">
-        KingKong ekibi projeniz ve ihtiyaçlarınız doğrultusunda size özel paket hazırlar ve profesyonel KingKong ekibi
-        etkinlik süresince ihtiyaçlarınız için daima yanınızda olur.
-      </h4>
-      <!-- <div class="mail">
-        <input type="text" placeholder="E-Posta Adresiniz" />
-        <div class="button">Abone ol</div>
-      </div> -->
+    <div class="contact">
+      <h1 class="contact-header">Bize Ulaşın</h1>
+      <div class="contact-body" *ngIf="!sended">
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <div class="form-group">
+            <input id="typeahead2" type="text" class="form-control" placeholder="E-posta Adresi*" />
+            <div class="invalid-feedback">Sorry, suggestions could not be loaded.</div>
+          </div>
+          <div class="form-group">
+            <input id="typeahead2" type="text" class="form-control" placeholder="Şirket(Zorunlu Değil)" />
+            <div class="invalid-feedback">Sorry, suggestions could not be loaded.</div>
+          </div>
+          <!-- <div>
+            <label for="typeahead-http">E-posta Adresi</label>
+            <input id="typeahead2" type="text" class="form-control" />
+          </div> -->
+        </div>
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <div class="form-group">
+            <input id="typeahead2" type="text" class="form-control" placeholder="İsim*" />
+            <div class="invalid-feedback">Sorry, suggestions could not be loaded.</div>
+          </div>
+          <div class="form-group">
+            <input id="typeahead2" type="text" class="form-control" placeholder="Soy İsim*" />
+            <div class="invalid-feedback">Sorry, suggestions could not be loaded.</div>
+          </div>
+        </div>
+        <!-- <label for="typeahead-basic">Mesajınız</label> -->
+        <textarea placeholder="Mesajınız*" id="typeahead" type="text" class="form-control" rows="5"></textarea>
+      </div>
+      <div class="contact-body" *ngIf="sended">
+        <div class="d-flex flex-column align-items-center">
+          <img src="../../../assets/successful.svg" alt="">
+          <h1 class="success-msg">Mesajınız Başarıyla<br>Gönderilmiştir</h1>
+        </div>
+      </div>
+      <div class="" *ngIf="!sended">
+        <button type="button" class="send-button2" (click)="sendButton()">Mesaj Gönder</button>
+      </div>
     </div>
   </div>
   <div class="footer-end">
     <div class="social">
-      <div></div>
-      <div></div>
-      <div></div>
       <div>
         <a href="https://www.instagram.com/kingkongistanbul/" target="_blank"> <img src="../../../assets/footer/ig.svg"
             alt="" class="social-img"></a>
@@ -33,30 +55,62 @@
     </div>
     <div class="footer-content">
       <div class="text-footer">
-        <img src="../../../assets/logo-grey.svg" alt="" />
+        <img src="../../../assets/logo-white.svg" alt="" />
         <div class="menu-footer">
-          <h1 class="menu-text">KingKong Nedir?</h1>
-          <h1 class="menu-text">Neden KingKong?</h1>
-          <h1 class="menu-text" (click)="openWeb(web)">Webinar</h1>
-          <h1 class="menu-text" (click)="openDev(dev)">Dewcon</h1>
-          <!-- <h1 class="menu-text">İletişim</h1> -->
+          <h1 class="menu-footer-text" (click)="openWhat(what)">KingKong Nedir?</h1>
+          <h1 class="menu-footer-text" (click)="openWhy(why)">Neden KingKong?</h1>
+          <h1 class="menu-footer-text" (click)="openWeb(web)">Webinar</h1>
+          <h1 class="menu-footer-text" (click)="openDev(dev)">Dewcon</h1>
+          <h1 class="menu-footer-text" (click)="openContact(contact)">İletişim</h1>
         </div>
         <div class="footer-legal">
-          <h1 class="legal-text" (click)="openLegal(legal)">Çerezler</h1>
-          <h1 class="legal-text" (click)="openPrivacy(privacy)">Gizlilik Politikası</h1>
-          <!-- <h1 class="legal-text">İletişim</h1> -->
+          <h1 class="menu-footer-text" (click)="openLegal(legal)">Çerezler</h1>
+          <h1 class="menu-footer-text" (click)="openPrivacy(privacy)">Gizlilik Politikası</h1>
+          <!-- <h1 class="menu-footer-text">İletişim</h1> -->
         </div>
       </div>
-      <div>
-        <h1 class="copyright">© 2021 | Tüm hakları saklıdır.</h1>
-      </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center" style="	margin: 10px 0 10px 0;">
+      <h1 class="copyright">© 2021 | Tüm hakları saklıdır.</h1>
     </div>
   </div>
 </div>
 
+<!-- What -->
+<ng-template #what let-modal>
+  <div class="modal-container">
+    <div class="modal-content2">
+      <h1 class="modal-head">King Kong<br>Nedir?</h1>
+      <p class="modal-txt">KingKong sanal olarak konferanstan kongreye tüm etkinliklerinizi yapabileceğiniz ve
+        özelleştirebileceğiniz platformlardan oluşan akıllı etkinlik sistemidir.
+      </p>
+    </div>
+    <div class="modal-img-what">
+      <button href="" class="close-button2" (click)="modal.close('Cross click')" aria-hidden="true"><img
+          src="../../../assets/modal-close.svg" alt=""></button>
+    </div>
+  </div>
+</ng-template>
+
+<!-- Why -->
+<ng-template #why let-modal>
+  <div class="modal-container">
+    <div class="modal-content2">
+      <h1 class="modal-head">Neden<br>King Kong?</h1>
+      <p class="modal-txt">
+        Akıllı etkinlik sistemi KingKong benzerlerinden çok farklı özellikleriyle katılımcılarınız için size özel bir
+        dünya yaratır ve benzersiz bir deneyim yaşatır.
+      </p>
+    </div>
+    <div class="modal-img-why">
+      <button href="" class="close-button2" (click)="modal.close('Cross click')" aria-hidden="true"><img
+          src="../../../assets/modal-close.svg" alt=""></button>
+    </div>
+  </div>
+</ng-template>
 
 <!-- Webinar -->
-<ng-template #web let-modal>
+<!-- <ng-template #web let-modal>
   <div class="header-modal">
     <div></div>
     <h4 class="title-modal">Webinar</h4>
@@ -73,10 +127,33 @@
       <li>Katılımcılarla canlı sohbet imkanları</li>
     </ul>
   </div>
+</ng-template> -->
+<ng-template #web let-modal>
+  <div class="modal-container">
+    <div class="modal-content2">
+      <h1 class="modal-head">Webinar</h1>
+      <div class="modal-body" style="height: 200px!important;">
+        <p class="modal-txt">
+          Sektör odaklı çözümlerimizle birlikte Profesyonel KingKong Prodüksiyon ekibi toplantılarınızda sizinle yakın
+          çalışmaya ve ihtiyaçlarınızı sektör odaklı çözmeye daima hazır.
+        </p>
+        <ul class="modal-txt">
+          <li>İnteraktif paneller</li>
+          <li>Soru-cevap etkinlikleri</li>
+          <li>Katılımcılarla canlı sohbet imkanları</li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-img-web">
+      <button href="" class="close-button2" (click)="modal.close('Cross click')" aria-hidden="true"><img
+          src="../../../assets/modal-close.svg" alt=""></button>
+    </div>
+  </div>
 </ng-template>
 
+
 <!-- Dewcon -->
-<ng-template #dev let-modal>
+<!-- <ng-template #dev let-modal>
   <div class="header-modal">
     <div></div>
     <h4 class="title-modal">Dewcon</h4>
@@ -93,6 +170,50 @@
       <li>Katılımcılara sunumlar süresince canlı görüşme ve oylama imkanı</li>
       <li>Simultane tercüme ile kitleleriniz arasındaki iletişim engelini ortadan kaldırma imkanı</li>
     </ul>
+  </div>
+</ng-template> -->
+
+<ng-template #dev let-modal>
+  <div class="modal-container">
+    <div class="modal-content2">
+      <h1 class="modal-head">Dewcon</h1>
+      <div class="modal-body" style="height: 200px!important;">
+        <p class="modal-txt">
+          Konuşmalar, paneller, stand alanları ve partilerden oluşan günlük veya birkaç günlük sanal dünyanızı yaratarak
+          katılımcılarınıza eşsiz imkanlar sunabilirsiniz.
+        </p>
+        <ul class="modal-txt">
+          <li>Kitlenizle özel paneller, konuşmalar, lansmanlar</li>
+          <li>Gerçek zamanlı soru - cevap etkinlikleri</li>
+          <li>Katılımcılara sunumlar süresince canlı görüşme ve oylama imkanı</li>
+          <li>Simultane tercüme ile kitleleriniz arasındaki iletişim engelini ortadan kaldırma imkanı</li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-img-dev">
+      <button href="" class="close-button2" (click)="modal.close('Cross click')" aria-hidden="true"><img
+          src="../../../assets/modal-close.svg" alt=""></button>
+    </div>
+  </div>
+</ng-template>
+
+<!-- İletişim -->
+<ng-template #contact let-modal>
+  <div class="modal-container">
+    <div class="modal-content2">
+      <h1 class="modal-head">İletişim</h1>
+      <p class="modal-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+      </p>
+      <ul class="modal-txt" style="list-style: none;padding: 0;">
+        <li style="margin-top: 10px;"><img src="../../../assets/footer/pin-3 1.svg" style="margin-right: 20px;" alt="">Levent, Esentepe Mah. Büyükdere Cad. Ecza Sokak</li>
+        <li style="margin-top: 10px;"><img src="../../../assets/footer/phone 1.svg" style="margin-right: 20px;" alt="">0555 555 55 55</li>
+        <li style="margin-top: 10px;"><img src="../../../assets/footer/letter 1.svg" style="margin-right: 20px;" alt="">kingkong@gmail.com</li>      
+      </ul>
+    </div>
+    <div class="modal-img-contact">
+      <button href="" class="close-button2" (click)="modal.close('Cross click')" aria-hidden="true"><img
+          src="../../../assets/modal-close.svg" alt=""></button>
+    </div>
   </div>
 </ng-template>
 

@@ -1,11 +1,11 @@
 <div class="main-container2">
   <div class="text-container">
-    <h1 class="text-head">KingKong Dünyasında</h1>
-    <h1 class="text-bold">Her Şey Çok Farklı!</h1>
-    <h5 class="text-3">
-      Akıllı etkinlik sistemi KingKong dünyasında yazılımdan tasarıma her şey size özeldir. <br>
-
-      KingKong tasarımları ve uzmanlığı size unutulmaz bir toplantı deneyimi yaşatır.
+    <h1 class="text-head">KingKong</h1>
+    <h1 class="text-head">Dünyasında Her Şey</h1>
+    <h1 class="text-head">Çok Farklı!</h1>
+    <h5 class="text-2">
+      Yazılımdan tasarıma her şey size özel olacak.<br>
+      KingKong tasarımları ve uzmanlığı size farklı bir toplantı deneyimi sunacak. 
       
     </h5>
     <div class="bullet">
@@ -25,10 +25,8 @@
       <div>></div>
     </div> -->
   </div>
+
   <div class="img-container">
-    <div class="play" (click)="openVid2(vid2)" >
-      <img src="../../../assets/video/play.svg" alt="" class="play-button">
-    </div>
     <div class="dot-red">
       <img src="../../../assets/video/dots-1.svg" alt="">
     </div>
@@ -36,6 +34,9 @@
       <img src="../../../assets/video/dots.svg" alt="">
     </div>
     <div class="video1">
+      <div class="play" (click)="openVid2(vid2)" >
+        <img src="../../../assets/video/play.svg" alt="" class="play-button">
+      </div>
       <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="video1">
         <source src="../../../assets/video/video-short.mp4" type="video/mp4" />
       </video>

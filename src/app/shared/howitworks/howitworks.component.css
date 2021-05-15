@@ -7,9 +7,9 @@
 	align-items: center;
 	margin: 50px 0 50px 0;
 }
-/* .logo {
+.logo-red {
 	width: 55px;
-} */
+}
 .header {
 	display: flex;
 	flex-direction: column;
@@ -107,7 +107,7 @@
 }
 
 .carousel-viewmore {
-	margin-top: 350px;
+	margin-top: 420px;
 	padding: 10px;
 	position: absolute;
 	display: flex;
@@ -148,7 +148,7 @@ div:hover > .only-show-on-hover3 {
 }
 
 /* Modal CSS */
-
+/* 
 .header-modal {
 	display: flex;
 	flex-direction: row;
@@ -205,7 +205,6 @@ label {
 	width: 100%;
 	color: white;
 	background: linear-gradient(259.52deg, #fa2b56 36.56%, #f91c3d 93.83%);
-	/* PortalButtonShadow */
 	width: 628px;
 	height: 60px;
 	box-shadow: 0px 4px 20px rgba(250, 37, 76, 0.2);
@@ -221,4 +220,4 @@ label {
 	font-weight: 700;
 	text-align: center;
 	margin-bottom: 80px;
-}
+} */
