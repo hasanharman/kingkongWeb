@@ -42,5 +42,9 @@ export class HowitworksComponent implements OnInit {
 		this.sended = true;
 	}
 
+	scrollFooter() {
+		window.scrollBy({behavior : "smooth", top: 1500});
+		
+	}
 	ngOnInit(): void {}
 }

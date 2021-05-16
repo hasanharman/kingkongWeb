@@ -147,8 +147,10 @@ div:hover > .only-show-on-hover3 {
 	visibility: visible;
 }
 
+
+
 /* Modal CSS */
-/* 
+
 .header-modal {
 	display: flex;
 	flex-direction: row;
@@ -220,4 +222,4 @@ label {
 	font-weight: 700;
 	text-align: center;
 	margin-bottom: 80px;
-} */
+}

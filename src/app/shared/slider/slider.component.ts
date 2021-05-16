@@ -10,12 +10,14 @@ declare var $: any;
 })
 export class SliderComponent implements OnInit {
 	activeImg: number = 1;
-	isShown1: boolean = false ;
+	isShown1: boolean = false;
+	clicked: boolean = false;
+	changeText: boolean = false;
 	// imgs: Array<string> = ['card1.png','card2.png','card3.png','card4.png'];
 
 	imgs1 = [
-		{ img: 'akıllıasistan/akilli-asistan.png', icon: 'akıllıasistan/virtual-assistant-2.svg', title: 'Akıllı Asistan', sub: '' },
-		{ img: 'analitikraporlama/analitik-raporlama.png', icon: 'analitikraporlama/document-copy1.svg', title: 'Analitik Raporlama', sub:'' },
+		{ img: 'akıllıasistan/akilli-asistan.png', icon: 'akıllıasistan/virtual-assistant-2.svg', title: 'Akıllı Asistan', sub: 'Lorem İpsum dolor sit amet dolor sit amet dolor sit amet' },
+		{ img: 'analitikraporlama/analitik-raporlama.png', icon: 'analitikraporlama/document-copy1.svg', title: 'Analitik Raporlama', sub: 'Lorem İpsum dolor sit amet dolor sit amet dolor sit amet' },
 		{ img: 'anket/anket.png', icon: 'anket/tripod1.svg', title: 'Anket', sub: '' },
 		{ img: 'backpack/backpack.png', icon: 'backpack/multiple-11.svg', title: 'Backpack', sub: '' },
 	];
@@ -38,7 +40,7 @@ export class SliderComponent implements OnInit {
 
 	// totalItems = this.imgs.length;
 
-	constructor(private modals: NgbModal) {}
+	constructor(private modals: NgbModal) { this.changeText = false;}
 
 	ngOnInit(): void {}
 
@@ -72,7 +74,8 @@ export class SliderComponent implements OnInit {
 	// 	}
 
 	loadmore() {
-		this.isShown1 = ! this.isShown1;
+		this.isShown1 = !this.isShown1;
+		this.clicked = !this.clicked;
 	}
 
 	prev() {

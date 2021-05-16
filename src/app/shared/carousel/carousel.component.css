@@ -5,8 +5,15 @@
   position: relative;
   display: flex;
   /* background */
-  /* background: linear-gradient(113.32deg, #3f3d48 0%, #222127 100%); */
+  background: linear-gradient(113.32deg, #3f3d48 0%, #222127 100%);
 }
+.target {
+  mask: url("../../../assets/carousel/img0.svg");
+  -webkit-mask: url("../../../assets/carousel/img0.svg");
+  mask-position: top right;
+  mask-repeat: no-repeat;
+}
+
 
 /* video {
   position: absolute;

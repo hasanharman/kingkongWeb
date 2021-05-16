@@ -34,24 +34,27 @@
       <div class="card-content">
         <img [src]="'../../../assets/cards/'+item.icon" alt="" class="card-icon" />
         <h3 class="card-text"> {{item.title}} </h3>
-        <p class="card-sub"> {{item.sub}} </p>
+        <!-- <div (mouseover)="changeText=true" (mouseout)="changeText=false">
+          <span *ngIf="!changeText">Hide</span>
+          <span *ngIf="changeText">Show</span>
+        </div> -->
+          <p class="card-sub hover2">{{item.sub}} </p>
         <!-- <p class="card-detail">Detaylı Bilgi</p> -->
       </div>
     </div>
     <!-- 12 cards -->
     <div class="d-flex flex-row justify-content-center align-items-center flex-wrap" *ngIf="isShown1">
-
       <div class="card-cont" [ngClass]="'card-cont-'+i" *ngFor="let item of imgs; let i = index" >
         <img [src]="'../../../assets/cards/'+item.img" alt="" class="card-image" />
         <div class="card-content">
           <img [src]="'../../../assets/cards/'+item.icon" alt="" class="card-icon" />
           <h3 class="card-text"> {{item.title}} </h3>
-          <p class="card-sub"> {{item.sub}} </p>
+          <div class="hover2">
+            <p class="card-sub">{{item.sub}} </p>
+          </div>
           <!-- <p class="card-detail">Detaylı Bilgi</p> -->
         </div>
       </div>
-
-
       <!-- <div class="card-cont">
         <img src="../../../assets/cards/card1.png" alt="" class="card-image" />
         <div class="card-content">
@@ -148,15 +151,12 @@
           <p class="card-sub"> Subtitle</p>
         </div>
       </div> -->
-
     </div>
-
   </div>
   <div class="viewmore" (click)="loadmore()">
-    <div>Daha fazla</div>
+    <div> {{ clicked ? 'Küçült' : 'Daha fazla' }} </div>
   </div>
 </div>
-
   <!-- <div class="specs">
     <div class="viewmore" (click)="openSmart(specs)">
       <div>Akıllı KingKong Özellikleri</div>
