@@ -20,6 +20,16 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
     .dark-backdrop {
       background-color: #000;
     }
+	.cookie-modal .modal-content {
+    position: fixed;
+    bottom: 0;
+	left:0;
+	background-color: #c2272d;
+	border-radius: 0px;
+	height: 160px;
+	padding: 16px 17px 25px 160px;
+    z-index: 10;
+	}
   `
 	]
 })
@@ -33,7 +43,7 @@ export class HowitworksComponent implements OnInit {
 			centered: true,
 			size: 'lg',
 			windowClass: 'dark-modal',
-			backdropClass: 'dark-backdrop',
+			backdropClass: 'dark-backdrop'
 		});
 		this.sended = false;
 	}
@@ -43,8 +53,7 @@ export class HowitworksComponent implements OnInit {
 	}
 
 	scrollFooter() {
-		window.scrollBy({behavior : "smooth", top: 1500});
-		
+		window.scrollBy({ behavior: 'smooth', top: 1500 });
 	}
 	ngOnInit(): void {}
 }

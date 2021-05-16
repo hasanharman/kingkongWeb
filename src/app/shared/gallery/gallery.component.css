@@ -13,7 +13,7 @@
 }
 
 .text-head1 {
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 62px;
@@ -21,7 +21,7 @@
   margin: 10px 0 0 0;
 }
 .text-head2 {
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 900;
   font-size: 50px;
@@ -37,7 +37,7 @@
 }
 
 .menu-text {
-  font-family: Gilroy;
+  font-family: "Gilroy-Light";
   font-style: normal;
   font-weight: 400;
   font-size: 21px;

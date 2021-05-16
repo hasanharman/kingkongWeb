@@ -163,6 +163,10 @@ label {
 	margin: 10px 0 50px 0;
 }
 
+ul {
+	list-style-image: url('../../../assets/footer/ellipse.svg');
+}
+
 /* ::ng-host.modal-body {
   display: flex;
   flex-direction: column;
@@ -181,7 +185,7 @@ label {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 20px 0 0 50px; 
+	margin: 20px 0 0 50px;
 	width: 450px;
 }
 .modal-head {
@@ -215,35 +219,35 @@ label {
 .modal-img-what {
 	background-image: url('../../../assets/footer/what.png');
 	background-size: auto;
-	background-position:center;
+	background-position: center;
 	width: 550px;
 	height: 520px;
 }
 .modal-img-why {
 	background-image: url('../../../assets/footer/why.png');
 	background-size: auto;
-	background-position:center;
+	background-position: center;
 	width: 550px;
 	height: 520px;
 }
 .modal-img-web {
 	background-image: url('../../../assets/footer/webinar.png');
 	background-size: auto;
-	background-position:center;
+	background-position: center;
 	width: 550px;
 	height: 520px;
 }
 .modal-img-dev {
 	background-image: url('../../../assets/footer/dewcon.png');
 	background-size: auto;
-	background-position:center;
+	background-position: center;
 	width: 550px;
 	height: 520px;
 }
 .modal-img-contact {
-	background-image: url('../../../assets/footer/iletisim.png');
-	background-size: auto;
-	background-position:center;
+	background: url('https://maps.google.com/maps?q=B%C3%BCy%C3%BCkdere%20Cad.%20Ecza%20Sok.%20No:6%20Kat:1%2034394%20Levent&t=&z=15&ie=UTF8&iwloc=&output=embed')
+		no-repeat;
+	background-position: center;
 	width: 550px;
 	height: 520px;
 }
@@ -256,22 +260,20 @@ label {
 ::-webkit-scrollbar {
 	width: 7px;
 	border: 1px solid #fa2b56;
-  }
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+/* Track */
+::-webkit-scrollbar-track {
 	background: transparent;
-
-  }
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
 	background: #fa2b56;
-
-  }
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
 	background: #fa2b56;
+}
 
-  }
 @media only screen and (max-device-width: 480px) {
 	.footer-end {
 		padding: 20px 0 20px 0;

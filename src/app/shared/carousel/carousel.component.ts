@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { TweenMax } from 'gsap';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
 	selector: 'app-carousel',
@@ -8,6 +9,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 	styleUrls: [ './carousel.component.css' ]
 })
 export class CarouselComponent implements OnInit {
+	@ViewChild('cookie') cookie: any;
 	closeResult: string | undefined;
 	activeImg: number = 0;
 	imgs: Array<string> = [ 'img0.svg', 'img1.svg' ];
@@ -16,12 +18,18 @@ export class CarouselComponent implements OnInit {
 		{ title: 'Etkinliklerinizi Taçlandırır', sub: 'KingKong’la Tanışın' },
 		{ title: 'Benzersiz Bir Dünya', sub: 'Sanal Etkinliklerde' }
 	];
-	constructor(private modals: NgbModal) {
-  }
+	// cookie = [
+	//   {title: 'KingKong KVKK ve ÇEREZLER', icon:'', content: 'İnternet sitemizde sizlere daha iyi bir hizmet sunabilmek için çerez kullanıyoruz. Konu ile ilgili daha detaylı bilgi almak için Çerez Bilgilendirme Metnini ve internet sitemiz kapsamındaki kişisel veri işleme faaliyetlerimize ilişkin bilgi almak için İnternet Sitesi KVK Bilgilendirme Metnini ziyaret edebilirsiniz.'}
+	// ];
 
-	ngOnInit(): void {
-		// this.loop
+	constructor(private modals: NgbModal) {
+
 	}
+	ngOnInit(): void {
+	}
+	ngAfterViewInit() {
+		this.openCookies()
+	  }
 
 	openVideo(video: any) {
 		this.modals.open(video, {
@@ -30,7 +38,11 @@ export class CarouselComponent implements OnInit {
 			windowClass: 'dark-modal',
 			backdropClass: 'dark-backdrop',
 		});
-		}
+	}
+
+	openCookies() {
+		this.modals.open(this.cookie, { windowClass: 'cookie-modal', backdropClass: 'dark-backdrop'});
+	}
 
 	selectImg(index: number) {
 		TweenMax.to(`.carousel-img-${this.activeImg}`, 0.5, {

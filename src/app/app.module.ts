@@ -16,6 +16,7 @@ import { GalleryComponent } from './shared/gallery/gallery.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { ComingSoonComponent } from './shared/coming-soon/coming-soon.component';
+import { CookiesComponent } from './shared/cookies/cookies.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ComingSoonComponent } from './shared/coming-soon/coming-soon.component'
     SliderComponent,
     HowitworksComponent,
     GalleryComponent,
-    ComingSoonComponent
+    ComingSoonComponent,
+    CookiesComponent,
   ],
   imports: [
     BrowserModule,

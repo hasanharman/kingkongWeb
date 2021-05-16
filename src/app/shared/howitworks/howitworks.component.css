@@ -83,26 +83,35 @@
 	background: url('../../../assets/how/umbrella.png') no-repeat;
 	background-size: contain;
 }
-.card-container2:hover > .icon-container3  {
-
+.card-container2:hover > .icon-container3 {
 	background: url('../../../assets/how/teknik-red.svg') no-repeat;
 	background-size: contain;
 }
 
+.card-container2:hover > .text-card-head{
+	color: var(--main-red);
+}
+.card-container2:hover > .text-card {
+	color: var(--main-red);
+}
+
+
 .text-card-head {
-	font-family: Playfair Display;
+	font-family: "Playfair Display";
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 400;
 	font-size: 30px;
+	line-height: 40px;
 	color: var(--main-black);
 }
 
 .text-card {
-	font-family: Gilroy;
+	font-family: "Gilroy-Light";
 	font-style: normal;
 	font-weight: normal;
 	text-align: center;
 	font-size: 16px;
+	line-height: 150%;
 	color: var(--main-grey);
 }
 

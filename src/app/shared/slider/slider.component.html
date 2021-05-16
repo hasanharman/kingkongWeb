@@ -29,7 +29,7 @@
     <h1 class="text-2">KingKong Dünyasında <br> Neler Yapabilirsiniz?</h1>
   </div>
   <div id="slider-cover">
-    <div class="card-cont" [ngClass]="'card-cont-'+i" *ngFor="let item of imgs1; let i = index" >
+    <div class="card-cont" id="deneme" [ngClass]="'card-cont-'+i" *ngFor="let item of imgs1; let i = index" >
       <img [src]="'../../../assets/cards/'+item.img" alt="" class="card-image" />
       <div class="card-content">
         <img [src]="'../../../assets/cards/'+item.icon" alt="" class="card-icon" />
@@ -49,9 +49,7 @@
         <div class="card-content">
           <img [src]="'../../../assets/cards/'+item.icon" alt="" class="card-icon" />
           <h3 class="card-text"> {{item.title}} </h3>
-          <div class="hover2">
-            <p class="card-sub">{{item.sub}} </p>
-          </div>
+            <p class="card-sub hover2">{{item.sub}} </p>
           <!-- <p class="card-detail">Detaylı Bilgi</p> -->
         </div>
       </div>

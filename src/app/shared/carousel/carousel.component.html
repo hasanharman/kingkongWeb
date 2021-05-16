@@ -1,22 +1,18 @@
-<div>
-  <!-- <video autoplay loop muted oncanplay="this.muted=true" class="video-bg" src="../../../assets/background_video.mp4" type="video/mp4"></video> -->
-  <!-- <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" id="videoId">
+<!-- <div>
+  <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" id="videoId">
     <source src="../../../assets/background_video.mp4" type="video/mp4" />
-  </video> -->
-
-</div>
-<div class="collapser">
-
+  </video>
+</div> -->
+<div class="collapser" >
   <video class="target"loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true"> 
     <source src="../../../assets/background_video.mp4" type="video/mp4" />
   </video>
-
   <div class="carousel-back">
     <app-header></app-header>
     <!-- <img alt="" class="carousel-back-img" *ngFor="let img of imgs; let i = index"
       [src]="'../../../assets/carousel/' + img" [ngClass]="'carousel-img-' + i" /> -->
   </div>
-  <div class="carousel-content">
+  <div class="carousel-content" >
     <div></div>
     <div class="carousel-info">
       <div class="carousel-text">
@@ -24,8 +20,8 @@
         <h1 class="carousel-sub">Etkinliklerinizi<br>
           Taçlandırın!</h1>
         <h6 class="carousel-hint">
-          KingKong <b>sanal konferans platformu</b> <br>
-          benzerlerine göre benzersiz olanaklar sunar!
+          KingKong <b class="gil-bold">sanal konferans platformu</b> <br>
+          benzerlerine göre <b class="gil-bold">benzersiz</b> olanaklar sunar!
         </h6>
         <div class="carousel-viewmore" (click)="openVideo(video)">
           <div>İzle</div>
@@ -55,6 +51,7 @@
 </div>
 
 
+
 <ng-template #video let-modal>
   <div class="header-modal">
     <div></div>
@@ -74,4 +71,20 @@
         type="video/mp4" />
     </video>
   </div>
+</ng-template>
+
+
+<ng-template #cookie let-modal>
+  <div class="header">
+    <h1 class="cheader">KingKong KVKK ve ÇEREZLER</h1>
+    <img src="../../../assets/modal-close.svg" alt="" (click)="modal.close('Cross click')" style="cursor: pointer;">
+</div>
+<div class="content">
+    <p class="ctext">İnternet sitemizde sizlere daha iyi bir hizmet sunabilmek için çerez kullanıyoruz. Konu ile ilgili daha
+        detaylı bilgi almak için Çerez Bilgilendirme Metni'ni
+        ve internet sitemiz kapsamındaki kişisel veri işleme faaliyetlerimize ilişkin bilgi almak için İnternet
+        Sitesi KVK Bilgilendirme Metni'ni ziyaret edebilirsiniz.</p>
+
+    <button class="accept-cookies" (click)="modal.close('Cross click')" style="cursor: pointer;">Kabul</button>
+</div>
 </ng-template>

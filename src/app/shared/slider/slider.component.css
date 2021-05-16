@@ -4,27 +4,30 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items:center
+	align-items: center;
 }
 
 .text-container {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	margin: 200px 0 50px 0;
 }
 
 .text-1 {
-	font-family: Playfair Display;
+	font-family: "Playfair Display";
 	font-weight: 400;
 	font-size: 30px;
+	line-height: 40px;
 	margin: 40px 0 0 0;
 	color: var(--main-red);
 }
 
 .text-2 {
-	font-family: Playfair Display;
+	font-family: "Playfair Display";
 	font-weight: 400;
 	font-size: 62px;
+	line-height: 129%;
 	margin: 10px 0 30px 0;
 	color: white;
 }
@@ -63,13 +66,14 @@
 	color: #fff;
 	z-index: 0;
 	width: 250px;
-	padding-bottom: 20px!important;
+	padding: 200px 0 20px 0;
 }
 .card-icon {
-	width: 57px;
+	width: 40px;
+	height: auto;
 }
 .card-text {
-	font-family: Playfair Display;
+	font-family: "Playfair Display";
 	font-style: normal;
 	font-weight: normal;
 	font-size: 28px;
@@ -77,34 +81,32 @@
 	margin: 15px 0 0 0;
 }
 .card-sub {
-	font-family: Gilroy;
+	font-family: "Gilroy-Light";
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
+	line-height: 137%;
 	margin: 15px 0 0 0;
 	display: none;
 }
 .hover2 {
 	visibility: hidden;
 }
-div:hover > .hover2 {
+:hover > .hover2 {
 	display: block;
 	visibility: visible;
 }
 .card-cont:hover > .card-image {
-	filter: invert(10%) sepia(100%) hue-rotate(3550deg) saturate(500%);
+	filter: invert(25%) sepia(100%) hue-rotate(3550deg) saturate(800%);
 }
 
-.specs {
-	margin-left: 45%;
-}
 .modal-body {
 	color: #f0f0f0;
 	font-size: 16px;
 	font-weight: 200;
-  }
+}
 .viewmore {
-	margin: 30px 0 30px 0;
+	margin: 50px 0 150px 0;
 	padding: 10px;
 	display: flex;
 	flex-direction: row;
@@ -125,11 +127,11 @@ div:hover > .hover2 {
 	margin: 5px;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
 	.text-container {
 		margin-left: 5%;
 	}
 	.card-cont {
 		margin-left: 5%;
 	}
-}
+} */
