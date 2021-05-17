@@ -41,7 +41,27 @@ export class CarouselComponent implements OnInit {
 	}
 
 	openCookies() {
-		this.modals.open(this.cookie, { windowClass: 'cookie-modal', backdropClass: 'dark-backdrop'});
+		this.modals.open(this.cookie, { windowClass: 'cookie-modal', backdropClass: 'dark-backdrop', animation: false});
+	}
+
+	openLegal(legal: any) {
+		this.modals.open(legal, {
+			scrollable: true,
+			centered: true,
+			size: 'xl',
+			windowClass: 'light-modal',
+			backdropClass: 'dark-backdrop'
+		});
+	}
+
+	openPrivacy(privacy: any) {
+		this.modals.open(privacy, {
+			scrollable: true,
+			centered: true,
+			size: 'xl',
+			windowClass: 'light-modal',
+			backdropClass: 'dark-backdrop'
+		});
 	}
 
 	selectImg(index: number) {

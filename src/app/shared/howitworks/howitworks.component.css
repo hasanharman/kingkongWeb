@@ -116,20 +116,30 @@
 }
 
 .carousel-viewmore {
-	margin-top: 420px;
-	padding: 10px;
-	position: absolute;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	width: 120px;
 	cursor: pointer;
+	width: 120px;
 	border-radius: 50px;
+	padding: 10px;
 	background-color: var(--main-red);
 	color: white;
 	font-family: "Poppins";
-	font-style: normal;
-	font-weight: normal;
+	font-size: 14px;
+}
+
+.contact-us {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	cursor: pointer;
+	width: 120px;
+	border-radius: 50px;
+	padding: 10px;
+	background-color: var(--main-red);
+	color: white;
+	font-family: "Poppins";
 	font-size: 14px;
 }
 

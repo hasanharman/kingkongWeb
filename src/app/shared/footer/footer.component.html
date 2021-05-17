@@ -53,6 +53,8 @@
             alt="" class="social-img"></a>
         <a href="https://www.facebook.com/kingkongistanbul" target="_blank"><img src="../../../assets/footer/yt.svg"
             alt="" class="social-img"></a>
+            <a href="https://www.facebook.com/kingkongistanbul" target="_blank"><img src="../../../assets/footer/in.png"
+              alt="" class="social-img"></a>
       </div>
       <!-- <a href="" target="_blank"><img src="../../../assets/footer/yt.svg" alt="" class="social-img"></a> -->
     </div>
@@ -67,8 +69,8 @@
           <h1 class="menu-footer-text" (click)="openContact(contact)">İletişim</h1>
         </div>
         <div class="footer-legal">
-          <h1 class="menu-footer-text" (click)="openPrivacy(privacy)">Gizlilik Politikası</h1>
-          <h1 class="menu-footer-text" (click)="openLegal(legal)">Yasal Uyarı</h1>
+          <h1 class="menu-footer-text" (click)="openLegal(legal)">Çerezler</h1>
+          <h1 class="menu-footer-text" (click)="openPrivacy(privacy)">KVKK Bilgilendirme</h1>
           <!-- <h1 class="menu-footer-text">İletişim</h1> -->
         </div>
       </div>
@@ -135,7 +137,7 @@
   <div class="modal-container">
     <div class="modal-content2">
       <h1 class="modal-head">Webinar</h1>
-      <div class="modal-body" style="height: 200px!important;">
+      <div class="modal-body" style="height: 200px!important;	margin: 10px 0 50px 0;">
         <p class="modal-txt">
           Sektör odaklı çözümlerimizle birlikte Profesyonel KingKong Prodüksiyon ekibi toplantılarınızda sizinle yakın
           çalışmaya ve ihtiyaçlarınızı sektör odaklı çözmeye daima hazır.
@@ -181,7 +183,7 @@
   <div class="modal-container">
     <div class="modal-content2">
       <h1 class="modal-head">Dewcon</h1>
-      <div class="modal-body" style="height: 200px!important;">
+      <div class="modal-body" style="height: 200px!important;	margin: 10px 0 50px 0;">
         <p class="modal-txt">
           Konuşmalar, paneller, stand alanları ve partilerden oluşan günlük veya birkaç günlük sanal dünyanızı yaratarak
           katılımcılarınıza eşsiz imkanlar sunabilirsiniz.
@@ -219,8 +221,8 @@
       </ul>
     </div>
     <div class="mapouter">
-      <button href="" class="close-button2" (click)="modal.close('Cross click')" aria-hidden="true" style="background-color: rgba(155, 155, 155, 0.25);"><img
-        src="../../../assets/modal-close.svg" alt=""></button>
+      <button href="" class="close-button2" (click)="modal.close('Cross click')" aria-hidden="true"
+        style="background-color: rgba(155, 155, 155, 0.25);"><img src="../../../assets/modal-close.svg" alt=""></button>
       <div class="gmap_canvas"><iframe width="550" height="520" id="gmap_canvas"
           src="https://maps.google.com/maps?q=B%C3%BCy%C3%BCkdere%20Cad.%20Ecza%20Sok.%20No:6%20Kat:1%2034394%20Levent%20%E2%80%93%20%C4%B0stanbul&t=&z=15&ie=UTF8&iwloc=&output=embed"
           frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -254,18 +256,11 @@
 <!-- Çerezler Modal -->
 <ng-template #legal let-modal>
   <div class="header-modal">
-    <div></div>
-    <h4 class="title-modal">KİNG KONG ÇEREZ BİLGİLENDİRME METNİ</h4>
-
+    <h4 class="modal-title ">KİNG KONG ÇEREZ BİLGİLENDİRME METNİ</h4>
     <button href="" class="close-button" (click)="modal.close('Cross click')" aria-hidden="true"><img
         src="../../../assets/modal-close.svg" alt=""></button>
-
-    <!-- <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button> -->
   </div>
-  <div class="modal-body">
-
+  <div class="modal-body" style="font-family: Gilroy-Light;font-size: 22px;font-weight: 500;line-height: 1.45;color: #232228!important;background-color: #ffffff!important;margin:20px">
     <p>King Kong Kongre Eğitim ve Organizasyon Ticaret Ltd. Şti. (“Şirketimiz” veya “King Kong”) olarak,
       “https://www.kingkongistanbul.com” (“Sitemiz”) adresini ziyaret ettiğiniz takdirde siz ziyaretçilerimize ait
       kişisel verilerin 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) ve ikincil düzenlemelerine uygun olarak
@@ -285,7 +280,6 @@
       gibi durumlarda her bir alan adı kendine münhasır üçüncü taraf çerezler yaratmaktadır.</p>
     <p>Sitemiz’de kullandığımız çerez türleri ile bu çerezleri kullanım amaçlarımız aşağıdaki gibidir:</p>
 
-
     <style type="text/css">
       .tg {
         border-collapse: collapse;
@@ -296,7 +290,7 @@
         border-color: black;
         border-style: solid;
         border-width: 1px;
-        font-family: Arial, sans-serif;
+        font-family: "Gilroy-Light";
         font-size: 14px;
         overflow: hidden;
         padding: 10px 5px;
@@ -307,7 +301,7 @@
         border-color: black;
         border-style: solid;
         border-width: 1px;
-        font-family: Arial, sans-serif;
+        font-family: "Gilroy-Light";
         font-size: 14px;
         font-weight: normal;
         overflow: hidden;
@@ -316,15 +310,15 @@
       }
 
       .tg .tg-65cc {
-        border-color: #efefef;
-        color: #efefef;
+        border-color: #232228;
+        color: #232228;
         text-align: center;
         vertical-align: top
       }
 
       .tg .tg-8r46 {
-        border-color: #efefef;
-        color: #efefef;
+        border-color: #232228;
+        color: #232228;
         font-size: 16px;
         text-align: center;
         vertical-align: top
@@ -425,7 +419,7 @@
         border-color: black;
         border-style: solid;
         border-width: 1px;
-        font-family: Arial, sans-serif;
+        font-family: "Gilroy-Light";
         font-size: 14px;
         overflow: hidden;
         padding: 10px 5px;
@@ -436,7 +430,7 @@
         border-color: black;
         border-style: solid;
         border-width: 1px;
-        font-family: Arial, sans-serif;
+        font-family: "Gilroy-Light";
         font-size: 14px;
         font-weight: normal;
         overflow: hidden;
@@ -445,16 +439,16 @@
       }
 
       .tg .tg-i5ln {
-        border-color: inherit;
-        color: #efefef;
+        border-color: #232228;
+        color: #232228;
         font-size: 16px;
         text-align: center;
         vertical-align: top
       }
 
       .tg .tg-3955 {
-        border-color: inherit;
-        color: #efefef;
+        border-color: #232228;
+        color: #232228;
         text-align: center;
         vertical-align: top
       }
@@ -467,9 +461,9 @@
       </colgroup>
       <thead>
         <tr>
-          <th class="tg-i5ln">[.]</th>
-          <th class="tg-i5ln">[.]</th>
-          <th class="tg-3955">[.]</th>
+          <th class="tg-i5ln">[Hakkı Pehlivan]</th>
+          <th class="tg-i5ln">[[Büyükdere Cad. Ecza Sok. No:6 Kat:1 34394 Levent – İstanbul]]</th>
+          <th class="tg-3955">[+90 0212 2824700 , info@kingkongistanbul.com]</th>
         </tr>
       </thead>
     </table>
@@ -484,8 +478,8 @@
 
 
   </div>
-  <div class="footer-modal">
-    <button type="button" class="send-button" (click)="modal.close('Cross click')">Onayla</button>
+  <div class="footer-modal" style="background-color: white;color: #232228;">
+    <button type="button" class="accept-button" (click)="modal.close('Cross click')">OKUDUM ve KABUL EDİYORUM</button>
   </div>
 </ng-template>
 
@@ -493,25 +487,17 @@
 <!-- Gizlilik Modal -->
 <ng-template #privacy let-modal>
   <div class="header-modal">
-    <div></div>
-    <h4 class="title-modal">KİNG KONG İNTERNET SİTESİ<br>KVK BİLGİLENDİRME METNİ</h4>
+    <h4 class="modal-title ">KİNG KONG İNTERNET SİTESİ KVK BİLGİLENDİRME METNİ</h4>
     <button href="" class="close-button" (click)="modal.close('Cross click')" aria-hidden="true"><img
         src="../../../assets/modal-close.svg" alt=""></button>
   </div>
-  <div class="modal-body">
-    <p> King Kong Kongre Eğitim ve Organizasyon Ticaret Ltd. Şti. (“Şirketimiz” veya “King Kong”) olarak, resmi internet
-      sitemiz olan “https://www.kingkongistanbul.com” (“Sitemiz”) adresini ziyaret ettiğiniz takdirde siz
-      ziyaretçilerimize ait kişisel verilerin 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) ve ikincil
-      düzenlemelerine uygun olarak işlenmesi ve korunması için azami hassasiyeti göstermekteyiz. </p>
+  <div class="modal-body" style="font-family: Gilroy-Light;font-size: 22px;font-weight: 500;line-height: 1.45;color: #232228!important;background-color: #ffffff!important;margin:20px">
+    <p>King Kong Kongre Eğitim ve Organizasyon Ticaret Ltd. Şti. (“Şirketimiz” veya “King Kong”) olarak, resmi internet sitemiz olan “https://www.kingkongistanbul.com” (“Sitemiz”) adresini ziyaret ettiğiniz takdirde siz ziyaretçilerimize ait kişisel verilerin 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) ve ikincil düzenlemelerine uygun olarak işlenmesi ve korunması için azami hassasiyeti göstermekteyiz.  </p>
     <p>
-      Şirketimiz’in KVKK’dan doğan aydınlatma yükümlülüğü kapsamında siz internet sitesi ziyaretçilerimizi işbu King
-      Kong İnternet Sitesi KVK Bilgilendirme Metni (“Bilgilendirme Metni”) aracılığıyla bilgilendirmek isteriz.
+      Şirketimiz’in KVKK’dan doğan aydınlatma yükümlülüğü kapsamında siz internet sitesi ziyaretçilerimizi işbu King Kong İnternet Sitesi KVK Bilgilendirme Metni (“Bilgilendirme Metni”) aracılığıyla bilgilendirmek isteriz.
     </p>
     <p><b>Kişisel verilerinizi hangi amaçlarla ve hangi yollarla elde ediyor ve işliyoruz?</b></p>
-    <p>Şirketimiz tarafından, “https://www.kingkongistanbul.com” adresini ziyaret etmenizle birlikte başta trafik
-      verileriniz olmak üzere aşağıda belirtilen kişisel verileriniz, beraberinde açıklanan amaçlarla bağlantılı,
-      sınırlı ve ölçülü bir şekilde elektronik ve fiziki ortamlarda yazılı olarak, otomatik ve otomatik olmayan
-      yöntemlerle KVKK’ya uygun olarak Şirketimiz tarafından işlenmektedir. </p>
+    <p>Şirketimiz tarafından, “https://www.kingkongistanbul.com” adresini ziyaret etmenizle birlikte başta trafik verileriniz olmak üzere aşağıda belirtilen kişisel verileriniz, beraberinde açıklanan amaçlarla bağlantılı, sınırlı ve ölçülü bir şekilde elektronik ve fiziki ortamlarda yazılı olarak, otomatik ve otomatik olmayan yöntemlerle KVKK’ya uygun olarak Şirketimiz tarafından işlenmektedir.  </p>
 
     <style type="text/css">
       .tg {
@@ -523,7 +509,7 @@
         border-color: black;
         border-style: solid;
         border-width: 1px;
-        font-family: Arial, sans-serif;
+        font-family: "Gilroy-Light";
         font-size: 14px;
         overflow: hidden;
         padding: 10px 5px;
@@ -534,7 +520,7 @@
         border-color: black;
         border-style: solid;
         border-width: 1px;
-        font-family: Arial, sans-serif;
+        font-family: "Gilroy-Light";
         font-size: 14px;
         font-weight: normal;
         overflow: hidden;
@@ -544,7 +530,7 @@
 
       .tg .tg-ugqb {
         border-color: inherit;
-        color: #efefef;
+        color: #232228;
         font-size: 16px;
         text-align: left;
         vertical-align: top
@@ -552,7 +538,7 @@
 
       .tg .tg-ywlh {
         border-color: inherit;
-        color: #efefef;
+        color: #232228;
         text-align: left;
         vertical-align: top
       }
@@ -562,14 +548,14 @@
         <tr>
           <th class="tg-ugqb"><span style="font-weight:bold">Kişisel Veriniz</span></th>
           <th class="tg-ugqb"><span style="font-weight:bold">Şirketimize Ulaştığı Ortam</span></th>
-          <th class="tg-ywlh"><span style="font-weight:bold">İşleme Amacımız / Amaçlarımız</span></th>
+          <th class="tg-ywlh"><span style="font-weight:bold">İşleme Amacımız/Amaçlarımız</span></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td class="tg-ywlh">Adınız, soyadınız, telefon numaranız <br>ve şahıs şirketi olmanız halinde şirket adınız
           </td>
-          <td class="tg-ywlh">[.]</td>
+          <td class="tg-ywlh">[https://www.kingkongistanbul.com]</td>
           <td class="tg-ywlh">Ürün ve hizmetlerimize ilişkin talep, şikâyet, soru ve önerilerinize cevap verebilmek
             <br>ve ürün ve hizmetlerimize ilişkin olarak entegrasyon süreçlerini yürütmek.
           </td>
@@ -577,7 +563,7 @@
         <tr>
           <td class="tg-ywlh">Adınız, soyadınız, e-posta adresiniz <br>ve e-posta içeriğinde paylaşılan kişisel
             bilgileriniz</td>
-          <td class="tg-ywlh">[.]</td>
+          <td class="tg-ywlh">[https://www.kingkongistanbul.com]</td>
           <td class="tg-ywlh">Ürün ve hizmetlerimize ilişkin talep, şikâyet, soru ve önerilerinize cevap verebilmek
             <br>ve ürün ve hizmetlerimize ilişkin olarak entegrasyon süreçlerini yürütmek.
           </td>
@@ -632,7 +618,7 @@
       sahip olduğunuzu bildiririz.
       İşbu Bilgilendirme Metni hakkında sorunuz olması halinde lütfen KVK Yetkilisi ile irtibata geçiniz.
     </p>
-
+    <p><b>KVK Yetkilisi:</b></p>
     <style type="text/css">
       .tg {
         border-collapse: collapse;
@@ -643,7 +629,7 @@
         border-color: black;
         border-style: solid;
         border-width: 1px;
-        font-family: Arial, sans-serif;
+        font-family: "Gilroy-Light";
         font-size: 14px;
         overflow: hidden;
         padding: 10px 5px;
@@ -654,7 +640,7 @@
         border-color: black;
         border-style: solid;
         border-width: 1px;
-        font-family: Arial, sans-serif;
+        font-family: "Gilroy-Light";
         font-size: 14px;
         font-weight: normal;
         overflow: hidden;
@@ -664,7 +650,7 @@
 
       .tg .tg-i5ln {
         border-color: inherit;
-        color: #efefef;
+        color: #232228;
         font-size: 16px;
         text-align: center;
         vertical-align: top
@@ -672,7 +658,7 @@
 
       .tg .tg-3955 {
         border-color: inherit;
-        color: #efefef;
+        color: #232228;
         text-align: center;
         vertical-align: top
       }
@@ -685,9 +671,9 @@
       </colgroup>
       <thead>
         <tr>
-          <th class="tg-i5ln">[.]</th>
-          <th class="tg-i5ln">[.]</th>
-          <th class="tg-3955">[.]</th>
+          <th class="tg-i5ln">[Hakkı Pehlivan]</th>
+          <th class="tg-i5ln">[[Büyükdere Cad. Ecza Sok. No:6 Kat:1 34394 Levent – İstanbul]]</th>
+          <th class="tg-3955">[+90 0212 2824700 , info@kingkongistanbul.com]</th>
         </tr>
       </thead>
     </table>
@@ -696,7 +682,7 @@
       Gerçekleşebilecek güncellemeler için sitemizi ziyaret etmenizi rica ederiz.</p>
     <p><b>King Kong Kongre Eğitim ve Organizasyon Ticaret Ltd. Şti.</b></p>
   </div>
-  <div class="footer-modal">
-    <button type="button" class="send-button" (click)="modal.close('Cross click')">Onayla</button>
+  <div class="footer-modal" style="background-color: white;color: #232228;">
+    <button type="button" class="accept-button" (click)="modal.close('Cross click')">OKUDUM ve KABUL EDİYORUM</button>
   </div>
 </ng-template>

@@ -140,27 +140,59 @@ label {
 }
 
 .copyright {
-	font-family: Gilroy;
+	font-family: "Gilroy";
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	color: #52596b;
 }
-
-.title-modal {
-	font-size: 30px;
-	background: -webkit-linear-gradient(#fa2b56, #f91c3d);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.header-modal {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #222127;
+}
+.modal-title {
+	font-family: "PlayfairDisplay";
+ 	 font-size: 32px;
+ 	 font-weight: bold;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: normal;
+  	letter-spacing: normal;
+  	color: #ffffff;
 	text-align: center;
-	margin-top: 37px;
+	margin: 18px 0 0 23px;
 }
 .modal-body {
-	color: #f0f0f0;
-	font-size: 16px;
-	font-weight: 200;
-	padding: 0;
-	margin: 10px 0 50px 0;
+	font-family: "Gilroy-Light";
+	font-size: 22px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.45;
+	letter-spacing: normal;
+	background-color: #232228;
+	color: #ffffff;
+	padding: 20px;
+}
+.footer-modal {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.accept-button {
+  width: 418px;
+  height: 49px;
+  padding: 6px 52px 10px 53px;
+  border-radius: 29px;
+  border: none;
+  color: white;
+  background-color: #c2272d;
+  margin: 10px 0 33px 33px;
 }
 
 ul {

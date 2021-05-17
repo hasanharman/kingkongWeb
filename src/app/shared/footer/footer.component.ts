@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -69,8 +69,8 @@ export class FooterComponent implements OnInit {
 		this.modalService.open(legal, {
 			scrollable: true,
 			centered: true,
-			size: 'lg',
-			windowClass: 'dark-modal',
+			size: 'xl',
+			windowClass: 'light-modal',
 			backdropClass: 'dark-backdrop'
 		});
 	}
@@ -79,8 +79,8 @@ export class FooterComponent implements OnInit {
 		this.modalService.open(privacy, {
 			scrollable: true,
 			centered: true,
-			size: 'lg',
-			windowClass: 'dark-modal',
+			size: 'xl',
+			windowClass: 'light-modal',
 			backdropClass: 'dark-backdrop'
 		});
 	}
