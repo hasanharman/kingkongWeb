@@ -60,13 +60,14 @@
 	border-radius: 10px;
 }
 .icon-container1 {
-	width: 100px;
-	height: 100px;
-	background: url('../../../assets/how/Toplanti.svg') no-repeat;
+	width: 61px;
+	height: 63px;
+	background: url('../../../assets/how/Group.png') no-repeat;
 	background-size: contain;
+	margin-bottom: 20px;
 }
 .card-container2:hover > .icon-container1  {
-	background: url('../../../assets/how/toplantı-red.svg') no-repeat;
+	background: url('../../../assets/how/Group-red.png') no-repeat;
 }
 .icon-container2 {
 	width: 100px;
@@ -78,13 +79,14 @@
 	background: url('../../../assets/how/paket-red.svg') no-repeat;
 }
 .icon-container3 {
-	width: 100px;
-	height: 100px;
+	width: 65px;
+	height: 65px;
 	background: url('../../../assets/how/umbrella.png') no-repeat;
 	background-size: contain;
+	margin-bottom: 20px;
 }
 .card-container2:hover > .icon-container3 {
-	background: url('../../../assets/how/teknik-red.svg') no-repeat;
+	background: url('../../../assets/how/umbrella-red.png') no-repeat;
 	background-size: contain;
 }
 

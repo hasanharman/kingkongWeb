@@ -4,13 +4,18 @@
   </video>
 </div> -->
 <div class="collapser">
-  <video class="target" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
-    <source src="../../../assets/background_video.mp4" type="video/mp4" />
+  <video class="target videoTarget" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+    <source src="../../../assets/video/840x740[1].mp4" type="video/mp4" />
   </video>
   <div class="carousel-back">
     <app-header></app-header>
     <!-- <img alt="" class="carousel-back-img" *ngFor="let img of imgs; let i = index"
       [src]="'../../../assets/carousel/' + img" [ngClass]="'carousel-img-' + i" /> -->
+      <img src="../../../assets/dots/wh-vert.png" class="dott1" alt="">
+      <img src="../../../assets/dots/w-l.png" class="dott2" alt="">
+      <img src="../../../assets/dots/w-l.png" class="dott3" alt="">
+      <img src="../../../assets/dots/w-l.png" class="dott4" alt="">
+
   </div>
   <div class="carousel-content">
     <div></div>
@@ -65,7 +70,7 @@
     </button> -->
   </div>
   <div class="modal-body">
-    <video loop muted autoplay controls oncanplay="this.play()" controlsList="nodownload" id="videoId">
+    <video loop muted autoplay controls oncanplay="this.play()" controlsList="nodownload" id="videoId" class="video-pop">
       <source
         src="https://player.vimeo.com/external/546009659.hd.mp4?s=efca536f7216017ee06ade06aa61374aa0c8d495&profile_id=175"
         type="video/mp4" />

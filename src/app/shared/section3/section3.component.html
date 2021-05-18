@@ -25,22 +25,18 @@
   </div>
 
   <div class="img-container">
-    <div class="dot-red">
-      <img src="../../../assets/video/dots-1.svg" alt="">
-    </div>
-    <div class="dot-white">
-      <img src="../../../assets/video/dots.svg" alt="">
-    </div>
-    <div class="video1">
+    <img src="../../../assets/dots/red-d.png" class="dott6" alt="">
+    <div class="video-div">
       <div class="play" (click)="openVid2(vid2)" >
-        <img src="../../../assets/video/play.svg" alt="" class="play-button">
+        <img src="../../../assets/video/play.svg" alt="" class="play-button ping">
       </div>
-      <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="video1">
+      <img src="../../../assets/video/thumb1.webp" class="video1" alt="">
+      <!-- <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="video1">
         <source src="../../../assets/video/video-short.mp4" type="video/mp4" />
-      </video>
+      </video> -->
     </div>
     <div class="video-back">
-      <img src="../../../assets/video/video-back.webp" alt="" class="video2" >
+      <img src="../../../assets/video/thumb2.webp" alt="" class="video2" >
     </div>
   </div>
 </div>
@@ -60,7 +56,8 @@
   </div>
   <div class="modal-body">
     <video loop muted autoplay controls oncanplay="this.play()" controlsList="nodownload" class="video-pop">
-      <source src="https://player.vimeo.com/external/546007863.hd.mp4?s=e45ccf0c4b0a89930027e4cc87569d2abd9a5c6d&profile_id=175" type="video/mp4" />
+      <!-- <source src="https://player.vimeo.com/external/546007863.hd.mp4?s=e45ccf0c4b0a89930027e4cc87569d2abd9a5c6d&profile_id=175" type="video/mp4" /> -->
+      <source src="../../../assets/background_video.mp4" type="video/mp4" />
     </video>
   </div>
 </ng-template>

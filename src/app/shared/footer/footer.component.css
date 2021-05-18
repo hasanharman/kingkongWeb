@@ -5,16 +5,46 @@
 	justify-content: center;
 	align-items: center;
 }
-.center {
+/* .center {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: #222127;
+} */
+.center {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #222127;
+	text-align: center!important;
 }
+.bigcrown {
+	background: url('../../../assets/footer/bigcrown.svg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 800px;
+	padding: 20px;
+}
+.footer-text2 {
+	font-family: "Gilroy-Light";
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.575);
+	padding: 10px;
+}
+.footer-header {
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	padding: 20px;
+	color: var(--main-red);
+}
+
 .text-head {
-	font-family: Playfair Display;
+	font-family: "Playfair Display";
 	font-style: normal;
 	font-weight: normal;
 	font-size: 36px;

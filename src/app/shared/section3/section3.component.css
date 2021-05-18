@@ -1,118 +1,153 @@
 .main-container2 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 }
 .img-container {
-  display: flex;
+	display: flex;
+}
+
+.video-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  z-index: 3;
 }
 .video1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 595px;
-  height: 397px;
-  z-index: 3;
-  margin-top: 40px;
+	width: 575.6px;
+	height: 323.2px;
+	border-radius: 10px;
+  margin-bottom: 200px;
 }
 .video-back {
-  position: absolute;
-  z-index: 1;
-  margin-top: 350px;
-  right: 0;
+	position: absolute;
+	z-index: 1;
+	margin-top: 400px;
+	right: 0;
 }
 .video2 {
-  width: 650px;
-  height: 391px;
-  border-radius: 10px;
+	width: 640px;
+	height: 360.4px;
+	border-radius: 10px;
 }
 .play-button {
-  position: absolute;
-  margin-left: 230px;
-  z-index: 5;
-  cursor: pointer;
+	position: absolute;
+	margin-left: 222px;
+  margin-top: -150px;
+	z-index: 5;
+	cursor: pointer;
 }
-.dot-red {
-  position: absolute;
-  z-index: 12;
-  margin-top: 200px;
-  margin-left: 400px;
+.dott6 {
+	position: absolute;
+	margin-top: 25%;
+	margin-left: 15%;
+	z-index: 10;
 }
-.dot-white {
-  position: absolute;
-  z-index: 12;
-  margin-top: 400px;
-  right: 0;
-  margin-right: 100px;
+.ping:hover {
+	-webkit-animation: ping .8s ease-in-out infinite both;
+	animation: ping .8s ease-in-out infinite both;
 }
+@-webkit-keyframes ping {
+	0% {
+		-webkit-transform: scale(.2);
+		transform: scale(.2);
+		opacity: .8;
+	}
+	80% {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: scale(2.2);
+		transform: scale(2.2);
+		opacity: 0;
+	}
+}
+@keyframes ping {
+	0% {
+		-webkit-transform: scale(.2);
+		transform: scale(.2);
+		opacity: .8;
+	}
+	80% {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: scale(2.2);
+		transform: scale(2.2);
+		opacity: 0;
+	}
+}
+
 .modal-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 500px;
 }
 .video-pop {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  width: 40%;
-  margin: 0 0 4% 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 40%;
+	margin: 0 0 4% 10%;
 }
 .text-head {
-  font-family: "Playfair Display";
-  font-weight: 400;
-  font-size: 62px;
-  line-height: 129%;
-  color: var(--main-black);
-  margin-top: 70px;
+	font-family: "Playfair Display";
+	font-weight: 400;
+	font-size: 62px;
+	line-height: 129%;
+	color: var(--main-black);
+	margin-top: 70px;
 }
 .text-bold {
-  font-family: "Playfair Display";
-  font-weight: 900;
-  font-size: 50px;
-  color: var(--main-black);
-  margin: 20px 0 0 0;
+	font-family: "Playfair Display";
+	font-weight: 900;
+	font-size: 50px;
+	color: var(--main-black);
+	margin: 20px 0 0 0;
 }
 
 .text-2 {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 45px;
-  margin: 20px 0 0 0;
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 45px;
+	margin: 20px 0 0 0;
 }
 
 .text-3 {
-  font-family: "Gilroy-Light";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 29px;
-  color: var(--main-grey);
+	font-family: "Gilroy-Light";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 29px;
+	color: var(--main-grey);
 }
 .bullet {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: baseline;
-  margin: 20px 0 0 0;
-
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+	margin: 20px 0 0 0;
 }
 .list-bullet {
-    width: 30px;
-    margin-right: 10px;
+	width: 30px;
+	margin-right: 10px;
 }
