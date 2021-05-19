@@ -3,7 +3,7 @@
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	background: url('../../../assets/man-section2.png') no-repeat;
+	background: url('../../../assets/man-section2.svg') no-repeat;
 	background-size: contain;
 	width: 100%;
 	height: 90%;
