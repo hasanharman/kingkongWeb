@@ -60,14 +60,14 @@
 	border-radius: 10px;
 }
 .icon-container1 {
-	width: 61px;
-	height: 63px;
-	background: url('../../../assets/how/Group.png') no-repeat;
+	width: 65px;
+	height: 65px;
+	background: url('../../../assets/how/presentation1-gri.svg') no-repeat;
 	background-size: contain;
 	margin-bottom: 20px;
 }
 .card-container2:hover > .icon-container1  {
-	background: url('../../../assets/how/Group-red.png') no-repeat;
+	background: url('../../../assets/how/presentation1-kirmizi.svg') no-repeat;
 }
 .icon-container2 {
 	width: 100px;
@@ -81,12 +81,12 @@
 .icon-container3 {
 	width: 65px;
 	height: 65px;
-	background: url('../../../assets/how/umbrella.png') no-repeat;
+	background: url('../../../assets/how/umbrella-13-gri.svg') no-repeat;
 	background-size: contain;
 	margin-bottom: 20px;
 }
 .card-container2:hover > .icon-container3 {
-	background: url('../../../assets/how/umbrella-red.png') no-repeat;
+	background: url('../../../assets/how/umbrella-13-kirmizi.svg') no-repeat;
 	background-size: contain;
 }
 
@@ -171,6 +171,48 @@ div:hover > .only-show-on-hover3 {
 
 
 /* Modal CSS */
+
+.modal-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.modal-content2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 20px 0 0 50px;
+	width: 450px;
+}
+.modal-head {
+	font-family: Playfair Display;
+	font-weight: 400;
+	font-size: 62px;
+	line-height: 83px;
+	letter-spacing: 0.01em;
+	margin-top: 20px;
+	color: #fa2b56 !important;
+}
+.modal-txt {
+	font-family: Gilroy;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 136.7%;
+	letter-spacing: 0.01em;
+	margin-top: 6px;
+	color: white;
+}
+.close-button2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 18px;
+	margin-right: 23px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
 
 .header-modal {
 	display: flex;

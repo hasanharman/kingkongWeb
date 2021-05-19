@@ -36,7 +36,54 @@
   </div>
   <div class="contact-us" >
     <!-- <div class="contact-us"  (click)="scrollFooter()" > -->
-    <div><a href="mailto:kingkongistanbul@gmail.com" style="text-decoration: none;color: white;" target="_blank">Bize Ulaşın</a></div>
+    <!-- <div><a href="mailto:kingkongistanbul@gmail.com" style="text-decoration: none;color: white;" target="_blank">Bize Ulaşın</a></div> -->
+    <div (click)="openContact(contact)">Bize Ulaşın</div>
     <div>></div>
   </div>
 </div>
+
+<!-- İletişim -->
+<ng-template #contact let-modal>
+  <div class="modal-container">
+    <div class="modal-content2">
+      <h1 class="modal-head">İletişim</h1>
+      <ul class="modal-txt" style="list-style: none;padding: 0;">
+        <li style="margin-top: 10px;"><img src="../../../assets/footer/pin-3 1.svg" style="margin-right: 20px;"
+            alt="">Büyükdere Cad. Ecza Sok. No:6 Kat:1 34394 Levent – İstanbul</li>
+        <!-- <li style="margin-top: 10px;"><img src="../../../assets/footer/phone 1.svg" style="margin-right: 20px;"
+            alt="">0555 555 55 55</li> -->
+        <li style="margin-top: 10px;"><img src="../../../assets/footer/letter 1.svg" style="margin-right: 20px;"
+            alt="">info@kingkongistanbul.com</li>
+      </ul>
+    </div>
+    <div class="mapouter">
+      <button href="" class="close-button2" (click)="modal.close('Cross click')" aria-hidden="true"
+        style="background-color: rgba(155, 155, 155, 0.25);"><img src="../../../assets/modal-close.svg" alt=""></button>
+      <div class="gmap_canvas"><iframe width="550" height="520" id="gmap_canvas"
+          src="https://maps.google.com/maps?q=B%C3%BCy%C3%BCkdere%20Cad.%20Ecza%20Sok.%20No:6%20Kat:1%2034394%20Levent%20%E2%80%93%20%C4%B0stanbul&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <style>
+          .mapouter {
+            position: relative;
+            text-align: right;
+            height: 520px;
+            width: 550px;
+          }
+        </style>
+        <style>
+          .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 520px;
+            width: 550px;
+          }
+        </style>
+      </div>
+    </div>
+
+    <!-- <div class="modal-img-contact">
+      <button href="" class="close-button2" (click)="modal.close('Cross click')" aria-hidden="true"><img
+          src="../../../assets/modal-close.svg" alt=""></button>
+    </div> -->
+  </div>
+</ng-template>

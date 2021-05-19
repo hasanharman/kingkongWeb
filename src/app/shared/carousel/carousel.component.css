@@ -9,18 +9,35 @@
 	background-color: black;
 }
 .target {
-	mask: url("../../../assets/carousel/Mask.svg");
-	-webkit-mask: url("../../../assets/carousel/Mask.svg");
+	mask: url("../../../assets/carousel/Mask2.png");
+	-webkit-mask: url("../../../assets/carousel/Mask2.png");
+	-webkit-mask-size: 100% 100%;
+	mask-size: 100% 100%;
 	mask-position: top right;
 	mask-repeat: no-repeat;
 }
 .videoTarget {
-	width: 1000px;
-	height: auto;
+	width: 840px;
+	height: 740px;
 	position: absolute;
 	top: 0;
 	right: 0;
 	object-fit: contain;
+}
+.new-modal-body {
+	font-family: "Gilroy-Light";
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.45;
+	color: #232228;
+	background-color:#ffffff;
+	margin: 20px;
+	padding: 20px;
+	overflow: auto;
+}
+p > b {
+	font-family: Gilroy-Bold;
+	font-weight: bold;
 }
 
 /* .modal {
@@ -77,6 +94,7 @@
 	width: 100%;
 	height: 100%;
 	z-index: 2;
+	margin-top: 5%;
 	margin-left: 15%;
 }
 
@@ -367,20 +385,20 @@
 }
 .dott2 {
 	position: absolute;
-  right: 0;
+	right: 0;
 	margin-left: 30%;
 }
 .dott3 {
 	position: absolute;
-  right: 0;
+	right: 0;
 	margin-right: 20%;
-  margin-top: 10%;
+	margin-top: 10%;
 }
 .dott4 {
 	position: absolute;
-  right: 0;
-  margin-right: 5%;
-  margin-top: 40%;
+	right: 0;
+	margin-right: 5%;
+	margin-top: 40%;
 }
 
 @keyframes example {
@@ -391,9 +409,6 @@
 		transform: scale(1);
 	}
 }
-
-
-
 
 /* Phone Screen */
 @media only screen and (max-width: 450px) {

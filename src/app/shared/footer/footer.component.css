@@ -232,6 +232,10 @@ ul {
 } */
 
 /* Yeni Modal Css */
+p > b {
+	font-family: Gilroy-Bold;
+	font-weight: bold;
+}
 
 .modal-container {
 	display: flex;

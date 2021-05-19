@@ -56,6 +56,16 @@ export class HowitworksComponent implements OnInit {
 		this.sended = false;
 	}
 
+	openContact(contact: any) {
+		this.modalService.open(contact, {
+			centered: true,
+			scrollable: true,
+			size: 'xl',
+			windowClass: 'dark-modal',
+			backdropClass: 'dark-backdrop'
+		});
+	}
+
 	sendButton() {
 		this.sended = true;
 	}
