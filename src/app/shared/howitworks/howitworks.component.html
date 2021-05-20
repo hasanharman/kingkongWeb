@@ -6,7 +6,7 @@
       <h1 class="text-head1">&nbsp;Nasıl&nbsp;Çalışır?</h1>
     </div>
   </div>
-  <div class="contents">
+  <div class="contents" *ngIf="!mobile">
     <div class="card-container2">
       <div class="icon-container1"></div>
       <h1 class="text-card-head">Toplantı</h1>
@@ -34,6 +34,46 @@
       </p>
     </div>
   </div>
+
+  <div class="contents" *ngIf="mobile">
+    <ngb-carousel >
+      <ng-template ngbSlide>
+        <div class="card-container2">
+          <div class="icon-container1"></div>
+          <h1 class="text-card-head">Toplantı</h1>
+          <p class="text-card">
+            Etkinliğinizin detaylarını ve gereksinimlerini öğrenmek için sizinle bir
+            toplantı organize eder.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="card-container2">
+          <!-- <img src="../../../assets/how/PaketButce.svg" alt="" /> -->
+          <div class="icon-container2"></div>
+          <h1 class="text-card-head">Bütçe</h1>
+          <p class="text-card">
+            Bu detaylar ve ihtiyaçlar doğrultusunda size özel bir paket ve bütçe
+            hazırlar.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="card-container2">
+          <!-- <img src="../../../assets/how/umbrella.svg" alt="" /> -->
+          <div class="icon-container3"></div>
+          <h1 class="text-card-head">Teknik Destek</h1>
+          <p class="text-card">
+            Etkinliğinizi tüm yönleriyle başarıya ulaşmasını sağlayacak teknik ve
+            lojistik unsurları yönetir.
+          </p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+
+
+
   <div class="contact-us" >
     <!-- <div class="contact-us"  (click)="scrollFooter()" > -->
     <!-- <div><a href="mailto:kingkongistanbul@gmail.com" style="text-decoration: none;color: white;" target="_blank">Bize Ulaşın</a></div> -->
@@ -41,6 +81,12 @@
     <div>></div>
   </div>
 </div>
+
+
+
+
+
+
 
 <!-- İletişim -->
 <ng-template #contact let-modal>

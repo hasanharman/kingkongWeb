@@ -14,15 +14,46 @@ export class GalleryComponent implements OnInit {
 	isActive: boolean = true;
 	mobile: boolean | undefined;
 
-	slides = [
-		{ image: 'https://placekitten.com/200/300' },
-		{ image: 'https://placekitten.com/200/300' },
-		{ image: 'https://placekitten.com/200/300' },
-		{ image: 'https://placekitten.com/200/300' },
-		{ image: 'https://placekitten.com/200/300' },
-		{ image: 'https://placekitten.com/200/300' },
-
+	anagiris = [
+		{ image: '../../../assets/gallery/ag1.webp' },
+		{ image: '../../../assets/gallery/ag2.webp' },
+		{ image: '../../../assets/gallery/ag3.webp' },
+		{ image: '../../../assets/gallery/ag4.webp' },
+		{ image: '../../../assets/gallery/ag5.webp' },
+		{ image: '../../../assets/gallery/ag6.webp' },
+		{ image: '../../../assets/gallery/ag7.webp' },
 	];
+
+	networking = [
+		{ image: '../../../assets/gallery/na1.webp' },
+		{ image: '../../../assets/gallery/na2.webp' },
+		{ image: '../../../assets/gallery/na3.webp' },
+		{ image: '../../../assets/gallery/na4.webp' },
+		{ image: '../../../assets/gallery/na5.webp' },
+		{ image: '../../../assets/gallery/na6.webp' },
+		{ image: '../../../assets/gallery/na7.webp' },
+	];
+
+	stand = [
+		{ image: '../../../assets/gallery/sa1.webp' },
+		{ image: '../../../assets/gallery/sa2.webp' },
+		{ image: '../../../assets/gallery/sa3.webp' },
+		{ image: '../../../assets/gallery/sa4.webp' },
+		{ image: '../../../assets/gallery/sa5.webp' },
+		{ image: '../../../assets/gallery/sa6.webp' },
+		{ image: '../../../assets/gallery/sa7.webp' },
+	];
+
+	toplanti = [
+		{ image: '../../../assets/gallery/ts1.webp' },
+		{ image: '../../../assets/gallery/ts2.webp' },
+		{ image: '../../../assets/gallery/ts3.webp' },
+		{ image: '../../../assets/gallery/ts4.webp' },
+		{ image: '../../../assets/gallery/ts5.webp' },
+		{ image: '../../../assets/gallery/ts6.webp' },
+		{ image: '../../../assets/gallery/ts7.webp' },
+	];
+
 
 	constructor() {}
 

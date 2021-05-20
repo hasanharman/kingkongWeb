@@ -41,6 +41,12 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class HowitworksComponent implements OnInit {
 	closeResult: string | undefined;
 	sended?: boolean | false;
+	mobile: boolean | undefined;
+
+	cards = [
+		{ icon: '../../../assets/gallery/ag1.webp' },
+	];
+
 	constructor(private modalService: NgbModal) {}
 
 	openModal(content: any) {
@@ -70,5 +76,10 @@ export class HowitworksComponent implements OnInit {
 	scrollFooter() {
 		window.scrollBy({ behavior: 'smooth', top: 1500 });
 	}
-	ngOnInit(): void {}
+	ngOnInit(): void {
+		if (window.screen.width <= 450) {
+			// 768px portrait
+			this.mobile = true;
+		}
+	}
 }

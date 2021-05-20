@@ -5,7 +5,7 @@
   </div>
   <div class="gallery-main">
     <div class="menu">
-      <div class="d-flex flex-row justify-content-between" style="width: 750px;">
+      <div class="menu-sub">
         <a (click)="show1()" class="menu-text" [class.active]="isActive && isShown1">Ana Giriş</a>
         <a (click)="show2()" class="menu-text" [class.active]="isActive && isShown2">Networking Alanı</a>
         <a (click)="show3()" class="menu-text" [class.active]="isActive && isShown3">Stand Alanı</a>
@@ -87,8 +87,49 @@
       </div>
     </div>
 
-    <div *ngIf="mobile">
- 
+    <div *ngIf="mobile && isShown1">
+      <ngb-carousel >
+        <ng-template ngbSlide *ngFor="let slide of anagiris; let i = index;">
+          <div class="picsum-img-wrapper">
+            <img [src]="slide.image" alt="Random first slide">
+          </div>
+          <div class="carousel-caption">
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+    <div *ngIf="mobile && isShown2">
+      <ngb-carousel >
+        <ng-template ngbSlide *ngFor="let slide of networking; let i = index;">
+          <div class="picsum-img-wrapper">
+            <img [src]="slide.image" alt="Random first slide">
+          </div>
+          <div class="carousel-caption">
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+    <div *ngIf="mobile && isShown3">
+      <ngb-carousel >
+        <ng-template ngbSlide *ngFor="let slide of stand; let i = index;">
+          <div class="picsum-img-wrapper">
+            <img [src]="slide.image" alt="Random first slide">
+          </div>
+          <div class="carousel-caption">
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+    <div *ngIf="mobile && isShown4">
+      <ngb-carousel >
+        <ng-template ngbSlide *ngFor="let slide of toplanti; let i = index;">
+          <div class="picsum-img-wrapper">
+            <img [src]="slide.image" alt="Random first slide">
+          </div>
+          <div class="carousel-caption">
+          </div>
+        </ng-template>
+      </ngb-carousel>
     </div>
   </div>
 </div>

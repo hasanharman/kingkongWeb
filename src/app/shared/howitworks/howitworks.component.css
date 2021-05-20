@@ -286,3 +286,14 @@ label {
 	text-align: center;
 	margin-bottom: 80px;
 }
+
+@media only screen and (max-device-width: 450px) {
+	.text-head1 {
+		font-size: 40px;
+	}
+	.card-container2 {
+		box-shadow: 0px 4px 20px rgba(34, 33, 39, 0.2);
+		border-radius: 10px;
+		margin: 40px 0 40px 0;
+	}
+  }

@@ -36,6 +36,13 @@
   margin-top: 43px;
 }
 
+.menu-sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 750px;
+}
+
 .menu-text {
   font-family: "Gilroy-Light";
   font-style: normal;
@@ -146,18 +153,47 @@
     font-size: 40px;
     margin: 0;
   }
-  .item-img {
-    margin: 0;
-    width: 100%;
-    padding: 8px 2px 8px 2px;
-    /* margin: 8px 0 8px 0; */
+  .picsum-img-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
-  .item-double {
-    width: 90vw;
-  } 
+  .carousel-caption {
+    position: relative;
+  }
+  ::ng-deep.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--main-red);
+    border-radius: 50%;
+  }
+  ::ng-deep.carousel-indicators .active {
+    background-color: var(--main-red);
+  }
   img {
     margin: 0;
-    width: 100%;
-    padding: 8px 2px 8px 2px;
+    width: 346px;
+    height: 374px;
+    border-radius: 10px;
+    margin: 20px 0 20px;
+    object-fit: cover;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .menu-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+  .menu-text {
+    font-size: 20px;
+    line-height: 29px;
   }
 }
