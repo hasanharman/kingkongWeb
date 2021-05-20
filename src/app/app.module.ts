@@ -18,6 +18,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { ComingSoonComponent } from './shared/coming-soon/coming-soon.component';
 import { CookiesComponent } from './shared/cookies/cookies.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,7 @@ import { CookiesComponent } from './shared/cookies/cookies.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    NgImageSliderModule
+    NgImageSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

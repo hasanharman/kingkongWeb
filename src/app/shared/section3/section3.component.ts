@@ -7,10 +7,14 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./section3.component.css']
 })
 export class Section3Component implements OnInit {
+  mobile: boolean | undefined;
 
   constructor(private modals: NgbModal) { }
 
   ngOnInit(): void {
+    if (window.screen.width <= 450) { // 768px portrait
+      this.mobile = true;
+    }
   }
 
   openVid2(vid2: any) {

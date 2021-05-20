@@ -14,8 +14,13 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class FooterComponent implements OnInit {
 	constructor(private modalService: NgbModal) {}
 	sended?: boolean | false;
+	mobile: boolean | undefined;
 
-	ngOnInit(): void {}
+	ngOnInit(): void {
+		if (window.screen.width <= 450) { // 768px portrait
+			this.mobile = true;
+		  }
+	}
 
 	sendButton() {
 		this.sended = true;

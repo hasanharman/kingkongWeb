@@ -1,5 +1,6 @@
 <div class="main-container2">
-  <div class="text-container">
+
+  <div class="text-container-gen">
     <h1 class="text-head">KingKong<br>Dünyasında Her Şey<br>Çok Farklı!</h1>
     <h5 class="text-2">
       Yazılımdan tasarıma her şey size özel olacak.<br>
@@ -8,15 +9,15 @@
     </h5>
     <div class="bullet">
         <img src="../../../assets/red-crown.svg" alt="" class="list-bullet" >
-        <h6 class="text-3">Profesyonel Prodüksiyon Ekibi</h6>
+        <p class="text-3">Profesyonel Prodüksiyon Ekibi</p>
     </div>
     <div class="bullet">
         <img src="../../../assets/red-crown.svg" alt="" class="list-bullet" >
-        <h6 class="text-3">Sanal Event Yönetim Uzmanlığı</h6>
+        <p class="text-3">Sanal Event Yönetim Uzmanlığı</p>
     </div>
     <div class="bullet">
         <img src="../../../assets/red-crown.svg" alt="" class="list-bullet" >
-        <h6 class="text-3">KingKong Tasarımları</h6>
+        <p class="text-3">KingKong Tasarımları</p>
     </div>
     <!-- <div class="carousel-viewmore">
       <div>Detaylı Bilgi</div>
@@ -24,7 +25,7 @@
     </div> -->
   </div>
 
-  <div class="img-container">
+  <div class="img-container" *ngIf="!mobile">
     <img src="../../../assets/dots/red-d.png" class="dott6" alt="">
     <div class="video-div">
       <div class="play" (click)="openVid2(vid2)" >
@@ -39,6 +40,19 @@
       <img src="../../../assets/video/thumb2.webp" alt="" class="video2" >
     </div>
   </div>
+  <div class="img-container" *ngIf="mobile">
+    <!-- <img src="../../../assets/dots/red-d.png" class="dott6" alt=""> -->
+    <div class="video-div">
+      <div class="play" (click)="openVid2(vid2)" >
+        <img src="../../../assets/video/play.svg" alt="" class="play-button ping">
+      </div>
+      <img src="../../../assets/video/thumb1.webp" class="video1" alt="">
+      <!-- <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="video1">
+        <source src="../../../assets/video/video-short.mp4" type="video/mp4" />
+      </video> -->
+    </div>
+  </div>
+
 </div>
 
 

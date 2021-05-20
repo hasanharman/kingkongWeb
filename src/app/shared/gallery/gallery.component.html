@@ -16,7 +16,7 @@
     <a class="menu-text">Toplantı Salonları</a> -->
       </div>
     </div>
-    <div class="gallery-masonry">
+    <div class="gallery-masonry" *ngIf="!mobile">
       <div *ngIf="isShown1" class="masonry">
         <div class="item">
           <img class="item-img1" src="../../../assets/gallery/ag1.webp" alt="" />
@@ -85,6 +85,10 @@
           <img class="item-img7" src="../../../assets/gallery/ts7.webp" alt="" />
         </div>
       </div>
+    </div>
+
+    <div *ngIf="mobile">
+ 
     </div>
   </div>
 </div>

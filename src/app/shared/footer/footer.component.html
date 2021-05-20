@@ -60,9 +60,27 @@
       </div>
       <!-- <a href="" target="_blank"><img src="../../../assets/footer/yt.svg" alt="" class="social-img"></a> -->
     </div>
-    <div class="footer-content">
+    <div class="footer-content" *ngIf="!mobile">
       <div class="text-footer">
         <img src="../../../assets/logo-white.svg" alt="" />
+        <div class="menu-footer">
+          <h1 class="menu-footer-text" (click)="openWhat(what)">KingKong Nedir?</h1>
+          <h1 class="menu-footer-text" (click)="openWhy(why)">Neden KingKong?</h1>
+          <h1 class="menu-footer-text" (click)="openWeb(web)">Webinar</h1>
+          <h1 class="menu-footer-text" (click)="openDev(dev)">Dewcon</h1>
+          <h1 class="menu-footer-text" (click)="openContact(contact)">İletişim</h1>
+        </div>
+        <div class="footer-legal">
+          <h1 class="menu-footer-text" (click)="openLegal(legal)">Çerezler</h1>
+          <h1 class="menu-footer-text" (click)="openPrivacy(privacy)">KVKK Bilgilendirme</h1>
+          <!-- <h1 class="menu-footer-text">İletişim</h1> -->
+        </div>
+      </div>
+    </div>
+    <div class="footer-content" *ngIf="mobile">
+      <img src="../../../assets/logo-white.svg" alt="" class="logo" />
+
+      <div class="text-footer-new">
         <div class="menu-footer">
           <h1 class="menu-footer-text" (click)="openWhat(what)">KingKong Nedir?</h1>
           <h1 class="menu-footer-text" (click)="openWhy(why)">Neden KingKong?</h1>

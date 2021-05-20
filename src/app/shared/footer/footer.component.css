@@ -152,6 +152,7 @@ label {
 .menu-footer {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 .menu-footer-text {
 	font-family: Gilroy;
@@ -337,19 +338,40 @@ p > b {
 }
 
 @media only screen and (max-device-width: 480px) {
+	.footer-content {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin: 0;
+	}
+	.logo {
+		width: 149px;
+	}
 	.footer-end {
 		padding: 20px 0 20px 0;
 	}
-	.text-footer  {
+	.text-footer-new  {
 		display: flex;
-		flex-direction: row;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		width: 50%!important;
+	}
+	.menu-footer {
+		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 	}
-	.menu-text {
-		padding-left: 10px;
+	.footer-legal {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.menu-footer-text {
+		font-size: 18px;
+		line-height: 1;
+ 		padding-left: 0px;
 	}
 	.legal-text {
-		padding-left: 10px;
+		padding-left: 5px;
 	}
 }
