@@ -19,7 +19,7 @@ export class SliderComponent implements OnInit {
 		{ img: 'kongrekonferans/kongre-konferans.png', icon: 'kongrekonferans/kongre-icon.svg', title: 'Kongre / Konferans', sub: 'Her etkinlik farklı ve özeldir, bu nedenle ihtiyaçları da farklıdır. KingKong bu farklı ve özel ihtiyaçları yenilikçi teknolojisi ve kreatif bakış açısıyla dijital ortamda ya da hibrit olarak çözer ve  gerçek bir kongre & konferans deneyimi yaşatır.' },
 		{ img: 'donemtoplantilari/donem-toplantilari.png', icon: 'donemtoplantilari/meetingicon.svg', title: 'Dönem Toplantıları', sub: 'KingKong, toplantınızın büyüklüğü, yaratmak istediğiniz imajı ve çerçevesi doğrultusunda size özel tasarımlar, teknik altyapı ve deneyimli bir ekip ile toplantınızı hedefleriniz doğrultusunda kusursuz bir şekilde planlar ve gerçekleştirir.' },
 		{ img: 'fuarsergi/fuar-sergi.png', icon: 'fuarsergi/fuar-sergi-icon.svg', title: 'Fuar / Sergi', sub: 'KingKong toplantılarınızda farklılık yaratmak ve diğerlerinden farklı olmak istediğinizi bilir. Bunun için yeni, farklı, benzersiz kreatif ve hibrit çözümler sunar.' },
-		{ img: 'lansmantoplantıları/lansman-toplantilari.png', icon: 'lansmantoplantıları/lansman-toplantilari-icon.svg', title: 'Lansman Toplantıları', sub:'Küçük, orta ve büyük ölçekli tüm fuar ve sergileriniz için ihtiyaçlarınızın tam olarak karşılayacak hibrit çözümlerle unutulmaz organizasyonlar gerçekleştirir.' }
+		{ img: 'lansman/lansman-toplantilari.png', icon: 'lansman/lansman-toplantilari-icon.svg', title: 'Lansman Toplantıları', sub:'Küçük, orta ve büyük ölçekli tüm fuar ve sergileriniz için ihtiyaçlarınızın tam olarak karşılayacak hibrit çözümlerle unutulmaz organizasyonlar gerçekleştirir.' }
 	];
 
 	imgs = [
