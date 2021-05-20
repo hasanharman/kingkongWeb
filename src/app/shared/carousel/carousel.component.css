@@ -8,25 +8,25 @@
 	/* background: linear-gradient(113.32deg, #3f3d48 0%, #222127 100%); */
 	background-color: #222127;
 }
-.video-band {
+/* .video-band {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 840px;
-	height: 740px;
+	width: 750px;
+	height: auto;
 	z-index: 2;
-}
+} */
 .target {
-	mask: url("../../../assets/carousel/Mask2.png");
-	-webkit-mask: url("../../../assets/carousel/Mask2.png");
+	mask: url("../../../assets/carousel/Intersect.svg");
+	-webkit-mask: url("../../../assets/carousel/Intersect.svg");
 	-webkit-mask-size: 100% 100%;
 	mask-size: 100% 100%;
 	mask-position: top right;
 	mask-repeat: no-repeat;
 }
 .videoTarget {
-	width: 840px;
-	height: 740px;
+	width: 750px;
+	height: auto;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -103,7 +103,7 @@ p > b {
 	height: 100%;
 	z-index: 3;
 	margin-top: 5%;
-	margin-left: 15%;
+	margin-left: 10%;
 }
 
 .carousel-info {
@@ -466,6 +466,27 @@ p > b {
 		border-radius: 29px;
 		background-color: #ffffff;
 		color: #c2272d;
+	}
+	.videoTarget {
+		width: 320px;
+		height: auto;
+		position: absolute;
+		top: 0;
+		right: 0;
+		object-fit: cover;
+	}
+	.dott1{
+		width: 20%;
+		opacity: 0.6;
+	}
+	.dott2 {
+		display: none;
+	}
+	.dott3 {
+		display: none;
+	}
+	.dott4 {
+		display: none;
 	}
 
 }

@@ -5,6 +5,10 @@
 	justify-content: center;
 	align-items: center;
 }
+/* remember to define focus styles! */
+*:focus {
+    outline: none;
+   }
 /* .center {
 	width: 100%;
 	display: flex;
@@ -382,8 +386,9 @@ p > b {
 		margin: 10px 0 10px 30px;
 	}
 	.line {
-		width: 90%;
+		width: 100%;
 		opacity: 0.3;
+		margin: 0;
 		border: solid 0.4px #ffffff7a;
 	}
 	.legal-text {
@@ -392,5 +397,23 @@ p > b {
 	.social-img {
 		margin-top: -60px;
 		margin-left: 10px;
+	}
+	::ng-deep.card {
+		background-color: #15141b;
+		border: none;
+		color: white;
+	}
+	::ng-deep.card-header {
+		background-color: #15141b;
+		border: 0;
+	}
+	.card-gen-title {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 300px;
+		background-color: #15141b;
+		color: white;
 	}
 }
