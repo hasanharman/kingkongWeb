@@ -17,10 +17,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
     .dark-modal .close {
       color: white;
     }
-
 	.light-modal .header-modal {
 		background-color: #222127;
-
     }
 	.light-modal .modal-body {
 	  background-color: #fff;
@@ -35,7 +33,6 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 	left:0;
 	background-color: #c2272d;
 	border-radius: 0px;
-	padding: 16px 17px 25px 160px;
     z-index: 10;
 	}
   `

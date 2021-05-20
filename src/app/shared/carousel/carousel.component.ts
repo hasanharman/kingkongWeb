@@ -23,7 +23,7 @@ export class CarouselComponent implements OnInit {
 	// ];
 
 	constructor(private modals: NgbModal) {
-
+		
 	}
 	ngOnInit(): void {
 	}

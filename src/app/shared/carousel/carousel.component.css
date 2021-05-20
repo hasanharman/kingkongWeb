@@ -15,7 +15,6 @@
 	width: 840px;
 	height: 740px;
 	z-index: 2;
-
 }
 .target {
 	mask: url("../../../assets/carousel/Mask2.png");
@@ -39,7 +38,7 @@
 	font-weight: 500;
 	line-height: 1.45;
 	color: #232228;
-	background-color:#ffffff;
+	background-color: #ffffff;
 	margin: 20px;
 	padding: 20px;
 	overflow: auto;
@@ -146,7 +145,6 @@ p > b {
 .gil-bold {
 	font-family: "Gilroy";
 	font-weight: 600;
-	font-size: 25px;
 	line-height: 147.69%;
 }
 
@@ -241,7 +239,7 @@ p > b {
 	width: 0;
 	border: 1px solid rgb(255, 255, 255);
 	opacity: 1;
-  } */
+} */
 
 .page-title {
 	font-family: "Gilroy-Bold";
@@ -292,8 +290,10 @@ p > b {
 	height: 500px;
 }
 
-/* Cookie Modal */
-
+/* Cookie Modal Auto Opened */
+.cookie-auto-open {
+	padding: 16px 17px 25px 160px;
+}
 .header {
 	display: flex;
 	flex-direction: row;
@@ -421,13 +421,24 @@ p > b {
 
 /* Phone Screen */
 @media only screen and (max-width: 450px) {
-	.carousel-info {
-		width: 80%;
+	.carousel-content {
+		margin-top: 200px;
+		margin-left: 34px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.carousel-title {
+		font-size: 28px;
 	}
 	.carousel-sub {
-		font-size: 30px;
+		font-size: 48px;
+  		line-height: 1.15;
 	}
-	.carousel-hint {
+	.carousel-hint{
 		font-size: 20px;
+		line-height: 1.4;
 	}
+
 }
