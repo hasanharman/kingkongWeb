@@ -24,7 +24,7 @@ export class SliderComponent implements OnInit {
 
 	imgs = [
 		{ img: 'akilliasistan/akilli-asistan.png', icon: 'akilliasistan/virtual-assistant-2.svg', title: 'Akıllı Asistan', sub: 'Her kullanıcıya özel sanal asistan atanır.  Etkinlik içinde kullanıcıyı, kullanıcının özelliklerine göre yönlendirir. İlgi alanlarına göre doğru kişilerle bağlantı kurmasını sağlar, ilgi alanına göre bilgilendirmeler yapar. ' },
-		{ img: 'zenginiletisim/zenginlestirilmiş-iletisim.png', icon: 'zenginiletisim/voice-record1.svg', title: 'Zenginleştirilmiş İletişim', sub: 'Yüksek çözünürlüklü ses ve görüntü altyapısı ile özel alanlarda, tekil ya da çoklu görüşme seçeneği sunar.' },
+		{ img: 'zengin/zengin.png', icon: 'zengin/voice-record1.svg', title: 'Zenginleştirilmiş İletişim', sub: 'Yüksek çözünürlüklü ses ve görüntü altyapısı ile özel alanlarda, tekil ya da çoklu görüşme seçeneği sunar.' },
 		{ img: 'networking/networking-secenekleri.png', icon: 'networking/hierarchy-551.svg', title: 'Networking Seçenekleri', sub: 'Kişileri taleplerine göre farklı kişilerle bir araya getirerek bilgi alışverişi olanağı sağlar.' },
 		{ img: 'toplantinotlari/toplanti-notlari.png', icon: 'toplantinotlari/meeting-notes.svg', title: 'Toplantı Notları', sub: 'Uygulama içinden toplantı notları alınabilir, herhangi bir anda yeni bir not, yapılabilecekler listesi oluşturulabilir ve sonrasında katılımcılara e-mail olarak atılabilir.' },
 		{ img: 'performans/yuksek-performans.png', icon: 'performans/multiple-11.svg', title: 'Yüksek Performans', sub: '100K katılımcıya kadar katılımcıya ulaşma olanağı.' },
