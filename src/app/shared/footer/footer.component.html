@@ -373,8 +373,7 @@
     <button href="" class="close-button" (click)="modal.close('Cross click')" aria-hidden="true"><img
         src="../../../assets/modal-close.svg" alt=""></button>
   </div>
-  <div class="modal-body"
-    style="font-family: Gilroy-Light;font-size: 18px;font-weight: 500;line-height: 1.45;color: #232228!important;background-color: #ffffff!important;margin:20px;">
+  <div class="modal-body long-content">
     <p>King Kong Kongre Eğitim ve Organizasyon Ticaret Ltd. Şti. <b>(“Şirketimiz” veya “King Kong”)</b> olarak,
       “https://www.kingkongistanbul.com” <b>(“Sitemiz”)</b> adresini ziyaret ettiğiniz takdirde siz ziyaretçilerimize
       ait
@@ -398,50 +397,6 @@
       gibi durumlarda her bir alan adı kendine münhasır üçüncü taraf çerezler yaratmaktadır.</p>
     <p>Sitemiz’de kullandığımız çerez türleri ile bu çerezleri kullanım amaçlarımız aşağıdaki gibidir:</p>
 
-    <style type="text/css">
-      .tg {
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
-
-      .tg td {
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
-        font-family: "Gilroy-Light";
-        font-size: 14px;
-        overflow: hidden;
-        padding: 10px 5px;
-        word-break: normal;
-      }
-
-      .tg th {
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
-        font-family: "Gilroy-Light";
-        font-size: 14px;
-        font-weight: normal;
-        overflow: hidden;
-        padding: 10px 5px;
-        word-break: normal;
-      }
-
-      .tg .tg-65cc {
-        border-color: #232228;
-        color: #232228;
-        text-align: center;
-        vertical-align: top
-      }
-
-      .tg .tg-8r46 {
-        border-color: #232228;
-        color: #232228;
-        font-size: 16px;
-        text-align: center;
-        vertical-align: top
-      }
-    </style>
     <table class="tg">
       <thead>
         <tr>
@@ -531,51 +486,8 @@
     <p>İşbu Çerez Bilgilendirme Metni hakkında sorunuz olması halinde lütfen KVK Yetkilisi ile irtibata geçiniz.</p>
 
     <p><b>KVK Yetkilisi:</b></p>
-    <style type="text/css">
-      .tg {
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
 
-      .tg td {
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
-        font-family: "Gilroy-Light";
-        font-size: 14px;
-        overflow: hidden;
-        padding: 10px 5px;
-        word-break: normal;
-      }
-
-      .tg th {
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
-        font-family: "Gilroy-Light";
-        font-size: 14px;
-        font-weight: normal;
-        overflow: hidden;
-        padding: 10px 5px;
-        word-break: normal;
-      }
-
-      .tg .tg-i5ln {
-        border-color: #232228;
-        color: #232228;
-        font-size: 16px;
-        text-align: center;
-        vertical-align: top
-      }
-
-      .tg .tg-3955 {
-        border-color: #232228;
-        color: #232228;
-        text-align: center;
-        vertical-align: top
-      }
-    </style>
-    <table class="tg" style="table-layout: fixed; width: 100%">
+    <table class="tg" style="table-layout: fixed; width: 100%" *ngIf="!mobile">
       <colgroup>
         <col style="width: 30%">
         <col style="width: 30%">
@@ -584,8 +496,24 @@
       <thead>
         <tr>
           <th class="tg-i5ln">[Hakkı Pehlivan]</th>
-          <th class="tg-i5ln">[[Büyükdere Cad. Ecza Sok. No:6 Kat:1 34394 Levent – İstanbul]]</th>
+          <th class="tg-i5ln">[Büyükdere Cad. Ecza Sok. No:6 Kat:1 34394 Levent – İstanbul]</th>
           <th class="tg-3955">[+90 0212 2824700 , info@kingkongistanbul.com]</th>
+        </tr>
+      </thead>
+    </table>
+    <table class="tg" style="table-layout: fixed; width: 100%" *ngIf="mobile">
+      <colgroup>
+        <col style="width: 30%">
+        <col style="width: 30%">
+        <col style="width: 30%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th class="tg-i5ln">[Hakkı Pehlivan]</th>
+          <th class="tg-i5ln">[Büyükdere Cad. Ecza Sok. No:6 Kat:1 34394 Levent – İstanbul]</th>
+          <th class="tg-3955">[+90 0212 2824700 , info@
+            kingkong
+            istanbul.com]</th>
         </tr>
       </thead>
     </table>
@@ -609,12 +537,11 @@
 <!-- Gizlilik Modal -->
 <ng-template #privacy let-modal>
   <div class="header-modal">
-    <h4 class="modal-title ">KINGKONG İNTERNET SİTESİ KVK BİLGİLENDİRME METNİ</h4>
+    <h4 class="modal-title">KINGKONG İNTERNET SİTESİ KVK BİLGİLENDİRME METNİ</h4>
     <button href="" class="close-button" (click)="modal.close('Cross click')" aria-hidden="true"><img
         src="../../../assets/modal-close.svg" alt=""></button>
   </div>
-  <div class="modal-body"
-    style="font-family: Gilroy-Light;font-size: 18px;font-weight: 500;line-height: 1.45;color: #232228!important;background-color: #ffffff!important;margin:20px">
+  <div class="modal-body long-content">
     <p>King Kong Kongre Eğitim ve Organizasyon Ticaret Ltd. Şti. <b>(“Şirketimiz” veya “King Kong”)</b> olarak, resmi
       internet
       sitemiz olan “https://www.kingkongistanbul.com” <b>(“Sitemiz”)</b> adresini ziyaret ettiğiniz takdirde siz
@@ -629,51 +556,8 @@
       verileriniz olmak üzere aşağıda belirtilen kişisel verileriniz, beraberinde açıklanan amaçlarla bağlantılı,
       sınırlı ve ölçülü bir şekilde elektronik ve fiziki ortamlarda yazılı olarak, otomatik ve otomatik olmayan
       yöntemlerle KVKK’ya uygun olarak Şirketimiz tarafından işlenmektedir. </p>
-    <style type="text/css">
-      .tg {
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
 
-      .tg td {
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
-        font-family: "Gilroy-Light";
-        font-size: 14px;
-        overflow: hidden;
-        padding: 10px 5px;
-        word-break: normal;
-      }
-
-      .tg th {
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
-        font-family: "Gilroy-Light";
-        font-size: 14px;
-        font-weight: normal;
-        overflow: hidden;
-        padding: 10px 5px;
-        word-break: normal;
-      }
-
-      .tg .tg-ugqb {
-        border-color: inherit;
-        color: #232228;
-        font-size: 16px;
-        text-align: left;
-        vertical-align: top
-      }
-
-      .tg .tg-ywlh {
-        border-color: inherit;
-        color: #232228;
-        text-align: left;
-        vertical-align: top
-      }
-    </style>
-    <table class="tg">
+    <table class="tg" *ngIf="!mobile">
       <thead>
         <tr>
           <th class="tg-ugqb"><span style="font-weight:bold">Kişisel Veriniz</span></th>
@@ -692,7 +576,41 @@
         </tr>
         <tr>
           <td class="tg-ywlh">Trafik verisi</td>
-          <td class="tg-ywlh">https://www.kingkongistanbul.com</td>
+          <td class="tg-ywlh">[https://www.kingkongistanbul.com]</td>
+          <td class="tg-ywlh">5651 sayılı İnternet Ortamında Yapılan Yayınların Düzenlenmesi ve Bu Yayınlar Yoluyla<br>
+            İşlenen Suçlarla Mücadele Edilmesi Hakkında Kanun ve ikincil düzenlemelerinden doğan<br> yükümlülüklerimizi
+            yerine getirmek.</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="tg" *ngIf="mobile">
+      <thead>
+        <tr>
+          <th class="tg-ugqb"><span style="font-weight:bold">Kişisel Veriniz</span></th>
+          <th class="tg-ugqb"><span style="font-weight:bold">Şirketimize Ulaştığı Ortam</span></th>
+          <th class="tg-ywlh"><span style="font-weight:bold">İşleme Amacımız/Amaçlarımız</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-ywlh">Adınız, soyadınız, telefon numaranız <br>ve şahıs şirketi olmanız halinde şirket adınız
+          </td>
+          <td class="tg-ywlh">[https://
+            www.
+            kingkong
+            istanbul
+            .com]</td>
+          <td class="tg-ywlh">Ürün ve hizmetlerimize ilişkin talep, şikâyet, soru ve önerilerinize cevap verebilmek
+            <br>ve ürün ve hizmetlerimize ilişkin olarak entegrasyon süreçlerini yürütmek.
+          </td>
+        </tr>
+        <tr>
+          <td class="tg-ywlh">Trafik verisi</td>
+          <td class="tg-ywlh">[https://
+            www.
+            kingkong
+            istanbul
+            .com]</td>
           <td class="tg-ywlh">5651 sayılı İnternet Ortamında Yapılan Yayınların Düzenlenmesi ve Bu Yayınlar Yoluyla<br>
             İşlenen Suçlarla Mücadele Edilmesi Hakkında Kanun ve ikincil düzenlemelerinden doğan<br> yükümlülüklerimizi
             yerine getirmek.</td>
@@ -750,51 +668,7 @@
       İşbu Bilgilendirme Metni hakkında sorunuz olması halinde lütfen KVK Yetkilisi ile irtibata geçiniz.
     </p>
     <p><b>KVK Yetkilisi:</b></p>
-    <style type="text/css">
-      .tg {
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
-
-      .tg td {
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
-        font-family: "Gilroy-Light";
-        font-size: 14px;
-        overflow: hidden;
-        padding: 10px 5px;
-        word-break: normal;
-      }
-
-      .tg th {
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
-        font-family: "Gilroy-Light";
-        font-size: 14px;
-        font-weight: normal;
-        overflow: hidden;
-        padding: 10px 5px;
-        word-break: normal;
-      }
-
-      .tg .tg-i5ln {
-        border-color: inherit;
-        color: #232228;
-        font-size: 16px;
-        text-align: center;
-        vertical-align: top
-      }
-
-      .tg .tg-3955 {
-        border-color: inherit;
-        color: #232228;
-        text-align: center;
-        vertical-align: top
-      }
-    </style>
-    <table class="tg" style="table-layout: fixed; width: 100%">
+    <table class="tg" style="table-layout: fixed; width: 100%" *ngIf="!mobile">
       <colgroup>
         <col style="width: 30%">
         <col style="width: 30%">
@@ -803,8 +677,24 @@
       <thead>
         <tr>
           <th class="tg-i5ln">[Hakkı Pehlivan]</th>
-          <th class="tg-i5ln">[[Büyükdere Cad. Ecza Sok. No:6 Kat:1 34394 Levent – İstanbul]]</th>
+          <th class="tg-i5ln">[Büyükdere Cad. Ecza Sok. No:6 Kat:1 34394 Levent – İstanbul]</th>
           <th class="tg-3955">[+90 0212 2824700 , info@kingkongistanbul.com]</th>
+        </tr>
+      </thead>
+    </table>
+    <table class="tg" style="table-layout: fixed; width: 100%" *ngIf="mobile">
+      <colgroup>
+        <col style="width: 30%">
+        <col style="width: 30%">
+        <col style="width: 30%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th class="tg-i5ln">[Hakkı Pehlivan]</th>
+          <th class="tg-i5ln">[Büyükdere Cad. Ecza Sok. No:6 Kat:1 34394 Levent – İstanbul]</th>
+          <th class="tg-3955">[+90 0212 2824700 , info@
+            kingkong
+            istanbul.com]</th>
         </tr>
       </thead>
     </table>

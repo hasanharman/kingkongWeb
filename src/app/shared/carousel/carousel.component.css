@@ -32,17 +32,7 @@
 	right: 0;
 	object-fit: contain;
 }
-.new-modal-body {
-	font-family: "Gilroy-Light";
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 1.45;
-	color: #232228;
-	background-color: #ffffff;
-	margin: 20px;
-	padding: 20px;
-	overflow: auto;
-}
+
 p > b {
 	font-family: Gilroy-Bold;
 	font-weight: bold;
@@ -382,6 +372,87 @@ p > b {
 	background: #fa2b56;
 }
 
+.long-content {
+	font-family: "Gilroy-Light";
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.45;
+	color: #232228 !important;
+	background-color: #ffffff !important;
+	margin: 20px;
+	overflow: auto;
+}
+
+.tg {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.tg td {
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	font-family: "Gilroy-Light";
+	font-size: 12px;
+	overflow: hidden;
+	padding: 10px 5px;
+	word-break: normal;
+}
+
+.tg th {
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	font-family: "Gilroy-Light";
+	font-size: 12px;
+	font-weight: normal;
+	overflow: hidden;
+	padding: 10px 5px;
+	word-break: normal;
+}
+
+.tg .tg-ugqb {
+	border-color: inherit;
+	color: #232228;
+	font-size: 13px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.tg .tg-ywlh {
+	border-color: inherit;
+	color: #232228;
+	text-align: left;
+	vertical-align: top;
+}
+
+.tg th {
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	font-family: "Gilroy-Light";
+	font-size: 14px;
+	font-weight: normal;
+	overflow: hidden;
+	padding: 10px 5px;
+	word-break: normal;
+  }
+
+  .tg .tg-i5ln {
+	border-color: #232228;
+	color: #232228;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: top
+  }
+
+  .tg .tg-3955 {
+	border-color: #232228;
+	color: #232228;
+	text-align: center;
+	vertical-align: top
+  }
+
 .modal-holder {
 	animation-name: example;
 	animation-duration: 0.1s;
@@ -487,6 +558,28 @@ p > b {
 	}
 	.dott4 {
 		display: none;
+	}
+	.modal-title {
+		font-size: 18px;
+		margin: 18px 0 0 23px;
+	}
+	.long-content {
+		font-size: 14px;
+		margin: 10px;
+	}
+	.footer-modal {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		font-size: 12px;
+	}
+	.accept-button {
+		width: 300px;
+		height: 50px;
+		padding: 6px;
+		border-radius: 29px;
+		margin: 10px;
 	}
 
 }

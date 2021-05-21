@@ -13,6 +13,8 @@ export class GalleryComponent implements OnInit {
 	isShown4: boolean = false;
 	isActive: boolean = true;
 	mobile: boolean | undefined;
+	searchSelector = "Ana Giriş";
+
 
 	anagiris = [
 		{ image: '../../../assets/gallery/ag1.webp' },
@@ -64,29 +66,34 @@ export class GalleryComponent implements OnInit {
 		}
 	}
 
-	show1() {
+
+	show1(value: any) {
 		this.isShown1 = !this.isShown1;
 		this.isShown2 = false;
 		this.isShown3 = false;
 		this.isShown4 = false;
-		this.isActive = true;
+		this.isActive = true;		this.searchSelector = value;
+
 	}
-	show2() {
+	show2(value: any) {
 		this.isShown2 = !this.isShown2;
 		this.isShown1 = false;
 		this.isShown3 = false;
 		this.isShown4 = false;
+		this.searchSelector = value;
 	}
-	show3() {
+	show3(value: any) {
 		this.isShown3 = !this.isShown3;
 		this.isShown1 = false;
 		this.isShown2 = false;
 		this.isShown4 = false;
+		this.searchSelector = value;
 	}
-	show4() {
+	show4(value: any) {
 		this.isShown4 = !this.isShown4;
 		this.isShown1 = false;
 		this.isShown2 = false;
 		this.isShown3 = false;
+		this.searchSelector = value;
 	}
 }

@@ -12,6 +12,7 @@ export class CarouselComponent implements OnInit {
 	@ViewChild('cookie') cookie: any;
 	closeResult: string | undefined;
 	activeImg: number = 0;
+	mobile: boolean | undefined;
 	imgs: Array<string> = [ 'img0.svg', 'img1.svg' ];
 
 	paginations = [
@@ -26,6 +27,9 @@ export class CarouselComponent implements OnInit {
 		
 	}
 	ngOnInit(): void {
+		if (window.screen.width <= 450) { // 768px portrait
+			this.mobile = true;
+		  }
 	}
 	ngAfterViewInit() {
 		this.openCookies()
