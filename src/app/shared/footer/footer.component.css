@@ -451,7 +451,8 @@ p > b {
 	.footer-legal {
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
+		justify-content: center;
+	
 	}
 	.menu-footer-text {
 		font-size: 18px;
@@ -465,7 +466,7 @@ p > b {
 		color: white;
 		line-height: 1;
 		padding-left: 0px;
-		margin: 10px 0 10px 30px;
+		margin: 10px 0 10px 10px;
 	}
 	.line {
 		width: 100%;
