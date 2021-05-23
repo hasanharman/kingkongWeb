@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
 	selector: 'app-howitworks',
@@ -36,19 +37,20 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
     z-index: 10;
 	}
   `
-	]
+	],
+	providers: [NgbCarouselConfig]  // add NgbCarouselConfig to the component providers
 })
 export class HowitworksComponent implements OnInit {
 	closeResult: string | undefined;
 	sended?: boolean | false;
 	mobile: boolean | undefined;
 
-	cards = [
-		{ icon: '../../../assets/gallery/ag1.webp' },
-	];
-
-	constructor(private modalService: NgbModal) {}
-
+	constructor(private modalService: NgbModal, config: NgbCarouselConfig) {
+		config.interval = 0;
+		config.wrap = false;
+		config.pauseOnHover = true;
+		config.showNavigationArrows = true
+	}
 	openModal(content: any) {
 		this.modalService.open(content, {
 			centered: true,

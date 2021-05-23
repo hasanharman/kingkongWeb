@@ -6,11 +6,17 @@
 <div class="collapser">
 
   <!-- <img class="video-band" src="../../../assets/carousel/bgmask.png" alt=""> -->
-  <video class="target videoTarget" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+  <video class="target videoTarget" loop muted autoplay playsinline oncanplay="this.play()" onloadedmetadata="this.muted = true" *ngIf="!mobile">
     <!-- <source src="../../../assets/video/840x740[1].mp4" type="video/mp4" /> -->
     <source
     src="https://player.vimeo.com/external/552854308.hd.mp4?s=ebe77bc6ccbd6224a3d69550fde9c838336c84a1&profile_id=174"
     type="video/mp4" />
+  </video>
+  <video class="target videoTarget" loop muted autoplay playsinline oncanplay="this.play()" onloadedmetadata="this.muted = true" *ngIf="mobile">
+    <!-- <source src="../../../assets/video/840x740[1].mp4" type="video/mp4" /> -->
+    <source
+    src="https://player.vimeo.com/external/553899305.sd.mp4?s=acb7b9ce6b0cd842ed3872093d28efd9fddfaf39&profile_id=165"
+    type="video/mp4"/>
   </video>
   <div class="carousel-back">
     <app-header></app-header>
@@ -66,7 +72,6 @@
   <div class="header-modal">
     <div></div>
     <h4 class="title-modal"></h4>
-
     <button href="" class="close-button" (click)="modal.close('Cross click')" aria-hidden="true"><img
         src="../../../assets/modal-close.svg" alt=""></button>
 
@@ -75,10 +80,7 @@
     </button> -->
   </div>
   <div class="modal-body">
-    <video controls controlsList="nodownload" id="videoId" class="video-pop">
-      <!-- <source
-        src="https://player.vimeo.com/external/546009659.hd.mp4?s=efca536f7216017ee06ade06aa61374aa0c8d495&profile_id=175"
-        type="video/mp4" /> -->
+    <video controls controlsList="nodownload" id="videoId" class="video-pop" muted autoplay playsinline oncanplay="this.play()">
       <source
         src="https://player.vimeo.com/external/546007863.hd.mp4?s=e45ccf0c4b0a89930027e4cc87569d2abd9a5c6d&profile_id=175"
         type="video/mp4" />

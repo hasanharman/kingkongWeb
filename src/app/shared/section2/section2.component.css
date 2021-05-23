@@ -97,7 +97,7 @@
 @media only screen and (max-width: 1490px) {
 	.text-container {
 		margin-left: 5%;
-		width: 30%;
+		width: 40%;
 	}
 }
 
@@ -115,6 +115,7 @@
 	}
 	.text-2 {
 		font-size: 20px;
+		margin: 15px 0 0 0 ;
 	}
 	.img-container {
 		display: flex;
@@ -129,7 +130,8 @@
 	}
 	.man-img {
 		width: 100%;
-		height: auto;
+		/* height: 365.66px; */
+		height: 100%;
 	}
 	.dott5 {
 		width: 70px;

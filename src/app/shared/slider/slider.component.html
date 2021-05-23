@@ -34,7 +34,7 @@
   <div id="slider-cover">
     <div class="card-cont" id="deneme" [ngClass]="'card-cont-'+i" *ngFor="let item of imgs1; let i = index" >
       <img [src]="'../../../assets/cards/'+item.img" alt="" class="card-image" />
-      <div class="card-content">
+      <div class="card-content" onclick="">
         <img [src]="'../../../assets/cards/'+item.icon" alt="" class="card-icon" />
         <h3 class="card-text"> {{item.title}} </h3>
         <!-- <div (mouseover)="changeText=true" (mouseout)="changeText=false">
@@ -47,7 +47,7 @@
     </div>
     <!-- 12 cards -->
     <div class="d-flex flex-row justify-content-center align-items-center flex-wrap" *ngIf="isShown1">
-      <div class="card-cont" [ngClass]="'card-cont-'+i" *ngFor="let item of imgs; let i = index" >
+      <div class="card-cont" [ngClass]="'card-cont-'+i" *ngFor="let item of imgs; let i = index" onclick="">
         <img [src]="'../../../assets/cards/'+item.img" alt="" class="card-image" />
         <div class="card-content">
           <img [src]="'../../../assets/cards/'+item.icon" alt="" class="card-icon" />
@@ -154,7 +154,10 @@
       </div> -->
     </div>
   </div>
-  <div class="viewmore" (click)="loadmore()">
+  <div class="viewmore" (click)="loadmore()" *ngIf="!mobile">
+    <div> {{ clicked ? 'Daha az' : 'Daha fazla' }} </div>
+  </div>
+  <div class="viewmore" (click)="loadmoreMobile()" *ngIf="mobile">
     <div> {{ clicked ? 'Daha az' : 'Daha fazla' }} </div>
   </div>
 </div>

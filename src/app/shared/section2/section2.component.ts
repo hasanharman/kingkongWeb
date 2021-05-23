@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section2.component.css']
 })
 export class Section2Component implements OnInit {
+	mobile: boolean | undefined;
 
   constructor() { }
 
   ngOnInit(): void {
+    if (window.screen.width <= 450) {
+			// 768px portrait
+			this.mobile = true;
+		}
   }
 
 }

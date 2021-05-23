@@ -13,6 +13,7 @@ export class SliderComponent implements OnInit {
 	isShown1: boolean = false;
 	clicked: boolean = false;
 	changeText: boolean = false;
+	mobile: boolean | undefined;
 	// imgs: Array<string> = ['card1.png','card2.png','card3.png','card4.png'];
 
 	imgs1 = [
@@ -41,7 +42,11 @@ export class SliderComponent implements OnInit {
 
 	constructor(private modals: NgbModal) { this.changeText = false;}
 
-	ngOnInit(): void {}
+	ngOnInit(): void {
+		if (window.screen.width <= 450) { // 768px portrait
+			this.mobile = true;
+		  }
+	}
 
 	// prev() {
 	// 	console.log(this.activeImg * 230);
@@ -75,6 +80,18 @@ export class SliderComponent implements OnInit {
 	loadmore() {
 		this.isShown1 = !this.isShown1;
 		this.clicked = !this.clicked;
+		if(!this.clicked){
+			window.scrollBy({ behavior: 'smooth', top: -1300 });	
+		}
+	}
+	loadmoreMobile() {
+		this.isShown1 = !this.isShown1;
+		this.clicked = !this.clicked;
+		if(!this.clicked){
+			setTimeout(() => {
+				window.scrollBy({ behavior: 'smooth', top: -3500 })
+			}, 100);	
+		}
 	}
 
 	prev() {

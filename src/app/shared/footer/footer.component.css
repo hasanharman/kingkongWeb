@@ -295,28 +295,28 @@ p > b {
 	outline: none;
 }
 .modal-img-what {
-	background-image: url('../../../assets/footer/what.png');
+	background-image: url('../../../assets/footer/what.webp');
 	background-size: auto;
 	background-position: center;
 	width: 550px;
 	height: 520px;
 }
 .modal-img-why {
-	background-image: url('../../../assets/footer/why.png');
+	background-image: url('../../../assets/footer/why.webp');
 	background-size: auto;
 	background-position: center;
 	width: 550px;
 	height: 520px;
 }
 .modal-img-web {
-	background-image: url('../../../assets/footer/webinar.png');
+	background-image: url('../../../assets/footer/webinar.webp');
 	background-size: auto;
 	background-position: center;
 	width: 550px;
 	height: 520px;
 }
 .modal-img-dev {
-	background-image: url('../../../assets/footer/dewcon.png');
+	background-image: url('../../../assets/footer/dewcon.webp');
 	background-size: auto;
 	background-position: center;
 	width: 550px;
@@ -405,23 +405,33 @@ p > b {
 	overflow: hidden;
 	padding: 10px 5px;
 	word-break: normal;
-  }
+}
 
-  .tg .tg-i5ln {
+.tg .tg-i5ln {
 	border-color: #232228;
 	color: #232228;
 	font-size: 12px;
 	text-align: center;
-	vertical-align: top
-  }
+	vertical-align: top;
+}
 
-  .tg .tg-3955 {
+.tg .tg-3955 {
 	border-color: #232228;
 	color: #232228;
 	text-align: center;
-	vertical-align: top
-  }
+	vertical-align: top;
+}
 
+::ng-deep.btn-link:hover {
+	font-weight: 400;
+	color: transparent;
+	text-decoration: none;
+	outline: none;
+}
+::ng-deep.btn-link:focus {
+	outline: 0 !important;
+	box-shadow: none;
+}
 @media only screen and (max-device-width: 480px) {
 	.footer-content {
 		display: flex;
@@ -452,7 +462,6 @@ p > b {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-	
 	}
 	.menu-footer-text {
 		font-size: 18px;

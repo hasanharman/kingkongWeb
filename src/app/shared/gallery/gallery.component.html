@@ -18,20 +18,24 @@
     <a class="menu-text">Toplantı Salonları</a> -->
       </div>
     </div>
-    <div class="menu" *ngIf="mobile">
+    <div *ngIf="mobile" class="menu">
       <div ngbDropdown class="d-inline-block">
-        <a class="menu-text" id="dropdownBasic1" ngbDropdownToggle [class.active]="isActive">{{searchSelector}}</a>
+        <a  id="dropdownBasic1" class="menu-text" [class.active]="isActive" ngbDropdownToggle>{{searchSelector}}</a>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <a (click)="show1('Ana Giriş')" class="menu-text" [class.active]="isActive && isShown1" ngbDropdownToggle>Ana
-            Giriş</a>
-          <a (click)="show2('Networking Alanı')" class="menu-text" [class.active]="isActive && isShown2"
-            ngbDropdownToggle>Networking Alanı</a>
-          <a (click)="show3('Stand Alanı')" class="menu-text" [class.active]="isActive && isShown3"
-            ngbDropdownToggle>Stand Alanı</a>
-          <a (click)="show4('Toplantı Salonları')" class="menu-text" [class.active]="isActive && isShown4"
-            ngbDropdownToggle>Toplantı Salonları</a>
+          <a (click)="show1('Ana Giriş')"  class="menu-text"  [class.active]="isActive && isShown1" ngbDropdownItem>Ana Giriş</a>
+          <a (click)="show2('Networking Alanı')"  class="menu-text"  [class.active]="isActive && isShown2" ngbDropdownItem>Networking Alanı</a>
+          <a (click)="show3('Stand Alanı')" class="menu-text"  [class.active]="isActive && isShown3" ngbDropdownItem>Stand Alanı</a>
+          <a (click)="show4('Toplantı Salonları')" class="menu-text"  [class.active]="isActive && isShown4" ngbDropdownItem>Toplantı Salonları</a>
         </div>
       </div>
+      <!-- <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem>Action - 1</button>
+          <button ngbDropdownItem>Another Action</button>
+          <button ngbDropdownItem>Something else is here</button>
+        </div>
+      </div> -->
     </div>
     <div class="gallery-masonry" *ngIf="!mobile">
       <div *ngIf="isShown1" class="masonry">

@@ -181,21 +181,33 @@
   }
   .menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column!important;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
   }
+  
   .menu-sub {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 100px;
   }
   .menu-text {
     font-size: 20px;
     line-height: 29px;
     padding: 10px;
+    background-color: white!important;
   }
+  ::ng-deep.carousel-control-prev-icon{
+    background-image: url('../../../assets/back.svg');
+    width: 30px;
+    height: 30px;
+ }
+  ::ng-deep.carousel-control-next-icon{
+   background-image: url('../../../assets/next.svg');
+   width: 30px;
+   height: 30px;
+ }
 
 }

@@ -1,10 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import {NgbDropdownConfig} from '@ng-bootstrap/ng-bootstrap';
+
 declare var $: any;
 
 @Component({
 	selector: 'app-gallery',
 	templateUrl: './gallery.component.html',
-	styleUrls: [ './gallery.component.css' ]
+	styleUrls: [ './gallery.component.css' ],
+	providers: [NgbCarouselConfig, NgbDropdownConfig]  // add NgbCarouselConfig to the component providers
 })
 export class GalleryComponent implements OnInit {
 	isShown1: boolean = true;
@@ -14,7 +18,6 @@ export class GalleryComponent implements OnInit {
 	isActive: boolean = true;
 	mobile: boolean | undefined;
 	searchSelector = "Ana Giriş";
-
 
 	anagiris = [
 		{ image: '../../../assets/gallery/ag1.webp' },
@@ -57,7 +60,14 @@ export class GalleryComponent implements OnInit {
 	];
 
 
-	constructor() {}
+	constructor(config: NgbCarouselConfig, drop: NgbDropdownConfig) {
+		config.interval = 0;
+		config.wrap = false;
+		config.pauseOnHover = true;
+		config.showNavigationArrows = true;
+		drop.placement = 'bottom-right';
+		drop.autoClose = true;
+	}
 
 	ngOnInit(): void {
 		if (window.screen.width <= 450) {

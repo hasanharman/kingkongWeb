@@ -66,17 +66,18 @@
 	background-size: contain;
 	margin-bottom: 20px;
 }
-.card-container2:hover > .icon-container1  {
+.card-container2:hover > .icon-container1 {
 	background: url('../../../assets/how/presentation1-kirmizi.svg') no-repeat;
 }
 .icon-container2 {
-	width: 100px;
-	height: 100px;
-	background: url('../../../assets/how/PaketButce.svg') no-repeat;
+	width: 65px;
+	height: 65px;
+	margin-bottom: 20px;
+	background: url('../../../assets/how/research-grey.svg') no-repeat;
 	background-size: contain;
 }
-.card-container2:hover > .icon-container2  {
-	background: url('../../../assets/how/paket-red.svg') no-repeat;
+.card-container2:hover > .icon-container2 {
+	background: url('../../../assets/how/research.svg') no-repeat;
 }
 .icon-container3 {
 	width: 65px;
@@ -90,13 +91,12 @@
 	background-size: contain;
 }
 
-.card-container2:hover > .text-card-head{
+.card-container2:hover > .text-card-head {
 	color: var(--main-red);
 }
 .card-container2:hover > .text-card {
 	color: var(--main-red);
 }
-
 
 .text-card-head {
 	font-family: "Playfair Display";
@@ -167,8 +167,6 @@ div:hover > .only-show-on-hover2 {
 div:hover > .only-show-on-hover3 {
 	visibility: visible;
 }
-
-
 
 /* Modal CSS */
 
@@ -288,7 +286,7 @@ label {
 }
 
 @media only screen and (max-device-width: 450px) {
-	.text-head1 {
+	.text-head1  {
 		font-size: 40px;
 	}
 	.card-container2 {
@@ -296,4 +294,26 @@ label {
 		border-radius: 10px;
 		margin: 40px 0 40px 0;
 	}
-  }
+	
+	.modal-head {
+		font-size: 28px;
+	}
+	.modal-content-3  {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.modal-txt {
+		font-size: 20px;
+	}
+	.close-button2 {
+		position: relative;
+		top: 0;
+		right: 0;
+		margin-top: 0px;
+		margin-right: 0px;
+		background-color: transparent;
+		border: none;
+		outline: none;
+	}
+}
