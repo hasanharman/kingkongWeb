@@ -171,6 +171,18 @@
   ::ng-deep.carousel-indicators .active {
     background-color: var(--main-red);
   }
+  ::ng-deep.swiper-pagination-bullets {
+    bottom: 0px!important;
+  }
+  ::ng-deep.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--main-red);
+    border-radius: 50%;
+  }
+  ::ng-deep.swiper-pagination-bullet-active {
+    background-color: var(--main-red);
+  }
   img {
     margin: 0;
     width: 346px;

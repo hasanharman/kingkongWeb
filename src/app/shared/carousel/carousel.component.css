@@ -493,7 +493,7 @@ p > b {
 /* Phone Screen */
 @media only screen and (max-width: 450px) {
 	.carousel-content {
-		margin-top: 160px;
+		margin-top: 95px;
 		margin-left: 34px;
 		margin-bottom: 10px;
 		width: 100%;
@@ -549,12 +549,23 @@ p > b {
 		object-fit: contain;
 	}
 	.videoTarget {
-		object-fit: contain;
-		width: 90%;
+		/* width: -webkit-fill-available;
 		height: auto;
 		position: absolute;
 		top: 0;
 		right: 0;
+		object-fit: contain; */
+		position: absolute;
+		top: 0;
+    	right: 0;
+		width: -webkit-fill-available;
+		height: auto;
+	}
+	video {
+		position: absolute;
+		top: 0;
+		right: 300px;
+
 	}
 	.dott1{
 		width: 15%;
@@ -603,6 +614,24 @@ p > b {
 	.modal-body {
 		width: 100%;
 		height: 224px;
+	}
+
+}
+@media only screen and (max-width: 375px) { 
+	.carousel-content {
+		margin-top: 125px;
+		margin-left: 30px;
+	}
+	.carousel-title {
+		font-size: 24px;
+	}
+	.carousel-sub {
+		font-size: 36px;
+  		line-height: 1.15;
+	}
+	.carousel-hint{
+		font-size: 16px;
+		line-height: 1.4;
 	}
 
 }

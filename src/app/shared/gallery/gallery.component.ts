@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
-import {NgbDropdownConfig} from '@ng-bootstrap/ng-bootstrap';
+import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
+import SwiperCore, { Navigation, Pagination, Swiper } from 'swiper/core';
 
 declare var $: any;
 
+SwiperCore.use([ Navigation, Pagination ]);
 @Component({
 	selector: 'app-gallery',
 	templateUrl: './gallery.component.html',
 	styleUrls: [ './gallery.component.css' ],
-	providers: [NgbCarouselConfig, NgbDropdownConfig]  // add NgbCarouselConfig to the component providers
+	providers: [ NgbCarouselConfig, NgbDropdownConfig ] // add NgbCarouselConfig to the component providers
 })
 export class GalleryComponent implements OnInit {
 	isShown1: boolean = true;
@@ -17,7 +19,7 @@ export class GalleryComponent implements OnInit {
 	isShown4: boolean = false;
 	isActive: boolean = true;
 	mobile: boolean | undefined;
-	searchSelector = "Ana Giriş";
+	searchSelector = 'Ana Giriş';
 
 	anagiris = [
 		{ image: '../../../assets/gallery/ag1.webp' },
@@ -26,7 +28,7 @@ export class GalleryComponent implements OnInit {
 		{ image: '../../../assets/gallery/ag4.webp' },
 		{ image: '../../../assets/gallery/ag5.webp' },
 		{ image: '../../../assets/gallery/ag6.webp' },
-		{ image: '../../../assets/gallery/ag7.webp' },
+		{ image: '../../../assets/gallery/ag7.webp' }
 	];
 
 	networking = [
@@ -36,7 +38,7 @@ export class GalleryComponent implements OnInit {
 		{ image: '../../../assets/gallery/na4.webp' },
 		{ image: '../../../assets/gallery/na5.webp' },
 		{ image: '../../../assets/gallery/na6.webp' },
-		{ image: '../../../assets/gallery/na7.webp' },
+		{ image: '../../../assets/gallery/na7.webp' }
 	];
 
 	stand = [
@@ -46,7 +48,7 @@ export class GalleryComponent implements OnInit {
 		{ image: '../../../assets/gallery/sa4.webp' },
 		{ image: '../../../assets/gallery/sa5.webp' },
 		{ image: '../../../assets/gallery/sa6.webp' },
-		{ image: '../../../assets/gallery/sa7.webp' },
+		{ image: '../../../assets/gallery/sa7.webp' }
 	];
 
 	toplanti = [
@@ -56,9 +58,8 @@ export class GalleryComponent implements OnInit {
 		{ image: '../../../assets/gallery/ts4.webp' },
 		{ image: '../../../assets/gallery/ts5.webp' },
 		{ image: '../../../assets/gallery/ts6.webp' },
-		{ image: '../../../assets/gallery/ts7.webp' },
+		{ image: '../../../assets/gallery/ts7.webp' }
 	];
-
 
 	constructor(config: NgbCarouselConfig, drop: NgbDropdownConfig) {
 		config.interval = 0;
@@ -76,14 +77,17 @@ export class GalleryComponent implements OnInit {
 		}
 	}
 
+	onSwiper(swiper: any) {
+		console.log(swiper);
+	}
 
 	show1(value: any) {
 		this.isShown1 = !this.isShown1;
 		this.isShown2 = false;
 		this.isShown3 = false;
 		this.isShown4 = false;
-		this.isActive = true;		this.searchSelector = value;
-
+		this.isActive = true;
+		this.searchSelector = value;
 	}
 	show2(value: any) {
 		this.isShown2 = !this.isShown2;

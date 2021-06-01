@@ -1,6 +1,11 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import SwiperCore, { Navigation,Pagination, Swiper } from 'swiper/core';
+
+declare var $: any;
+
+SwiperCore.use([Navigation, Pagination]);
 
 @Component({
 	selector: 'app-howitworks',
@@ -45,12 +50,22 @@ export class HowitworksComponent implements OnInit {
 	sended?: boolean | false;
 	mobile: boolean | undefined;
 
+	cards = [
+		{ title:'Toplantı', text:'Etkinliğinizin detaylarını ve gereksinimlerini öğrenmek için sizinle bir toplantı organize eder.',icon: '../../../assets/how/presentation1-gri.svg'},
+		{ title:'Bütçe', text:'Bu detaylar ve ihtiyaçlar doğrultusunda size özel bir paket ve bütçehazırlar.', icon:'../../../assets/how/research-grey.svg'},
+		{title:'Teknik Destek', text:'Etkinliğinizi tüm yönleriyle başarıya ulaşmasını sağlayacak teknik ve lojistik unsurları yönetir.', icon:'../../../assets/how/umbrella-13-gri.svg'}
+	];
+
 	constructor(private modalService: NgbModal, config: NgbCarouselConfig) {
 		config.interval = 0;
 		config.wrap = false;
 		config.pauseOnHover = true;
 		config.showNavigationArrows = true
 	}
+	onSwiper(swiper:any) {
+		console.log(swiper);
+	}
+
 	openModal(content: any) {
 		this.modalService.open(content, {
 			centered: true,

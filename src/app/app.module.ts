@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Injectable } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +18,16 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { ComingSoonComponent } from './shared/coming-soon/coming-soon.component';
 import { CookiesComponent } from './shared/cookies/cookies.component';
 
+import * as Hammer from 'hammerjs';
+import { HammerModule, HammerGestureConfig, HAMMER_GESTURE_CONFIG} from '@angular/platform-browser';
+import { SwiperModule } from 'swiper/angular';
+
+@Injectable()
+export class MyHammerConfig extends HammerGestureConfig {
+  overrides = <any> {
+    swipe: { direction: Hammer.DIRECTION_ALL },
+  };
+}
 
 @NgModule({
   declarations: [
@@ -40,8 +50,13 @@ import { CookiesComponent } from './shared/cookies/cookies.component';
     BrowserAnimationsModule,
     NgbModule,
     NgImageSliderModule,
+    HammerModule,
+    SwiperModule,
   ],
-  providers: [],
+  providers: [{
+    provide: HAMMER_GESTURE_CONFIG,
+    useClass: MyHammerConfig,
+  },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

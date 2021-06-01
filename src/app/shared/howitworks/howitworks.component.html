@@ -35,9 +35,16 @@
     </div>
   </div>
 
-  <div class="contents" *ngIf="mobile">
-    <ngb-carousel>
-      <ng-template ngbSlide>
+  <div *ngIf="mobile">
+    <swiper [pagination]="true">
+      <!-- <ng-template swiperSlide *ngFor="let card of cards; let i = index;">
+        <div class="card-container-mob">
+          <h1 class="text-card-head">{{card.title}}</h1>
+          <p class="text-card"> {{card.text}}
+          </p>
+        </div>
+      </ng-template> -->
+      <ng-template  swiperSlide data-swiper-slide-index="1">
         <div class="card-container2">
           <div class="icon-container1"></div>
           <h1 class="text-card-head">Toplantı</h1>
@@ -47,9 +54,8 @@
           </p>
         </div>
       </ng-template>
-      <ng-template ngbSlide>
-        <div class="card-container2">
-          <!-- <img src="../../../assets/how/PaketButce.svg" alt="" /> -->
+      <ng-template  swiperSlide data-swiper-slide-index="2">
+        <div class="card-container2" >
           <div class="icon-container2"></div>
           <h1 class="text-card-head">Bütçe</h1>
           <p class="text-card">
@@ -58,9 +64,8 @@
           </p>
         </div>
       </ng-template>
-      <ng-template ngbSlide>
-        <div class="card-container2">
-          <!-- <img src="../../../assets/how/umbrella.svg" alt="" /> -->
+      <ng-template swiperSlide data-swiper-slide-index="3">
+        <div class="card-container2" >
           <div class="icon-container3"></div>
           <h1 class="text-card-head">Teknik Destek</h1>
           <p class="text-card">
@@ -69,17 +74,19 @@
           </p>
         </div>
       </ng-template>
-    </ngb-carousel>
+    </swiper>
   </div>
 
 
 
+<div class="button-center">
   <div class="contact-us" >
     <!-- <div class="contact-us"  (click)="scrollFooter()" > -->
     <!-- <div><a href="mailto:kingkongistanbul@gmail.com" style="text-decoration: none;color: white;" target="_blank">Bize Ulaşın</a></div> -->
     <div (click)="openContact(contact)">Bize Ulaşın</div>
     <div>></div>
   </div>
+</div>
 </div>
 
 

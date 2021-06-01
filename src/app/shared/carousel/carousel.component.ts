@@ -31,9 +31,9 @@ export class CarouselComponent implements OnInit {
 			this.mobile = true;
 		  }
 	}
-	ngAfterViewInit() {
-		this.openCookies()
-	  }
+	// ngAfterViewInit() {
+	// 	this.openCookies()
+	//   }
 
 	openVideo(video: any) {
 		this.modals.open(video, {
